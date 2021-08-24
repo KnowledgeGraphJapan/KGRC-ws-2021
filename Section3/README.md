@@ -28,6 +28,23 @@ fjs:furniture rdfs:label "furniture"@en .
 fjs:sleeping_place a rdfs:Class .
 fjs:sleeping_place rdfs:label "sleeping place"@en .
 ```
+## Wordnet との接続
+* [データ](./data)
+
+シーンの関連語
+```
+SpeckledBand:376 kgcf:relatedWord wordnet:word-think .
+SpeckledBand:376 kgcf:relatedWord wordnet:word-snake> .
+```
+
+動機の関連語
+```
+kdf:rancor a kgcf:motivation_of_murder .
+kdf:rancor kgcf:relatedWord <http://www.w3.org/2006/03/wn/wn31/instances/word-rancor> .
+kdf:rancor kgcf:relatedWord <http://www.w3.org/2006/03/wn/wn31/instances/word-acrimony> .
+kdf:rancor kgcf:relatedWord <http://www.w3.org/2006/03/wn/wn31/instances/word-animosity> .
+kdf:rancor kgcf:relatedWord <http://www.w3.org/2006/03/wn/wn31/instances/word-rancour> .
+```
 
 ## 殺害手段オントロジー
 * https://github.com/KGChallenge/Challenge/blob/master/Means/KnowledgeGraph/root-ontology_modify2.ttl
