@@ -1,0 +1,2484 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fjs: <http://challenge2021.labs.fujitsu.com/ontology/kgc.owl#> . 
+
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/fear> a fjs:basic_emotion .
+fjs:basic_emotion  rdfs:label "basic emotion"@en .
+fjs:basic_emotion  a rdfs:Class .
+fjs:basic_emotion  rdfs:seeAlso <http://www.wikidata.org/entity/Q16748867> .
+fjs:basic_emotion rdfs:subClassOf fjs:emotion .
+fjs:emotion a rdfs:Class .
+fjs:emotion rdfs:label "emotion"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/guess> a fjs:business .
+fjs:business  rdfs:label "business"@en .
+fjs:business  a rdfs:Class .
+fjs:business  rdfs:seeAlso <http://www.wikidata.org/entity/Q4830453> .
+fjs:business rdfs:subClassOf fjs:organization .
+fjs:organization a rdfs:Class .
+fjs:organization rdfs:label "organization"@en .
+fjs:business rdfs:subClassOf fjs:economic_unit .
+fjs:economic_unit a rdfs:Class .
+fjs:economic_unit rdfs:label "economic unit"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Fear> a fjs:basic_emotion .
+fjs:basic_emotion  rdfs:label "basic emotion"@en .
+fjs:basic_emotion  a rdfs:Class .
+fjs:basic_emotion  rdfs:seeAlso <http://www.wikidata.org/entity/Q16748867> .
+fjs:basic_emotion rdfs:subClassOf fjs:emotion .
+fjs:emotion a rdfs:Class .
+fjs:emotion rdfs:label "emotion"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/receive> a fjs:concept .
+fjs:concept  rdfs:label "concept"@en .
+fjs:concept  a rdfs:Class .
+fjs:concept  rdfs:seeAlso <http://www.wikidata.org/entity/Q151885> .
+fjs:concept rdfs:subClassOf fjs:mental_representation .
+fjs:mental_representation a rdfs:Class .
+fjs:mental_representation rdfs:label "mental representation"@en .
+fjs:concept rdfs:subClassOf fjs:abstract_object .
+fjs:abstract_object a rdfs:Class .
+fjs:abstract_object rdfs:label "abstract object"@en .
+fjs:concept rdfs:subClassOf fjs:capability .
+fjs:capability a rdfs:Class .
+fjs:capability rdfs:label "capability"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Room> a fjs:facility .
+fjs:facility  rdfs:label "facility"@en .
+fjs:facility  a rdfs:Class .
+fjs:facility  rdfs:seeAlso <http://www.wikidata.org/entity/Q13226383> .
+fjs:facility rdfs:subClassOf fjs:geographic_location .
+fjs:geographic_location a rdfs:Class .
+fjs:geographic_location rdfs:label "geographic location"@en .
+fjs:facility rdfs:subClassOf fjs:artificial_geographic_entity .
+fjs:artificial_geographic_entity a rdfs:Class .
+fjs:artificial_geographic_entity rdfs:label "artificial geographic entity"@en .
+fjs:facility rdfs:subClassOf fjs:geographical_object .
+fjs:geographical_object a rdfs:Class .
+fjs:geographical_object rdfs:label "geographical object"@en .
+fjs:facility rdfs:subClassOf fjs:organization .
+fjs:organization a rdfs:Class .
+fjs:organization rdfs:label "organization"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/smoke>  rdfs:subClassOf fjs:aerosol .
+fjs:aerosol a rdfs:Class .
+fjs:aerosol rdfs:label "aerosol"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/smoke>  rdfs:subClassOf fjs:lithometeor .
+fjs:lithometeor a rdfs:Class .
+fjs:lithometeor rdfs:label "lithometeor"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/smoke>  rdfs:subClassOf fjs:particulates .
+fjs:particulates a rdfs:Class .
+fjs:particulates rdfs:label "particulates"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/smoke>  rdfs:subClassOf fjs:combustion_product .
+fjs:combustion_product a rdfs:Class .
+fjs:combustion_product rdfs:label "combustion product"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Note>  rdfs:subClassOf fjs:document .
+fjs:document a rdfs:Class .
+fjs:document rdfs:label "document"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Note>  rdfs:subClassOf fjs:personal_testimonial .
+fjs:personal_testimonial a rdfs:Class .
+fjs:personal_testimonial rdfs:label "personal testimonial"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Note>  rdfs:subClassOf fjs:message .
+fjs:message a rdfs:Class .
+fjs:message rdfs:label "message"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Note>  rdfs:subClassOf fjs:literary_work .
+fjs:literary_work a rdfs:Class .
+fjs:literary_work rdfs:label "literary work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Stairs>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Stairs>  rdfs:subClassOf fjs:horizontal_structural_element .
+fjs:horizontal_structural_element a rdfs:Class .
+fjs:horizontal_structural_element rdfs:label "horizontal structural element"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Stairs>  rdfs:subClassOf fjs:support .
+fjs:support a rdfs:Class .
+fjs:support rdfs:label "support"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Chair>  rdfs:subClassOf fjs:seat .
+fjs:seat a rdfs:Class .
+fjs:seat rdfs:label "seat"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Chair>  rdfs:subClassOf fjs:furniture .
+fjs:furniture a rdfs:Class .
+fjs:furniture rdfs:label "furniture"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/something> a fjs:variable-order_class .
+fjs:variable-order_class  rdfs:label "variable-order class"@en .
+fjs:variable-order_class  a rdfs:Class .
+fjs:variable-order_class  rdfs:seeAlso <http://www.wikidata.org/entity/Q23958852> .
+fjs:variable-order_class rdfs:subClassOf fjs:metaclass .
+fjs:metaclass a rdfs:Class .
+fjs:metaclass rdfs:label "(meta)class"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/hand>  rdfs:subClassOf fjs:cardinal_body_part .
+fjs:cardinal_body_part a rdfs:Class .
+fjs:cardinal_body_part rdfs:label "cardinal body part"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/hand>  rdfs:subClassOf fjs:autopod_region .
+fjs:autopod_region a rdfs:Class .
+fjs:autopod_region rdfs:label "autopod region"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/ice>  rdfs:subClassOf fjs:water .
+fjs:water a rdfs:Class .
+fjs:water rdfs:label "water"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/ice>  rdfs:subClassOf fjs:solid .
+fjs:solid a rdfs:Class .
+fjs:solid rdfs:label "solid"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/house>  rdfs:subClassOf fjs:residential_building .
+fjs:residential_building a rdfs:Class .
+fjs:residential_building rdfs:label "residential building"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/house>  rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/neck>  rdfs:subClassOf fjs:cardinal_body_part .
+fjs:cardinal_body_part a rdfs:Class .
+fjs:cardinal_body_part rdfs:label "cardinal body part"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/neck>  rdfs:subClassOf fjs:subdivision_of_body_proper .
+fjs:subdivision_of_body_proper a rdfs:Class .
+fjs:subdivision_of_body_proper rdfs:label "subdivision of body proper"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/door>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/door>  rdfs:subClassOf fjs:device .
+fjs:device a rdfs:Class .
+fjs:device rdfs:label "device"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/door>  rdfs:subClassOf fjs:obstacle .
+fjs:obstacle a rdfs:Class .
+fjs:obstacle rdfs:label "obstacle"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Answer>  rdfs:subClassOf fjs:statement .
+fjs:statement a rdfs:Class .
+fjs:statement rdfs:label "statement"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Story> a fjs:form .
+fjs:form  rdfs:label "form"@en .
+fjs:form  a rdfs:Class .
+fjs:form  rdfs:seeAlso <http://www.wikidata.org/entity/Q1437361> .
+fjs:form rdfs:subClassOf fjs:format .
+fjs:format a rdfs:Class .
+fjs:format rdfs:label "format"@en .
+fjs:form rdfs:subClassOf fjs:form .
+fjs:form a rdfs:Class .
+fjs:form rdfs:label "form"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/revenge>  rdfs:subClassOf fjs:behavior .
+fjs:behavior a rdfs:Class .
+fjs:behavior rdfs:label "behavior"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/name>  rdfs:subClassOf fjs:word .
+fjs:word a rdfs:Class .
+fjs:word rdfs:label "word"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/name>  rdfs:subClassOf fjs:sign .
+fjs:sign a rdfs:Class .
+fjs:sign rdfs:label "sign"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/cadaver>  rdfs:subClassOf fjs:body .
+fjs:body a rdfs:Class .
+fjs:body rdfs:label "body"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/cadaver>  rdfs:subClassOf fjs:carcass .
+fjs:carcass a rdfs:Class .
+fjs:carcass rdfs:label "carcass"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Ash> a fjs:taxon .
+fjs:taxon  rdfs:label "taxon"@en .
+fjs:taxon  a rdfs:Class .
+fjs:taxon  rdfs:seeAlso <http://www.wikidata.org/entity/Q16521> .
+fjs:taxon rdfs:subClassOf fjs:living_organism_class .
+fjs:living_organism_class a rdfs:Class .
+fjs:living_organism_class rdfs:label "living organism class"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/House>  rdfs:subClassOf fjs:residential_building .
+fjs:residential_building a rdfs:Class .
+fjs:residential_building rdfs:label "residential building"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/House>  rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/fact>  rdfs:subClassOf fjs:occurrence .
+fjs:occurrence a rdfs:Class .
+fjs:occurrence rdfs:label "occurrence"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/fact>  rdfs:subClassOf fjs:phenomenon .
+fjs:phenomenon a rdfs:Class .
+fjs:phenomenon rdfs:label "phenomenon"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Have> a fjs:family_name .
+fjs:family_name  rdfs:label "family name"@en .
+fjs:family_name  a rdfs:Class .
+fjs:family_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q101352> .
+fjs:family_name rdfs:subClassOf fjs:anthroponym .
+fjs:anthroponym a rdfs:Class .
+fjs:anthroponym rdfs:label "anthroponym"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Criminal> a fjs:occupation .
+fjs:occupation  rdfs:label "occupation"@en .
+fjs:occupation  a rdfs:Class .
+fjs:occupation  rdfs:seeAlso <http://www.wikidata.org/entity/Q12737077> .
+fjs:occupation rdfs:subClassOf fjs:human_activity .
+fjs:human_activity a rdfs:Class .
+fjs:human_activity rdfs:label "human activity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Face> a fjs:anatomical_structure .
+fjs:anatomical_structure  rdfs:label "anatomical structure"@en .
+fjs:anatomical_structure  a rdfs:Class .
+fjs:anatomical_structure  rdfs:seeAlso <http://www.wikidata.org/entity/Q4936952> .
+fjs:anatomical_structure rdfs:subClassOf fjs:biological_component .
+fjs:biological_component a rdfs:Class .
+fjs:biological_component rdfs:label "biological component"@en .
+fjs:anatomical_structure rdfs:subClassOf fjs:material_anatomical_entity .
+fjs:material_anatomical_entity a rdfs:Class .
+fjs:material_anatomical_entity rdfs:label "material anatomical entity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Expression> a fjs:social_skills .
+fjs:social_skills  rdfs:label "social skills"@en .
+fjs:social_skills  a rdfs:Class .
+fjs:social_skills  rdfs:seeAlso <http://www.wikidata.org/entity/Q1413287> .
+fjs:social_skills rdfs:subClassOf fjs:skill .
+fjs:skill a rdfs:Class .
+fjs:skill rdfs:label "skill"@en .
+fjs:social_skills rdfs:subClassOf fjs:competence .
+fjs:competence a rdfs:Class .
+fjs:competence rdfs:label "competence"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/face> a fjs:anatomical_structure .
+fjs:anatomical_structure  rdfs:label "anatomical structure"@en .
+fjs:anatomical_structure  a rdfs:Class .
+fjs:anatomical_structure  rdfs:seeAlso <http://www.wikidata.org/entity/Q4936952> .
+fjs:anatomical_structure rdfs:subClassOf fjs:biological_component .
+fjs:biological_component a rdfs:Class .
+fjs:biological_component rdfs:label "biological component"@en .
+fjs:anatomical_structure rdfs:subClassOf fjs:material_anatomical_entity .
+fjs:material_anatomical_entity a rdfs:Class .
+fjs:material_anatomical_entity rdfs:label "material anatomical entity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/open> a fjs:competition_class .
+fjs:competition_class  rdfs:label "competition class"@en .
+fjs:competition_class  a rdfs:Class .
+fjs:competition_class  rdfs:seeAlso <http://www.wikidata.org/entity/Q22936940> .
+fjs:competition_class rdfs:subClassOf fjs:classification_in_sports .
+fjs:classification_in_sports a rdfs:Class .
+fjs:classification_in_sports rdfs:label "classification in sports"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/fireplace> a fjs:technological_component .
+fjs:technological_component  rdfs:label "technological component"@en .
+fjs:technological_component  a rdfs:Class .
+fjs:technological_component  rdfs:seeAlso <http://www.wikidata.org/entity/Q811909> .
+fjs:technological_component rdfs:subClassOf fjs:component .
+fjs:component a rdfs:Class .
+fjs:component rdfs:label "component"@en .
+fjs:technological_component rdfs:subClassOf fjs:artificial_entity .
+fjs:artificial_entity a rdfs:Class .
+fjs:artificial_entity rdfs:label "artificial entity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/window>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/lamp>  rdfs:subClassOf fjs:light_source .
+fjs:light_source a rdfs:Class .
+fjs:light_source rdfs:label "light source"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/lamp>  rdfs:subClassOf fjs:artificial_physical_object .
+fjs:artificial_physical_object a rdfs:Class .
+fjs:artificial_physical_object rdfs:label "artificial physical object"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/lamp>  rdfs:subClassOf fjs:furniture .
+fjs:furniture a rdfs:Class .
+fjs:furniture rdfs:label "furniture"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/lamp>  rdfs:subClassOf fjs:light_fixture .
+fjs:light_fixture a rdfs:Class .
+fjs:light_fixture rdfs:label "light fixture"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/deeply> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/money>  rdfs:subClassOf fjs:legal_tender .
+fjs:legal_tender a rdfs:Class .
+fjs:legal_tender rdfs:label "legal tender"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/money>  rdfs:subClassOf fjs:nominal_good .
+fjs:nominal_good a rdfs:Class .
+fjs:nominal_good rdfs:label "nominal good"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/money>  rdfs:subClassOf fjs:standard_of_deferred_payment .
+fjs:standard_of_deferred_payment a rdfs:Class .
+fjs:standard_of_deferred_payment rdfs:label "standard of deferred payment"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/suffering>  rdfs:subClassOf fjs:qualia .
+fjs:qualia a rdfs:Class .
+fjs:qualia rdfs:label "qualia"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/effect>  rdfs:subClassOf fjs:consequence .
+fjs:consequence a rdfs:Class .
+fjs:consequence rdfs:label "consequence"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/poison> a fjs:class_of_chemical_substances_by_use .
+fjs:class_of_chemical_substances_by_use  rdfs:label "class of chemical substances by use"@en .
+fjs:class_of_chemical_substances_by_use  a rdfs:Class .
+fjs:class_of_chemical_substances_by_use  rdfs:seeAlso <http://www.wikidata.org/entity/Q100434640> .
+fjs:class_of_chemical_substances_by_use rdfs:subClassOf fjs:group_or_class_of_chemical_substances .
+fjs:group_or_class_of_chemical_substances a rdfs:Class .
+fjs:group_or_class_of_chemical_substances rdfs:label "group or class of chemical substances"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/garden>  rdfs:subClassOf fjs:landscape .
+fjs:landscape a rdfs:Class .
+fjs:landscape rdfs:label "landscape"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/garden>  rdfs:subClassOf fjs:exterior_space .
+fjs:exterior_space a rdfs:Class .
+fjs:exterior_space rdfs:label "exterior space"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/garden>  rdfs:subClassOf fjs:land_use .
+fjs:land_use a rdfs:Class .
+fjs:land_use rdfs:label "land use"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/garden>  rdfs:subClassOf fjs:workplace .
+fjs:workplace a rdfs:Class .
+fjs:workplace rdfs:label "workplace"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/garden>  rdfs:subClassOf fjs:venue .
+fjs:venue a rdfs:Class .
+fjs:venue rdfs:label "venue"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/garden>  rdfs:subClassOf fjs:green_space .
+fjs:green_space a rdfs:Class .
+fjs:green_space rdfs:label "green space"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/garden>  rdfs:subClassOf fjs:human-made_landform .
+fjs:human-made_landform a rdfs:Class .
+fjs:human-made_landform rdfs:label "human-made landform"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/garden>  rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/marriage> a fjs:legal_institution .
+fjs:legal_institution  rdfs:label "legal institution"@en .
+fjs:legal_institution  a rdfs:Class .
+fjs:legal_institution  rdfs:seeAlso <http://www.wikidata.org/entity/Q1938208> .
+fjs:legal_institution rdfs:subClassOf fjs:legislation .
+fjs:legislation a rdfs:Class .
+fjs:legislation rdfs:label "legislation"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/clothes>  rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/clothes>  rdfs:subClassOf fjs:product .
+fjs:product a rdfs:Class .
+fjs:product rdfs:label "product"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/living_room>  rdfs:subClassOf fjs:room .
+fjs:room a rdfs:Class .
+fjs:room rdfs:label "room"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/alone> a fjs:Wikimedia_disambiguation_page .
+fjs:Wikimedia_disambiguation_page  rdfs:label "Wikimedia disambiguation page"@en .
+fjs:Wikimedia_disambiguation_page  a rdfs:Class .
+fjs:Wikimedia_disambiguation_page  rdfs:seeAlso <http://www.wikidata.org/entity/Q4167410> .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:MediaWiki_main-namespace_page .
+fjs:MediaWiki_main-namespace_page a rdfs:Class .
+fjs:MediaWiki_main-namespace_page rdfs:label "MediaWiki main-namespace page"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:list .
+fjs:list a rdfs:Class .
+fjs:list rdfs:label "list"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:Wikimedia_internal_item .
+fjs:Wikimedia_internal_item a rdfs:Class .
+fjs:Wikimedia_internal_item rdfs:label "Wikimedia internal item"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/candle> a fjs:energy_storage .
+fjs:energy_storage  rdfs:label "energy storage"@en .
+fjs:energy_storage  a rdfs:Class .
+fjs:energy_storage  rdfs:seeAlso <http://www.wikidata.org/entity/Q837718> .
+fjs:energy_storage rdfs:subClassOf fjs:manufactured_good .
+fjs:manufactured_good a rdfs:Class .
+fjs:manufactured_good rdfs:label "manufactured good"@en .
+fjs:energy_storage rdfs:subClassOf fjs:goods .
+fjs:goods a rdfs:Class .
+fjs:goods rdfs:label "goods"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/reason>  rdfs:subClassOf fjs:mental_process .
+fjs:mental_process a rdfs:Class .
+fjs:mental_process rdfs:label "mental process"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/chimney>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/chimney>  rdfs:subClassOf fjs:architectural_structure .
+fjs:architectural_structure a rdfs:Class .
+fjs:architectural_structure rdfs:label "architectural structure"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/chimney>  rdfs:subClassOf fjs:fluid_accelerator .
+fjs:fluid_accelerator a rdfs:Class .
+fjs:fluid_accelerator rdfs:label "fluid accelerator"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/housekeeper> a fjs:profession .
+fjs:profession  rdfs:label "profession"@en .
+fjs:profession  a rdfs:Class .
+fjs:profession  rdfs:seeAlso <http://www.wikidata.org/entity/Q28640> .
+fjs:profession rdfs:subClassOf fjs:job .
+fjs:job a rdfs:Class .
+fjs:job rdfs:label "job"@en .
+fjs:profession rdfs:subClassOf fjs:occupation .
+fjs:occupation a rdfs:Class .
+fjs:occupation rdfs:label "occupation"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/night>  rdfs:subClassOf fjs:time_of_the_day .
+fjs:time_of_the_day a rdfs:Class .
+fjs:time_of_the_day rdfs:label "time of the day"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/table>  rdfs:subClassOf fjs:furniture .
+fjs:furniture a rdfs:Class .
+fjs:furniture rdfs:label "furniture"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/fire>  rdfs:subClassOf fjs:fire .
+fjs:fire a rdfs:Class .
+fjs:fire rdfs:label "fire"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/fire>  rdfs:subClassOf fjs:disaster .
+fjs:disaster a rdfs:Class .
+fjs:disaster rdfs:label "disaster"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Know>  rdfs:subClassOf fjs:computer_science .
+fjs:computer_science a rdfs:Class .
+fjs:computer_science rdfs:label "computer science"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Know>  rdfs:subClassOf fjs:statistics .
+fjs:statistics a rdfs:Class .
+fjs:statistics rdfs:label "statistics"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Know>  rdfs:subClassOf fjs:discovery .
+fjs:discovery a rdfs:Class .
+fjs:discovery rdfs:label "discovery"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Know>  rdfs:subClassOf fjs:analysis .
+fjs:analysis a rdfs:Class .
+fjs:analysis rdfs:label "analysis"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Know>  rdfs:subClassOf fjs:text_and_data_mining .
+fjs:text_and_data_mining a rdfs:Class .
+fjs:text_and_data_mining rdfs:label "text and data mining"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/heart> a fjs:organ_type .
+fjs:organ_type  rdfs:label "organ type"@en .
+fjs:organ_type  a rdfs:Class .
+fjs:organ_type  rdfs:seeAlso <http://www.wikidata.org/entity/Q103812529> .
+fjs:organ_type rdfs:subClassOf fjs:anatomical_structure_type .
+fjs:anatomical_structure_type a rdfs:Class .
+fjs:anatomical_structure_type rdfs:label "anatomical structure type"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Inside> a fjs:video_game .
+fjs:video_game  rdfs:label "video game"@en .
+fjs:video_game  a rdfs:Class .
+fjs:video_game  rdfs:seeAlso <http://www.wikidata.org/entity/Q7889> .
+fjs:video_game rdfs:subClassOf fjs:electronic_game .
+fjs:electronic_game a rdfs:Class .
+fjs:electronic_game rdfs:label "electronic game"@en .
+fjs:video_game rdfs:subClassOf fjs:entertainment_software .
+fjs:entertainment_software a rdfs:Class .
+fjs:entertainment_software rdfs:label "entertainment software"@en .
+fjs:video_game rdfs:subClassOf fjs:creative_work .
+fjs:creative_work a rdfs:Class .
+fjs:creative_work rdfs:label "creative work"@en .
+fjs:video_game rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:video_game rdfs:subClassOf fjs:application .
+fjs:application a rdfs:Class .
+fjs:application rdfs:label "application"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/frame>  rdfs:subClassOf fjs:artificial_physical_object .
+fjs:artificial_physical_object a rdfs:Class .
+fjs:artificial_physical_object rdfs:label "artificial physical object"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Bedroom>  rdfs:subClassOf fjs:room .
+fjs:room a rdfs:Class .
+fjs:room rdfs:label "room"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Bedroom>  rdfs:subClassOf fjs:sleeping_place .
+fjs:sleeping_place a rdfs:Class .
+fjs:sleeping_place rdfs:label "sleeping place"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/room> a fjs:facility .
+fjs:facility  rdfs:label "facility"@en .
+fjs:facility  a rdfs:Class .
+fjs:facility  rdfs:seeAlso <http://www.wikidata.org/entity/Q13226383> .
+fjs:facility rdfs:subClassOf fjs:geographic_location .
+fjs:geographic_location a rdfs:Class .
+fjs:geographic_location rdfs:label "geographic location"@en .
+fjs:facility rdfs:subClassOf fjs:artificial_geographic_entity .
+fjs:artificial_geographic_entity a rdfs:Class .
+fjs:artificial_geographic_entity rdfs:label "artificial geographic entity"@en .
+fjs:facility rdfs:subClassOf fjs:geographical_object .
+fjs:geographical_object a rdfs:Class .
+fjs:geographical_object rdfs:label "geographical object"@en .
+fjs:facility rdfs:subClassOf fjs:organization .
+fjs:organization a rdfs:Class .
+fjs:organization rdfs:label "organization"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/investigation>  rdfs:subClassOf fjs:planned_process .
+fjs:planned_process a rdfs:Class .
+fjs:planned_process rdfs:label "planned process"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Window>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Exist>  rdfs:subClassOf fjs:quantifier .
+fjs:quantifier a rdfs:Class .
+fjs:quantifier rdfs:label "quantifier"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/telegram> a fjs:instant_messaging_client .
+fjs:instant_messaging_client  rdfs:label "instant messaging client"@en .
+fjs:instant_messaging_client  a rdfs:Class .
+fjs:instant_messaging_client  rdfs:seeAlso <http://www.wikidata.org/entity/Q2462003> .
+fjs:instant_messaging_client rdfs:subClassOf fjs:client .
+fjs:client a rdfs:Class .
+fjs:client rdfs:label "client"@en .
+fjs:instant_messaging_client rdfs:subClassOf fjs:communication_software .
+fjs:communication_software a rdfs:Class .
+fjs:communication_software rdfs:label "communication software"@en .
+fjs:instant_messaging_client rdfs:subClassOf fjs:communication_medium .
+fjs:communication_medium a rdfs:Class .
+fjs:communication_medium rdfs:label "communication medium"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Traces> a fjs:Wikimedia_disambiguation_page .
+fjs:Wikimedia_disambiguation_page  rdfs:label "Wikimedia disambiguation page"@en .
+fjs:Wikimedia_disambiguation_page  a rdfs:Class .
+fjs:Wikimedia_disambiguation_page  rdfs:seeAlso <http://www.wikidata.org/entity/Q4167410> .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:MediaWiki_main-namespace_page .
+fjs:MediaWiki_main-namespace_page a rdfs:Class .
+fjs:MediaWiki_main-namespace_page rdfs:label "MediaWiki main-namespace page"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:list .
+fjs:list a rdfs:Class .
+fjs:list rdfs:label "list"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:Wikimedia_internal_item .
+fjs:Wikimedia_internal_item a rdfs:Class .
+fjs:Wikimedia_internal_item rdfs:label "Wikimedia internal item"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/note>  rdfs:subClassOf fjs:document .
+fjs:document a rdfs:Class .
+fjs:document rdfs:label "document"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/note>  rdfs:subClassOf fjs:personal_testimonial .
+fjs:personal_testimonial a rdfs:Class .
+fjs:personal_testimonial rdfs:label "personal testimonial"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/note>  rdfs:subClassOf fjs:message .
+fjs:message a rdfs:Class .
+fjs:message rdfs:label "message"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/note>  rdfs:subClassOf fjs:literary_work .
+fjs:literary_work a rdfs:Class .
+fjs:literary_work rdfs:label "literary work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/flower_bed>  rdfs:subClassOf fjs:bedding .
+fjs:bedding a rdfs:Class .
+fjs:bedding rdfs:label "bedding"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/others> a fjs:concept .
+fjs:concept  rdfs:label "concept"@en .
+fjs:concept  a rdfs:Class .
+fjs:concept  rdfs:seeAlso <http://www.wikidata.org/entity/Q151885> .
+fjs:concept rdfs:subClassOf fjs:mental_representation .
+fjs:mental_representation a rdfs:Class .
+fjs:mental_representation rdfs:label "mental representation"@en .
+fjs:concept rdfs:subClassOf fjs:abstract_object .
+fjs:abstract_object a rdfs:Class .
+fjs:abstract_object rdfs:label "abstract object"@en .
+fjs:concept rdfs:subClassOf fjs:capability .
+fjs:capability a rdfs:Class .
+fjs:capability rdfs:label "capability"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/finger>  rdfs:subClassOf fjs:digit .
+fjs:digit a rdfs:Class .
+fjs:digit rdfs:label "digit"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/finger>  rdfs:subClassOf fjs:region_of_hand .
+fjs:region_of_hand a rdfs:Class .
+fjs:region_of_hand rdfs:label "region of hand"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/death> a fjs:biological_process .
+fjs:biological_process  rdfs:label "biological process"@en .
+fjs:biological_process  a rdfs:Class .
+fjs:biological_process  rdfs:seeAlso <http://www.wikidata.org/entity/Q2996394> .
+fjs:biological_process rdfs:subClassOf fjs:process .
+fjs:process a rdfs:Class .
+fjs:process rdfs:label "process"@en .
+fjs:biological_process rdfs:subClassOf fjs:process .
+fjs:process a rdfs:Class .
+fjs:process rdfs:label "process"@en .
+fjs:biological_process rdfs:subClassOf fjs:natural_process .
+fjs:natural_process a rdfs:Class .
+fjs:natural_process rdfs:label "natural process"@en .
+fjs:biological_process rdfs:subClassOf fjs:biological_phenomenon .
+fjs:biological_phenomenon a rdfs:Class .
+fjs:biological_phenomenon rdfs:label "biological phenomenon"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/people> a fjs:organisms_known_by_a_particular_common_name .
+fjs:organisms_known_by_a_particular_common_name  rdfs:label "organisms known by a particular common name"@en .
+fjs:organisms_known_by_a_particular_common_name  a rdfs:Class .
+fjs:organisms_known_by_a_particular_common_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q55983715> .
+fjs:organisms_known_by_a_particular_common_name rdfs:subClassOf fjs:living_organism_class .
+fjs:living_organism_class a rdfs:Class .
+fjs:living_organism_class rdfs:label "living organism class"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Go> a fjs:board_game .
+fjs:board_game  rdfs:label "board game"@en .
+fjs:board_game  a rdfs:Class .
+fjs:board_game  rdfs:seeAlso <http://www.wikidata.org/entity/Q131436> .
+fjs:board_game rdfs:subClassOf fjs:tabletop_game .
+fjs:tabletop_game a rdfs:Class .
+fjs:tabletop_game rdfs:label "tabletop game"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Sleep> a fjs:biological_process .
+fjs:biological_process  rdfs:label "biological process"@en .
+fjs:biological_process  a rdfs:Class .
+fjs:biological_process  rdfs:seeAlso <http://www.wikidata.org/entity/Q2996394> .
+fjs:biological_process rdfs:subClassOf fjs:process .
+fjs:process a rdfs:Class .
+fjs:process rdfs:label "process"@en .
+fjs:biological_process rdfs:subClassOf fjs:process .
+fjs:process a rdfs:Class .
+fjs:process rdfs:label "process"@en .
+fjs:biological_process rdfs:subClassOf fjs:natural_process .
+fjs:natural_process a rdfs:Class .
+fjs:natural_process rdfs:label "natural process"@en .
+fjs:biological_process rdfs:subClassOf fjs:biological_phenomenon .
+fjs:biological_phenomenon a rdfs:Class .
+fjs:biological_phenomenon rdfs:label "biological phenomenon"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Less_than> a fjs:sourcing_circumstance .
+fjs:sourcing_circumstance  rdfs:label "sourcing circumstance"@en .
+fjs:sourcing_circumstance  a rdfs:Class .
+fjs:sourcing_circumstance  rdfs:seeAlso <http://www.wikidata.org/entity/Q104637420> .
+fjs:sourcing_circumstance rdfs:subClassOf fjs:term .
+fjs:term a rdfs:Class .
+fjs:term rdfs:label "term"@en .
+fjs:sourcing_circumstance rdfs:subClassOf fjs:value .
+fjs:value a rdfs:Class .
+fjs:value rdfs:label "value"@en .
+fjs:sourcing_circumstance rdfs:subClassOf fjs:Wikidata_internal_entity .
+fjs:Wikidata_internal_entity a rdfs:Class .
+fjs:Wikidata_internal_entity rdfs:label "Wikidata internal entity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/glasses>  rdfs:subClassOf fjs:corrective_lens .
+fjs:corrective_lens a rdfs:Class .
+fjs:corrective_lens rdfs:label "corrective lens"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/glasses>  rdfs:subClassOf fjs:costume_accessory .
+fjs:costume_accessory a rdfs:Class .
+fjs:costume_accessory rdfs:label "costume accessory"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/edge>  rdfs:subClassOf fjs:legal_norm .
+fjs:legal_norm a rdfs:Class .
+fjs:legal_norm rdfs:label "legal norm"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/edge>  rdfs:subClassOf fjs:delimitation .
+fjs:delimitation a rdfs:Class .
+fjs:delimitation rdfs:label "delimitation"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/property> a fjs:metaclass .
+fjs:metaclass  rdfs:label "metaclass"@en .
+fjs:metaclass  a rdfs:Class .
+fjs:metaclass  rdfs:seeAlso <http://www.wikidata.org/entity/Q19478619> .
+fjs:metaclass rdfs:subClassOf fjs:class .
+fjs:class a rdfs:Class .
+fjs:class rdfs:label "class"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Many_times> a fjs:extended_play .
+fjs:extended_play  rdfs:label "extended play"@en .
+fjs:extended_play  a rdfs:Class .
+fjs:extended_play  rdfs:seeAlso <http://www.wikidata.org/entity/Q169930> .
+fjs:extended_play rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:extended_play rdfs:subClassOf fjs:type_of_manufactured_good .
+fjs:type_of_manufactured_good a rdfs:Class .
+fjs:type_of_manufactured_good rdfs:label "type of manufactured good"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/See> a fjs:chemical_compound .
+fjs:chemical_compound  rdfs:label "chemical compound"@en .
+fjs:chemical_compound  a rdfs:Class .
+fjs:chemical_compound  rdfs:seeAlso <http://www.wikidata.org/entity/Q11173> .
+fjs:chemical_compound rdfs:subClassOf fjs:pure_substance .
+fjs:pure_substance a rdfs:Class .
+fjs:pure_substance rdfs:label "pure substance"@en .
+fjs:chemical_compound rdfs:subClassOf fjs:chemical_component .
+fjs:chemical_component a rdfs:Class .
+fjs:chemical_component rdfs:label "chemical component"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Think> a fjs:single .
+fjs:single  rdfs:label "single"@en .
+fjs:single  a rdfs:Class .
+fjs:single  rdfs:seeAlso <http://www.wikidata.org/entity/Q134556> .
+fjs:single rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:single rdfs:subClassOf fjs:audio_storage_device .
+fjs:audio_storage_device a rdfs:Class .
+fjs:audio_storage_device rdfs:label "audio storage device"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Talk> a fjs:occurrence .
+fjs:occurrence  rdfs:label "occurrence"@en .
+fjs:occurrence  a rdfs:Class .
+fjs:occurrence  rdfs:seeAlso <http://www.wikidata.org/entity/Q1190554> .
+fjs:occurrence rdfs:subClassOf fjs:temporal_entity .
+fjs:temporal_entity a rdfs:Class .
+fjs:temporal_entity rdfs:label "temporal entity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Morning> a fjs:time_of_the_day .
+fjs:time_of_the_day  rdfs:label "time of the day"@en .
+fjs:time_of_the_day  a rdfs:Class .
+fjs:time_of_the_day  rdfs:seeAlso <http://www.wikidata.org/entity/Q1260524> .
+fjs:time_of_the_day rdfs:subClassOf fjs:occurrence .
+fjs:occurrence a rdfs:Class .
+fjs:occurrence rdfs:label "occurrence"@en .
+fjs:time_of_the_day rdfs:subClassOf fjs:time_interval .
+fjs:time_interval a rdfs:Class .
+fjs:time_interval rdfs:label "time interval"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/company> a fjs:type_of_organisation .
+fjs:type_of_organisation  rdfs:label "type of organisation"@en .
+fjs:type_of_organisation  a rdfs:Class .
+fjs:type_of_organisation  rdfs:seeAlso <http://www.wikidata.org/entity/Q17197366> .
+fjs:type_of_organisation rdfs:subClassOf fjs:class .
+fjs:class a rdfs:Class .
+fjs:class rdfs:label "class"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Come> a fjs:body_fluids .
+fjs:body_fluids  rdfs:label "body fluids"@en .
+fjs:body_fluids  a rdfs:Class .
+fjs:body_fluids  rdfs:seeAlso <http://www.wikidata.org/entity/Q1058795> .
+fjs:body_fluids rdfs:subClassOf fjs:liquid .
+fjs:liquid a rdfs:Class .
+fjs:liquid rdfs:label "liquid"@en .
+fjs:body_fluids rdfs:subClassOf fjs:biogenic_substance .
+fjs:biogenic_substance a rdfs:Class .
+fjs:biogenic_substance rdfs:label "biogenic substance"@en .
+fjs:body_fluids rdfs:subClassOf fjs:secretion_or_excretion .
+fjs:secretion_or_excretion a rdfs:Class .
+fjs:secretion_or_excretion rdfs:label "secretion or excretion"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/truth> a fjs:academic_discipline .
+fjs:academic_discipline  rdfs:label "academic discipline"@en .
+fjs:academic_discipline  a rdfs:Class .
+fjs:academic_discipline  rdfs:seeAlso <http://www.wikidata.org/entity/Q11862829> .
+fjs:academic_discipline rdfs:subClassOf fjs:specialty .
+fjs:specialty a rdfs:Class .
+fjs:specialty rdfs:label "specialty"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Quickly> a fjs:fast_food_restaurant_chain .
+fjs:fast_food_restaurant_chain  rdfs:label "fast food restaurant chain"@en .
+fjs:fast_food_restaurant_chain  a rdfs:Class .
+fjs:fast_food_restaurant_chain  rdfs:seeAlso <http://www.wikidata.org/entity/Q18509232> .
+fjs:fast_food_restaurant_chain rdfs:subClassOf fjs:restaurant_chain .
+fjs:restaurant_chain a rdfs:Class .
+fjs:restaurant_chain rdfs:label "restaurant chain"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/After_death> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/cook> a fjs:profession .
+fjs:profession  rdfs:label "profession"@en .
+fjs:profession  a rdfs:Class .
+fjs:profession  rdfs:seeAlso <http://www.wikidata.org/entity/Q28640> .
+fjs:profession rdfs:subClassOf fjs:job .
+fjs:job a rdfs:Class .
+fjs:job rdfs:label "job"@en .
+fjs:profession rdfs:subClassOf fjs:occupation .
+fjs:occupation a rdfs:Class .
+fjs:occupation rdfs:label "occupation"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Good_friends> a fjs:television_series_episode .
+fjs:television_series_episode  rdfs:label "television series episode"@en .
+fjs:television_series_episode  a rdfs:Class .
+fjs:television_series_episode  rdfs:seeAlso <http://www.wikidata.org/entity/Q21191270> .
+fjs:television_series_episode rdfs:subClassOf fjs:episode .
+fjs:episode a rdfs:Class .
+fjs:episode rdfs:label "episode"@en .
+fjs:television_series_episode rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:television_series_episode rdfs:subClassOf fjs:television_program .
+fjs:television_program a rdfs:Class .
+fjs:television_program rdfs:label "television program"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Farmer_boy> a fjs:literary_work .
+fjs:literary_work  rdfs:label "literary work"@en .
+fjs:literary_work  a rdfs:Class .
+fjs:literary_work  rdfs:seeAlso <http://www.wikidata.org/entity/Q7725634> .
+fjs:literary_work rdfs:subClassOf fjs:creative_work .
+fjs:creative_work a rdfs:Class .
+fjs:creative_work rdfs:label "creative work"@en .
+fjs:literary_work rdfs:subClassOf fjs:text .
+fjs:text a rdfs:Class .
+fjs:text rdfs:label "text"@en .
+fjs:literary_work rdfs:subClassOf fjs:written_work .
+fjs:written_work a rdfs:Class .
+fjs:written_work rdfs:label "written work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Brenda> a fjs:female_given_name .
+fjs:female_given_name  rdfs:label "female given name"@en .
+fjs:female_given_name  a rdfs:Class .
+fjs:female_given_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q11879590> .
+fjs:female_given_name rdfs:subClassOf fjs:given_name .
+fjs:given_name a rdfs:Class .
+fjs:given_name rdfs:label "given name"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/statement>  rdfs:subClassOf fjs:proposition .
+fjs:proposition a rdfs:Class .
+fjs:proposition rdfs:label "proposition"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/the_first_day> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/opinion> a fjs:Wikidata_reason_for_deprecation .
+fjs:Wikidata_reason_for_deprecation  rdfs:label "Wikidata reason for deprecation"@en .
+fjs:Wikidata_reason_for_deprecation  a rdfs:Class .
+fjs:Wikidata_reason_for_deprecation  rdfs:seeAlso <http://www.wikidata.org/entity/Q27949697> .
+fjs:Wikidata_reason_for_deprecation rdfs:subClassOf fjs:Wikidata_internal_entity .
+fjs:Wikidata_internal_entity a rdfs:Class .
+fjs:Wikidata_internal_entity rdfs:label "Wikidata internal entity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/envelope>  rdfs:subClassOf fjs:covering .
+fjs:covering a rdfs:Class .
+fjs:covering rdfs:label "covering"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/pocket> a fjs:container .
+fjs:container  rdfs:label "container"@en .
+fjs:container  a rdfs:Class .
+fjs:container  rdfs:seeAlso <http://www.wikidata.org/entity/Q987767> .
+fjs:container rdfs:subClassOf fjs:artificial_physical_object .
+fjs:artificial_physical_object a rdfs:Class .
+fjs:artificial_physical_object rdfs:label "artificial physical object"@en .
+fjs:container rdfs:subClassOf fjs:tool .
+fjs:tool a rdfs:Class .
+fjs:tool rdfs:label "tool"@en .
+fjs:container rdfs:subClassOf fjs:storage .
+fjs:storage a rdfs:Class .
+fjs:storage rdfs:label "storage"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/laws> a fjs:Platonic_dialogue .
+fjs:Platonic_dialogue  rdfs:label "Platonic dialogue"@en .
+fjs:Platonic_dialogue  a rdfs:Class .
+fjs:Platonic_dialogue  rdfs:seeAlso <http://www.wikidata.org/entity/Q3026037> .
+fjs:Platonic_dialogue rdfs:subClassOf fjs:dialogue .
+fjs:dialogue a rdfs:Class .
+fjs:dialogue rdfs:label "dialogue"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Cause> a fjs:role .
+fjs:role  rdfs:label "role"@en .
+fjs:role  a rdfs:Class .
+fjs:role  rdfs:seeAlso <http://www.wikidata.org/entity/Q4897819> .
+fjs:role rdfs:subClassOf fjs:entity .
+fjs:entity a rdfs:Class .
+fjs:entity rdfs:label "entity"@en .
+fjs:role rdfs:subClassOf fjs:quality .
+fjs:quality a rdfs:Class .
+fjs:quality rdfs:label "quality"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Doctor_Richard> a fjs:human .
+fjs:human  rdfs:label "human"@en .
+fjs:human  a rdfs:Class .
+fjs:human  rdfs:seeAlso <http://www.wikidata.org/entity/Q5> .
+fjs:human rdfs:subClassOf fjs:person .
+fjs:person a rdfs:Class .
+fjs:person rdfs:label "person"@en .
+fjs:human rdfs:subClassOf fjs:natural_person .
+fjs:natural_person a rdfs:Class .
+fjs:natural_person rdfs:label "natural person"@en .
+fjs:human rdfs:subClassOf fjs:omnivore .
+fjs:omnivore a rdfs:Class .
+fjs:omnivore rdfs:label "omnivore"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Marry> a fjs:female_given_name .
+fjs:female_given_name  rdfs:label "female given name"@en .
+fjs:female_given_name  a rdfs:Class .
+fjs:female_given_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q11879590> .
+fjs:female_given_name rdfs:subClassOf fjs:given_name .
+fjs:given_name a rdfs:Class .
+fjs:given_name rdfs:label "given name"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/offense>  rdfs:subClassOf fjs:violation_of_law .
+fjs:violation_of_law a rdfs:Class .
+fjs:violation_of_law rdfs:label "violation of law"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/offense>  rdfs:subClassOf fjs:offense .
+fjs:offense a rdfs:Class .
+fjs:offense rdfs:label "offense"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/offense>  rdfs:subClassOf fjs:social_issue .
+fjs:social_issue a rdfs:Class .
+fjs:social_issue rdfs:label "social issue"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/offense>  rdfs:subClassOf fjs:statutory_law .
+fjs:statutory_law a rdfs:Class .
+fjs:statutory_law rdfs:label "statutory law"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/card> a fjs:game_mechanic .
+fjs:game_mechanic  rdfs:label "game mechanic"@en .
+fjs:game_mechanic  a rdfs:Class .
+fjs:game_mechanic  rdfs:seeAlso <http://www.wikidata.org/entity/Q1751513> .
+fjs:game_mechanic rdfs:subClassOf fjs:game_rules .
+fjs:game_rules a rdfs:Class .
+fjs:game_rules rdfs:label "game rules"@en .
+fjs:game_mechanic rdfs:subClassOf fjs:role-playing_game_system .
+fjs:role-playing_game_system a rdfs:Class .
+fjs:role-playing_game_system rdfs:label "role-playing game system"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/lawn>  rdfs:subClassOf fjs:territorial_entity .
+fjs:territorial_entity a rdfs:Class .
+fjs:territorial_entity rdfs:label "territorial entity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Progress> a fjs:property .
+fjs:property  rdfs:label "property"@en .
+fjs:property  a rdfs:Class .
+fjs:property  rdfs:seeAlso <http://www.wikidata.org/entity/Q937228> .
+fjs:property rdfs:subClassOf fjs:entity .
+fjs:entity a rdfs:Class .
+fjs:entity rdfs:label "entity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/large_garden> a fjs:taxon .
+fjs:taxon  rdfs:label "taxon"@en .
+fjs:taxon  a rdfs:Class .
+fjs:taxon  rdfs:seeAlso <http://www.wikidata.org/entity/Q16521> .
+fjs:taxon rdfs:subClassOf fjs:living_organism_class .
+fjs:living_organism_class a rdfs:Class .
+fjs:living_organism_class rdfs:label "living organism class"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Tin_miner> a fjs:publication .
+fjs:publication  rdfs:label "publication"@en .
+fjs:publication  a rdfs:Class .
+fjs:publication  rdfs:seeAlso <http://www.wikidata.org/entity/Q732577> .
+fjs:publication rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Another_interpretation> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Sea>  rdfs:subClassOf fjs:water_area .
+fjs:water_area a rdfs:Class .
+fjs:water_area rdfs:label "water area"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Sea>  rdfs:subClassOf fjs:still_waters .
+fjs:still_waters a rdfs:Class .
+fjs:still_waters rdfs:label "still waters"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Sea>  rdfs:subClassOf fjs:geographic_location .
+fjs:geographic_location a rdfs:Class .
+fjs:geographic_location rdfs:label "geographic location"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/case>  rdfs:subClassOf fjs:artificial_physical_object .
+fjs:artificial_physical_object a rdfs:Class .
+fjs:artificial_physical_object rdfs:label "artificial physical object"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/case>  rdfs:subClassOf fjs:tool .
+fjs:tool a rdfs:Class .
+fjs:tool rdfs:label "tool"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/case>  rdfs:subClassOf fjs:storage .
+fjs:storage a rdfs:Class .
+fjs:storage rdfs:label "storage"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/plan>  rdfs:subClassOf fjs:abstract_object .
+fjs:abstract_object a rdfs:Class .
+fjs:abstract_object rdfs:label "abstract object"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Draw>  rdfs:subClassOf fjs:result .
+fjs:result a rdfs:Class .
+fjs:result rdfs:label "result"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Drug>  rdfs:subClassOf fjs:drug .
+fjs:drug a rdfs:Class .
+fjs:drug rdfs:label "drug"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Drug>  rdfs:subClassOf fjs:pharmaceutical_product .
+fjs:pharmaceutical_product a rdfs:Class .
+fjs:pharmaceutical_product rdfs:label "pharmaceutical product"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Admit>  rdfs:subClassOf fjs:immittance .
+fjs:immittance a rdfs:Class .
+fjs:immittance rdfs:label "immittance"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Admit>  rdfs:subClassOf fjs:physical_quantity .
+fjs:physical_quantity a rdfs:Class .
+fjs:physical_quantity rdfs:label "physical quantity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/consult> a fjs:Wikimedia_disambiguation_page .
+fjs:Wikimedia_disambiguation_page  rdfs:label "Wikimedia disambiguation page"@en .
+fjs:Wikimedia_disambiguation_page  a rdfs:Class .
+fjs:Wikimedia_disambiguation_page  rdfs:seeAlso <http://www.wikidata.org/entity/Q4167410> .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:MediaWiki_main-namespace_page .
+fjs:MediaWiki_main-namespace_page a rdfs:Class .
+fjs:MediaWiki_main-namespace_page rdfs:label "MediaWiki main-namespace page"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:list .
+fjs:list a rdfs:Class .
+fjs:list rdfs:label "list"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:Wikimedia_internal_item .
+fjs:Wikimedia_internal_item a rdfs:Class .
+fjs:Wikimedia_internal_item rdfs:label "Wikimedia internal item"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Get_along> a fjs:single .
+fjs:single  rdfs:label "single"@en .
+fjs:single  a rdfs:Class .
+fjs:single  rdfs:seeAlso <http://www.wikidata.org/entity/Q134556> .
+fjs:single rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:single rdfs:subClassOf fjs:audio_storage_device .
+fjs:audio_storage_device a rdfs:Class .
+fjs:audio_storage_device rdfs:label "audio storage device"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/face_of_fear> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/madness> a fjs:mental_process .
+fjs:mental_process  rdfs:label "mental process"@en .
+fjs:mental_process  a rdfs:Class .
+fjs:mental_process  rdfs:seeAlso <http://www.wikidata.org/entity/Q781413> .
+fjs:mental_process rdfs:subClassOf fjs:biological_process .
+fjs:biological_process a rdfs:Class .
+fjs:biological_process rdfs:label "biological process"@en .
+fjs:mental_process rdfs:subClassOf fjs:nervous_system_process .
+fjs:nervous_system_process a rdfs:Class .
+fjs:nervous_system_process rdfs:label "nervous system process"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/card_game> a fjs:game_mechanic .
+fjs:game_mechanic  rdfs:label "game mechanic"@en .
+fjs:game_mechanic  a rdfs:Class .
+fjs:game_mechanic  rdfs:seeAlso <http://www.wikidata.org/entity/Q1751513> .
+fjs:game_mechanic rdfs:subClassOf fjs:game_rules .
+fjs:game_rules a rdfs:Class .
+fjs:game_rules rdfs:label "game rules"@en .
+fjs:game_mechanic rdfs:subClassOf fjs:role-playing_game_system .
+fjs:role-playing_game_system a rdfs:Class .
+fjs:role-playing_game_system rdfs:label "role-playing game system"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/sample>  rdfs:subClassOf fjs:part_and_whole .
+fjs:part_and_whole a rdfs:Class .
+fjs:part_and_whole rdfs:label "part and whole"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/1897> a fjs:year .
+fjs:year  rdfs:label "year"@en .
+fjs:year  a rdfs:Class .
+fjs:year  rdfs:seeAlso <http://www.wikidata.org/entity/Q577> .
+fjs:year rdfs:subClassOf fjs:orbital_period .
+fjs:orbital_period a rdfs:Class .
+fjs:orbital_period rdfs:label "orbital period"@en .
+fjs:year rdfs:subClassOf fjs:time_interval .
+fjs:time_interval a rdfs:Class .
+fjs:time_interval rdfs:label "time interval"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Angel>  rdfs:subClassOf fjs:mythic_humanoid .
+fjs:mythic_humanoid a rdfs:Class .
+fjs:mythic_humanoid rdfs:label "mythic humanoid"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Angel>  rdfs:subClassOf fjs:spirit .
+fjs:spirit a rdfs:Class .
+fjs:spirit rdfs:label "spirit"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Angel>  rdfs:subClassOf fjs:null .
+fjs:null a rdfs:Class .
+fjs:null rdfs:label "null"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Angel>  rdfs:subClassOf fjs:mythical_character .
+fjs:mythical_character a rdfs:Class .
+fjs:mythical_character rdfs:label "mythical character"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Devil> a fjs:personification .
+fjs:personification  rdfs:label "personification"@en .
+fjs:personification  a rdfs:Class .
+fjs:personification  rdfs:seeAlso <http://www.wikidata.org/entity/Q207174> .
+fjs:personification rdfs:subClassOf fjs:artistic_theme .
+fjs:artistic_theme a rdfs:Class .
+fjs:artistic_theme rdfs:label "artistic theme"@en .
+fjs:personification rdfs:subClassOf fjs:stylistic_device .
+fjs:stylistic_device a rdfs:Class .
+fjs:stylistic_device rdfs:label "stylistic device"@en .
+fjs:personification rdfs:subClassOf fjs:abstract_being .
+fjs:abstract_being a rdfs:Class .
+fjs:abstract_being rdfs:label "abstract being"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/combustion> a fjs:execution_method .
+fjs:execution_method  rdfs:label "execution method"@en .
+fjs:execution_method  a rdfs:Class .
+fjs:execution_method  rdfs:seeAlso <http://www.wikidata.org/entity/Q15169167> .
+fjs:execution_method rdfs:subClassOf fjs:method .
+fjs:method a rdfs:Class .
+fjs:method rdfs:label "method"@en .
+fjs:execution_method rdfs:subClassOf fjs:cause_of_death .
+fjs:cause_of_death a rdfs:Class .
+fjs:cause_of_death rdfs:label "cause of death"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Attack>  rdfs:subClassOf fjs:military_operation .
+fjs:military_operation a rdfs:Class .
+fjs:military_operation rdfs:label "military operation"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Attack>  rdfs:subClassOf fjs:attack .
+fjs:attack a rdfs:Class .
+fjs:attack rdfs:label "attack"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Hotel>  rdfs:subClassOf fjs:horeca .
+fjs:horeca a rdfs:Class .
+fjs:horeca rdfs:label "horeca"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Hotel>  rdfs:subClassOf fjs:business .
+fjs:business a rdfs:Class .
+fjs:business rdfs:label "business"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Hotel>  rdfs:subClassOf fjs:building .
+fjs:building a rdfs:Class .
+fjs:building rdfs:label "building"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Four_men> a fjs:painting .
+fjs:painting  rdfs:label "painting"@en .
+fjs:painting  a rdfs:Class .
+fjs:painting  rdfs:seeAlso <http://www.wikidata.org/entity/Q3305213> .
+fjs:painting rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Same_air> a fjs:airport .
+fjs:airport  rdfs:label "airport"@en .
+fjs:airport  a rdfs:Class .
+fjs:airport  rdfs:seeAlso <http://www.wikidata.org/entity/Q1248784> .
+fjs:airport rdfs:subClassOf fjs:aerodrome .
+fjs:aerodrome a rdfs:Class .
+fjs:aerodrome rdfs:label "aerodrome"@en .
+fjs:airport rdfs:subClassOf fjs:station .
+fjs:station a rdfs:Class .
+fjs:station rdfs:label "station"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/we> a fjs:day_of_the_week .
+fjs:day_of_the_week  rdfs:label "day of the week"@en .
+fjs:day_of_the_week  a rdfs:Class .
+fjs:day_of_the_week  rdfs:seeAlso <http://www.wikidata.org/entity/Q41825> .
+fjs:day_of_the_week rdfs:subClassOf fjs:day .
+fjs:day a rdfs:Class .
+fjs:day rdfs:label "day"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Negligence> a fjs:mens_rea .
+fjs:mens_rea  rdfs:label "mens rea"@en .
+fjs:mens_rea  a rdfs:Class .
+fjs:mens_rea  rdfs:seeAlso <http://www.wikidata.org/entity/Q1048403> .
+fjs:mens_rea rdfs:subClassOf fjs:element .
+fjs:element a rdfs:Class .
+fjs:element rdfs:label "element"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Description>  rdfs:subClassOf fjs:sensemaking .
+fjs:sensemaking a rdfs:Class .
+fjs:sensemaking rdfs:label "sensemaking"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Description>  rdfs:subClassOf fjs:text .
+fjs:text a rdfs:Class .
+fjs:text rdfs:label "text"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/folklore> a fjs:genre .
+fjs:genre  rdfs:label "genre"@en .
+fjs:genre  a rdfs:Class .
+fjs:genre  rdfs:seeAlso <http://www.wikidata.org/entity/Q483394> .
+fjs:genre rdfs:subClassOf fjs:class .
+fjs:class a rdfs:Class .
+fjs:class rdfs:label "class"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/All_the_evidence> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/for_a_while> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Path> a fjs:artificial_geographic_entity .
+fjs:artificial_geographic_entity  rdfs:label "artificial geographic entity"@en .
+fjs:artificial_geographic_entity  a rdfs:Class .
+fjs:artificial_geographic_entity  rdfs:seeAlso <http://www.wikidata.org/entity/Q27096235> .
+fjs:artificial_geographic_entity rdfs:subClassOf fjs:geographic_entity .
+fjs:geographic_entity a rdfs:Class .
+fjs:geographic_entity rdfs:label "geographic entity"@en .
+fjs:artificial_geographic_entity rdfs:subClassOf fjs:artificial_physical_object .
+fjs:artificial_physical_object a rdfs:Class .
+fjs:artificial_physical_object rdfs:label "artificial physical object"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/regret> a fjs:negative_emotion .
+fjs:negative_emotion  rdfs:label "negative emotion"@en .
+fjs:negative_emotion  a rdfs:Class .
+fjs:negative_emotion  rdfs:seeAlso <http://www.wikidata.org/entity/Q60539481> .
+fjs:negative_emotion rdfs:subClassOf fjs:emotion .
+fjs:emotion a rdfs:Class .
+fjs:emotion rdfs:label "emotion"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/St_Ives> a fjs:town .
+fjs:town  rdfs:label "town"@en .
+fjs:town  a rdfs:Class .
+fjs:town  rdfs:seeAlso <http://www.wikidata.org/entity/Q3957> .
+fjs:town rdfs:subClassOf fjs:humansettlement .
+fjs:humansettlement a rdfs:Class .
+fjs:humansettlement rdfs:label "human settlement"@en .
+fjs:town rdfs:subClassOf fjs:community .
+fjs:community a rdfs:Class .
+fjs:community rdfs:label "community"@en .
+fjs:town rdfs:subClassOf fjs:urbanarea .
+fjs:urbanarea a rdfs:Class .
+fjs:urbanarea rdfs:label "urban area"@en .
+fjs:town rdfs:subClassOf fjs:citytown .
+fjs:citytown a rdfs:Class .
+fjs:citytown rdfs:label "city/town"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Card_game> a fjs:game_mechanic .
+fjs:game_mechanic  rdfs:label "game mechanic"@en .
+fjs:game_mechanic  a rdfs:Class .
+fjs:game_mechanic  rdfs:seeAlso <http://www.wikidata.org/entity/Q1751513> .
+fjs:game_mechanic rdfs:subClassOf fjs:game_rules .
+fjs:game_rules a rdfs:Class .
+fjs:game_rules rdfs:label "game rules"@en .
+fjs:game_mechanic rdfs:subClassOf fjs:role-playing_game_system .
+fjs:role-playing_game_system a rdfs:Class .
+fjs:role-playing_game_system rdfs:label "role-playing game system"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Local_police>  rdfs:subClassOf fjs:police .
+fjs:police a rdfs:Class .
+fjs:police rdfs:label "police"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Yesterday> a fjs:musical_composition .
+fjs:musical_composition  rdfs:label "musical composition"@en .
+fjs:musical_composition  a rdfs:Class .
+fjs:musical_composition  rdfs:seeAlso <http://www.wikidata.org/entity/Q207628> .
+fjs:musical_composition rdfs:subClassOf fjs:artistic_creation .
+fjs:artistic_creation a rdfs:Class .
+fjs:artistic_creation rdfs:label "artistic creation"@en .
+fjs:musical_composition rdfs:subClassOf fjs:musical_work .
+fjs:musical_work a rdfs:Class .
+fjs:musical_work rdfs:label "musical work"@en .
+fjs:musical_composition rdfs:subClassOf fjs:academic_discipline .
+fjs:academic_discipline a rdfs:Class .
+fjs:academic_discipline rdfs:label "academic discipline"@en .
+fjs:musical_composition rdfs:subClassOf fjs:specialty .
+fjs:specialty a rdfs:Class .
+fjs:specialty rdfs:label "specialty"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/It_s_true> a fjs:Wikimedia_disambiguation_page .
+fjs:Wikimedia_disambiguation_page  rdfs:label "Wikimedia disambiguation page"@en .
+fjs:Wikimedia_disambiguation_page  a rdfs:Class .
+fjs:Wikimedia_disambiguation_page  rdfs:seeAlso <http://www.wikidata.org/entity/Q4167410> .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:MediaWiki_main-namespace_page .
+fjs:MediaWiki_main-namespace_page a rdfs:Class .
+fjs:MediaWiki_main-namespace_page rdfs:label "MediaWiki main-namespace page"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:list .
+fjs:list a rdfs:Class .
+fjs:list rdfs:label "list"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:Wikimedia_internal_item .
+fjs:Wikimedia_internal_item a rdfs:Class .
+fjs:Wikimedia_internal_item rdfs:label "Wikimedia internal item"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/grass> a fjs:taxon .
+fjs:taxon  rdfs:label "taxon"@en .
+fjs:taxon  a rdfs:Class .
+fjs:taxon  rdfs:seeAlso <http://www.wikidata.org/entity/Q16521> .
+fjs:taxon rdfs:subClassOf fjs:living_organism_class .
+fjs:living_organism_class a rdfs:Class .
+fjs:living_organism_class rdfs:label "living organism class"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/In_the_room> a fjs:television_series_episode .
+fjs:television_series_episode  rdfs:label "television series episode"@en .
+fjs:television_series_episode  a rdfs:Class .
+fjs:television_series_episode  rdfs:seeAlso <http://www.wikidata.org/entity/Q21191270> .
+fjs:television_series_episode rdfs:subClassOf fjs:episode .
+fjs:episode a rdfs:Class .
+fjs:episode rdfs:label "episode"@en .
+fjs:television_series_episode rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:television_series_episode rdfs:subClassOf fjs:television_program .
+fjs:television_program a rdfs:Class .
+fjs:television_program rdfs:label "television program"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Check>  rdfs:subClassOf fjs:promissory_note .
+fjs:promissory_note a rdfs:Class .
+fjs:promissory_note rdfs:label "promissory note"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Check>  rdfs:subClassOf fjs:negotiable_instrument .
+fjs:negotiable_instrument a rdfs:Class .
+fjs:negotiable_instrument rdfs:label "negotiable instrument"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Bushes> a fjs:painting .
+fjs:painting  rdfs:label "painting"@en .
+fjs:painting  a rdfs:Class .
+fjs:painting  rdfs:seeAlso <http://www.wikidata.org/entity/Q3305213> .
+fjs:painting rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/fate> a fjs:concept .
+fjs:concept  rdfs:label "concept"@en .
+fjs:concept  a rdfs:Class .
+fjs:concept  rdfs:seeAlso <http://www.wikidata.org/entity/Q151885> .
+fjs:concept rdfs:subClassOf fjs:mental_representation .
+fjs:mental_representation a rdfs:Class .
+fjs:mental_representation rdfs:label "mental representation"@en .
+fjs:concept rdfs:subClassOf fjs:abstract_object .
+fjs:abstract_object a rdfs:Class .
+fjs:abstract_object rdfs:label "abstract object"@en .
+fjs:concept rdfs:subClassOf fjs:capability .
+fjs:capability a rdfs:Class .
+fjs:capability rdfs:label "capability"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/forehead>  rdfs:subClassOf fjs:subdivision_of_frontal_part_of_head .
+fjs:subdivision_of_frontal_part_of_head a rdfs:Class .
+fjs:subdivision_of_frontal_part_of_head rdfs:label "subdivision of frontal part of head"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Hoist>  rdfs:subClassOf fjs:device .
+fjs:device a rdfs:Class .
+fjs:device rdfs:label "device"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Research>  rdfs:subClassOf fjs:process .
+fjs:process a rdfs:Class .
+fjs:process rdfs:label "process"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Research>  rdfs:subClassOf fjs:inquiry .
+fjs:inquiry a rdfs:Class .
+fjs:inquiry rdfs:label "inquiry"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Knowledge> a fjs:philosophical_concept .
+fjs:philosophical_concept  rdfs:label "philosophical concept"@en .
+fjs:philosophical_concept  a rdfs:Class .
+fjs:philosophical_concept  rdfs:seeAlso <http://www.wikidata.org/entity/Q33104279> .
+fjs:philosophical_concept rdfs:subClassOf fjs:concept .
+fjs:concept a rdfs:Class .
+fjs:concept rdfs:label "concept"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Information>  rdfs:subClassOf fjs:abstract_object .
+fjs:abstract_object a rdfs:Class .
+fjs:abstract_object rdfs:label "abstract object"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/monkey> a fjs:organisms_known_by_a_particular_common_name .
+fjs:organisms_known_by_a_particular_common_name  rdfs:label "organisms known by a particular common name"@en .
+fjs:organisms_known_by_a_particular_common_name  a rdfs:Class .
+fjs:organisms_known_by_a_particular_common_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q55983715> .
+fjs:organisms_known_by_a_particular_common_name rdfs:subClassOf fjs:living_organism_class .
+fjs:living_organism_class a rdfs:Class .
+fjs:living_organism_class rdfs:label "living organism class"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Brenda'> a fjs:female_given_name .
+fjs:female_given_name  rdfs:label "female given name"@en .
+fjs:female_given_name  a rdfs:Class .
+fjs:female_given_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q11879590> .
+fjs:female_given_name rdfs:subClassOf fjs:given_name .
+fjs:given_name a rdfs:Class .
+fjs:given_name rdfs:label "given name"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/gun> a fjs:weapon_family .
+fjs:weapon_family  rdfs:label "weapon family"@en .
+fjs:weapon_family  a rdfs:Class .
+fjs:weapon_family  rdfs:seeAlso <http://www.wikidata.org/entity/Q15142889> .
+fjs:weapon_family rdfs:subClassOf fjs:class .
+fjs:class a rdfs:Class .
+fjs:class rdfs:label "class"@en .
+fjs:weapon_family rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/hall>  rdfs:subClassOf fjs:interior_space .
+fjs:interior_space a rdfs:Class .
+fjs:interior_space rdfs:label "interior space"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Detect> a fjs:media_franchise .
+fjs:media_franchise  rdfs:label "media franchise"@en .
+fjs:media_franchise  a rdfs:Class .
+fjs:media_franchise  rdfs:seeAlso <http://www.wikidata.org/entity/Q196600> .
+fjs:media_franchise rdfs:subClassOf fjs:intellectual_work .
+fjs:intellectual_work a rdfs:Class .
+fjs:intellectual_work rdfs:label "intellectual work"@en .
+fjs:media_franchise rdfs:subClassOf fjs:series_of_creative_works .
+fjs:series_of_creative_works a rdfs:Class .
+fjs:series_of_creative_works rdfs:label "series of creative works"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/gravel>  rdfs:subClassOf fjs:clastic_sediment .
+fjs:clastic_sediment a rdfs:Class .
+fjs:clastic_sediment rdfs:label "clastic sediment"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/gravel>  rdfs:subClassOf fjs:dry_bulk_cargo .
+fjs:dry_bulk_cargo a rdfs:Class .
+fjs:dry_bulk_cargo rdfs:label "dry bulk cargo"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Visitor>  rdfs:subClassOf fjs:behavioral_pattern .
+fjs:behavioral_pattern a rdfs:Class .
+fjs:behavioral_pattern rdfs:label "behavioral pattern"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Grassland> a fjs:biome .
+fjs:biome  rdfs:label "biome"@en .
+fjs:biome  a rdfs:Class .
+fjs:biome  rdfs:seeAlso <http://www.wikidata.org/entity/Q101998> .
+fjs:biome rdfs:subClassOf fjs:landscape .
+fjs:landscape a rdfs:Class .
+fjs:landscape rdfs:label "landscape"@en .
+fjs:biome rdfs:subClassOf fjs:biological_system .
+fjs:biological_system a rdfs:Class .
+fjs:biological_system rdfs:label "biological system"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/stuff> a fjs:website .
+fjs:website  rdfs:label "website"@en .
+fjs:website  a rdfs:Class .
+fjs:website  rdfs:seeAlso <http://www.wikidata.org/entity/Q35127> .
+fjs:website rdfs:subClassOf fjs:digital_media .
+fjs:digital_media a rdfs:Class .
+fjs:digital_media rdfs:label "digital media"@en .
+fjs:website rdfs:subClassOf fjs:online_publication .
+fjs:online_publication a rdfs:Class .
+fjs:online_publication rdfs:label "online publication"@en .
+fjs:website rdfs:subClassOf fjs:online_service .
+fjs:online_service a rdfs:Class .
+fjs:online_service rdfs:label "online service"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Living_room>  rdfs:subClassOf fjs:room .
+fjs:room a rdfs:Class .
+fjs:room rdfs:label "room"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/nausea>  rdfs:subClassOf fjs:symptom .
+fjs:symptom a rdfs:Class .
+fjs:symptom rdfs:label "symptom"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/nausea>  rdfs:subClassOf fjs:digestive_sign .
+fjs:digestive_sign a rdfs:Class .
+fjs:digestive_sign rdfs:label "digestive sign"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Behind_you> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Bedtime> a fjs:time_of_the_day .
+fjs:time_of_the_day  rdfs:label "time of the day"@en .
+fjs:time_of_the_day  a rdfs:Class .
+fjs:time_of_the_day  rdfs:seeAlso <http://www.wikidata.org/entity/Q1260524> .
+fjs:time_of_the_day rdfs:subClassOf fjs:occurrence .
+fjs:occurrence a rdfs:Class .
+fjs:occurrence rdfs:label "occurrence"@en .
+fjs:time_of_the_day rdfs:subClassOf fjs:time_interval .
+fjs:time_interval a rdfs:Class .
+fjs:time_interval rdfs:label "time interval"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/gate>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/gate>  rdfs:subClassOf fjs:architectural_structure .
+fjs:architectural_structure a rdfs:Class .
+fjs:architectural_structure rdfs:label "architectural structure"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/gate>  rdfs:subClassOf fjs:portal .
+fjs:portal a rdfs:Class .
+fjs:portal rdfs:label "portal"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/gate>  rdfs:subClassOf fjs:device .
+fjs:device a rdfs:Class .
+fjs:device rdfs:label "device"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/friendship>  rdfs:subClassOf fjs:interpersonal_relationship .
+fjs:interpersonal_relationship a rdfs:Class .
+fjs:interpersonal_relationship rdfs:label "interpersonal relationship"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Outsider> a fjs:human .
+fjs:human  rdfs:label "human"@en .
+fjs:human  a rdfs:Class .
+fjs:human  rdfs:seeAlso <http://www.wikidata.org/entity/Q5> .
+fjs:human rdfs:subClassOf fjs:person .
+fjs:person a rdfs:Class .
+fjs:person rdfs:label "person"@en .
+fjs:human rdfs:subClassOf fjs:natural_person .
+fjs:natural_person a rdfs:Class .
+fjs:natural_person rdfs:label "natural person"@en .
+fjs:human rdfs:subClassOf fjs:omnivore .
+fjs:omnivore a rdfs:Class .
+fjs:omnivore rdfs:label "omnivore"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Occur>  rdfs:subClassOf fjs:temporal_entity .
+fjs:temporal_entity a rdfs:Class .
+fjs:temporal_entity rdfs:label "temporal entity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Servant> a fjs:profession .
+fjs:profession  rdfs:label "profession"@en .
+fjs:profession  a rdfs:Class .
+fjs:profession  rdfs:seeAlso <http://www.wikidata.org/entity/Q28640> .
+fjs:profession rdfs:subClassOf fjs:job .
+fjs:job a rdfs:Class .
+fjs:job rdfs:label "job"@en .
+fjs:profession rdfs:subClassOf fjs:occupation .
+fjs:occupation a rdfs:Class .
+fjs:occupation rdfs:label "occupation"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Family>  rdfs:subClassOf fjs:social_group .
+fjs:social_group a rdfs:Class .
+fjs:social_group rdfs:label "social group"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Family>  rdfs:subClassOf fjs:group_of_humans .
+fjs:group_of_humans a rdfs:Class .
+fjs:group_of_humans rdfs:label "group of humans"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Family>  rdfs:subClassOf fjs:institution .
+fjs:institution a rdfs:Class .
+fjs:institution rdfs:label "institution"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Family>  rdfs:subClassOf fjs:kindred .
+fjs:kindred a rdfs:Class .
+fjs:kindred rdfs:label "kindred"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Progess> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Garden>  rdfs:subClassOf fjs:landscape .
+fjs:landscape a rdfs:Class .
+fjs:landscape rdfs:label "landscape"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Garden>  rdfs:subClassOf fjs:exterior_space .
+fjs:exterior_space a rdfs:Class .
+fjs:exterior_space rdfs:label "exterior space"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Garden>  rdfs:subClassOf fjs:land_use .
+fjs:land_use a rdfs:Class .
+fjs:land_use rdfs:label "land use"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Garden>  rdfs:subClassOf fjs:workplace .
+fjs:workplace a rdfs:Class .
+fjs:workplace rdfs:label "workplace"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Garden>  rdfs:subClassOf fjs:venue .
+fjs:venue a rdfs:Class .
+fjs:venue rdfs:label "venue"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Garden>  rdfs:subClassOf fjs:green_space .
+fjs:green_space a rdfs:Class .
+fjs:green_space rdfs:label "green space"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Garden>  rdfs:subClassOf fjs:human-made_landform .
+fjs:human-made_landform a rdfs:Class .
+fjs:human-made_landform rdfs:label "human-made landform"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Garden>  rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/literature> a fjs:art_form .
+fjs:art_form  rdfs:label "art form"@en .
+fjs:art_form  a rdfs:Class .
+fjs:art_form  rdfs:seeAlso <http://www.wikidata.org/entity/Q56055944> .
+fjs:art_form rdfs:subClassOf fjs:type .
+fjs:type a rdfs:Class .
+fjs:type rdfs:label "type"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Madness> a fjs:mental_process .
+fjs:mental_process  rdfs:label "mental process"@en .
+fjs:mental_process  a rdfs:Class .
+fjs:mental_process  rdfs:seeAlso <http://www.wikidata.org/entity/Q781413> .
+fjs:mental_process rdfs:subClassOf fjs:biological_process .
+fjs:biological_process a rdfs:Class .
+fjs:biological_process rdfs:label "biological process"@en .
+fjs:mental_process rdfs:subClassOf fjs:nervous_system_process .
+fjs:nervous_system_process a rdfs:Class .
+fjs:nervous_system_process rdfs:label "nervous system process"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/distribution>  rdfs:subClassOf fjs:statistical_models .
+fjs:statistical_models a rdfs:Class .
+fjs:statistical_models rdfs:label "statistical models"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/distribution>  rdfs:subClassOf fjs:distribution .
+fjs:distribution a rdfs:Class .
+fjs:distribution rdfs:label "distribution"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/distribution>  rdfs:subClassOf fjs:generalized_function .
+fjs:generalized_function a rdfs:Class .
+fjs:generalized_function rdfs:label "generalized function"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/good_atmosphere> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Divorce> a fjs:Wikidata_end_cause .
+fjs:Wikidata_end_cause  rdfs:label "Wikidata end cause"@en .
+fjs:Wikidata_end_cause  a rdfs:Class .
+fjs:Wikidata_end_cause  rdfs:seeAlso <http://www.wikidata.org/entity/Q66593009> .
+fjs:Wikidata_end_cause rdfs:subClassOf fjs:Wikidata_internal_entity .
+fjs:Wikidata_internal_entity a rdfs:Class .
+fjs:Wikidata_internal_entity rdfs:label "Wikidata internal entity"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Perpetrator> a fjs:occupation .
+fjs:occupation  rdfs:label "occupation"@en .
+fjs:occupation  a rdfs:Class .
+fjs:occupation  rdfs:seeAlso <http://www.wikidata.org/entity/Q12737077> .
+fjs:occupation rdfs:subClassOf fjs:human_activity .
+fjs:human_activity a rdfs:Class .
+fjs:human_activity rdfs:label "human activity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Suspect> a fjs:law_enforcement_jargon .
+fjs:law_enforcement_jargon  rdfs:label "law enforcement jargon"@en .
+fjs:law_enforcement_jargon  a rdfs:Class .
+fjs:law_enforcement_jargon  rdfs:seeAlso <http://www.wikidata.org/entity/Q13642845> .
+fjs:law_enforcement_jargon rdfs:subClassOf fjs:jargon .
+fjs:jargon a rdfs:Class .
+fjs:jargon rdfs:label "jargon"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Failure>  rdfs:subClassOf fjs:result .
+fjs:result a rdfs:Class .
+fjs:result rdfs:label "result"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Failure>  rdfs:subClassOf fjs:occurrence .
+fjs:occurrence a rdfs:Class .
+fjs:occurrence rdfs:label "occurrence"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Failure>  rdfs:subClassOf fjs:operational_risk .
+fjs:operational_risk a rdfs:Class .
+fjs:operational_risk rdfs:label "operational risk"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/four-wheeled_carriage> a fjs:null .
+fjs:null  rdfs:label "null"@en .
+fjs:null  a rdfs:Class .
+fjs:null  rdfs:seeAlso <http://www.wikidata.org/entity/Q16384705> .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Poison_label> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Demon> a fjs:biblical_topic .
+fjs:biblical_topic  rdfs:label "biblical topic"@en .
+fjs:biblical_topic  a rdfs:Class .
+fjs:biblical_topic  rdfs:seeAlso <http://www.wikidata.org/entity/Q98088085> .
+fjs:biblical_topic rdfs:subClassOf fjs:content .
+fjs:content a rdfs:Class .
+fjs:content rdfs:label "content"@en .
+fjs:biblical_topic rdfs:subClassOf fjs:religious_concept .
+fjs:religious_concept a rdfs:Class .
+fjs:religious_concept rdfs:label "religious concept"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Consciousness>  rdfs:subClassOf fjs:mental_state .
+fjs:mental_state a rdfs:Class .
+fjs:mental_state rdfs:label "mental state"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Consciousness>  rdfs:subClassOf fjs:phenomenon .
+fjs:phenomenon a rdfs:Class .
+fjs:phenomenon rdfs:label "phenomenon"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Garden_path> a fjs:painting .
+fjs:painting  rdfs:label "painting"@en .
+fjs:painting  a rdfs:Class .
+fjs:painting  rdfs:seeAlso <http://www.wikidata.org/entity/Q3305213> .
+fjs:painting rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Owen> a fjs:human .
+fjs:human  rdfs:label "human"@en .
+fjs:human  a rdfs:Class .
+fjs:human  rdfs:seeAlso <http://www.wikidata.org/entity/Q5> .
+fjs:human rdfs:subClassOf fjs:person .
+fjs:person a rdfs:Class .
+fjs:person rdfs:label "person"@en .
+fjs:human rdfs:subClassOf fjs:natural_person .
+fjs:natural_person a rdfs:Class .
+fjs:natural_person rdfs:label "natural person"@en .
+fjs:human rdfs:subClassOf fjs:omnivore .
+fjs:omnivore a rdfs:Class .
+fjs:omnivore rdfs:label "omnivore"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/side>  rdfs:subClassOf fjs:line_segment .
+fjs:line_segment a rdfs:Class .
+fjs:line_segment rdfs:label "line segment"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/side>  rdfs:subClassOf fjs:polytope .
+fjs:polytope a rdfs:Class .
+fjs:polytope rdfs:label "polytope"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Generous> a fjs:horse .
+fjs:horse  rdfs:label "horse"@en .
+fjs:horse  a rdfs:Class .
+fjs:horse  rdfs:seeAlso <http://www.wikidata.org/entity/Q726> .
+fjs:horse rdfs:subClassOf fjs:Equidae .
+fjs:Equidae a rdfs:Class .
+fjs:Equidae rdfs:label "Equidae"@en .
+fjs:horse rdfs:subClassOf fjs:domesticated_mammal .
+fjs:domesticated_mammal a rdfs:Class .
+fjs:domesticated_mammal rdfs:label "domesticated mammal"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Judge> a fjs:legal_profession .
+fjs:legal_profession  rdfs:label "legal profession"@en .
+fjs:legal_profession  a rdfs:Class .
+fjs:legal_profession  rdfs:seeAlso <http://www.wikidata.org/entity/Q15987302> .
+fjs:legal_profession rdfs:subClassOf fjs:profession .
+fjs:profession a rdfs:Class .
+fjs:profession rdfs:label "profession"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Porter> a fjs:family_name .
+fjs:family_name  rdfs:label "family name"@en .
+fjs:family_name  a rdfs:Class .
+fjs:family_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q101352> .
+fjs:family_name rdfs:subClassOf fjs:anthroponym .
+fjs:anthroponym a rdfs:Class .
+fjs:anthroponym rdfs:label "anthroponym"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/1_mile> a fjs:musical_group .
+fjs:musical_group  rdfs:label "musical group"@en .
+fjs:musical_group  a rdfs:Class .
+fjs:musical_group  rdfs:seeAlso <http://www.wikidata.org/entity/Q215380> .
+fjs:musical_group rdfs:subClassOf fjs:musical_ensemble .
+fjs:musical_ensemble a rdfs:Class .
+fjs:musical_ensemble rdfs:label "musical ensemble"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/control>  rdfs:subClassOf fjs:diacritic .
+fjs:diacritic a rdfs:Class .
+fjs:diacritic rdfs:label "diacritic"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/control>  rdfs:subClassOf fjs:stress .
+fjs:stress a rdfs:Class .
+fjs:stress rdfs:label "stress"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Nature> a fjs:scientific_journal .
+fjs:scientific_journal  rdfs:label "scientific journal"@en .
+fjs:scientific_journal  a rdfs:Class .
+fjs:scientific_journal  rdfs:seeAlso <http://www.wikidata.org/entity/Q5633421> .
+fjs:scientific_journal rdfs:subClassOf fjs:trade_magazine .
+fjs:trade_magazine a rdfs:Class .
+fjs:trade_magazine rdfs:label "trade magazine"@en .
+fjs:scientific_journal rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scientific_journal rdfs:subClassOf fjs:academic_journal .
+fjs:academic_journal a rdfs:Class .
+fjs:academic_journal rdfs:label "academic journal"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Face_to_face> a fjs:Redewendung .
+fjs:Redewendung  rdfs:label "Redewendung"@en .
+fjs:Redewendung  a rdfs:Class .
+fjs:Redewendung  rdfs:seeAlso <http://www.wikidata.org/entity/Q15841920> .
+fjs:Redewendung rdfs:subClassOf fjs:phrase .
+fjs:phrase a rdfs:Class .
+fjs:phrase rdfs:label "phrase"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Good_mood> a fjs:studio_album .
+fjs:studio_album  rdfs:label "studio album"@en .
+fjs:studio_album  a rdfs:Class .
+fjs:studio_album  rdfs:seeAlso <http://www.wikidata.org/entity/Q208569> .
+fjs:studio_album rdfs:subClassOf fjs:album .
+fjs:album a rdfs:Class .
+fjs:album rdfs:label "album"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/the_drug> a fjs:song .
+fjs:song  rdfs:label "song"@en .
+fjs:song  a rdfs:Class .
+fjs:song  rdfs:seeAlso <http://www.wikidata.org/entity/Q7366> .
+fjs:song rdfs:subClassOf fjs:musical_work .
+fjs:musical_work a rdfs:Class .
+fjs:musical_work rdfs:label "musical work"@en .
+fjs:song rdfs:subClassOf fjs:literary_work .
+fjs:literary_work a rdfs:Class .
+fjs:literary_work rdfs:label "literary work"@en .
+fjs:song rdfs:subClassOf fjs:vocal_music .
+fjs:vocal_music a rdfs:Class .
+fjs:vocal_music rdfs:label "vocal music"@en .
+fjs:song rdfs:subClassOf fjs:musical_composition .
+fjs:musical_composition a rdfs:Class .
+fjs:musical_composition rdfs:label "musical composition"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Standale> a fjs:valley .
+fjs:valley  rdfs:label "valley"@en .
+fjs:valley  a rdfs:Class .
+fjs:valley  rdfs:seeAlso <http://www.wikidata.org/entity/Q39816> .
+fjs:valley rdfs:subClassOf fjs:landform .
+fjs:landform a rdfs:Class .
+fjs:landform rdfs:label "landform"@en .
+fjs:valley rdfs:subClassOf fjs:geographic_region .
+fjs:geographic_region a rdfs:Class .
+fjs:geographic_region rdfs:label "geographic region"@en .
+fjs:valley rdfs:subClassOf fjs:low_spot .
+fjs:low_spot a rdfs:Class .
+fjs:low_spot rdfs:label "low spot"@en .
+fjs:valley rdfs:subClassOf fjs:natural_geographic_object .
+fjs:natural_geographic_object a rdfs:Class .
+fjs:natural_geographic_object rdfs:label "natural geographic object"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/mentally_ill> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/symptoms> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Reproduction> a fjs:biological_process .
+fjs:biological_process  rdfs:label "biological process"@en .
+fjs:biological_process  a rdfs:Class .
+fjs:biological_process  rdfs:seeAlso <http://www.wikidata.org/entity/Q2996394> .
+fjs:biological_process rdfs:subClassOf fjs:process .
+fjs:process a rdfs:Class .
+fjs:process rdfs:label "process"@en .
+fjs:biological_process rdfs:subClassOf fjs:process .
+fjs:process a rdfs:Class .
+fjs:process rdfs:label "process"@en .
+fjs:biological_process rdfs:subClassOf fjs:natural_process .
+fjs:natural_process a rdfs:Class .
+fjs:natural_process rdfs:label "natural process"@en .
+fjs:biological_process rdfs:subClassOf fjs:biological_phenomenon .
+fjs:biological_phenomenon a rdfs:Class .
+fjs:biological_phenomenon rdfs:label "biological phenomenon"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/song> a fjs:genre .
+fjs:genre  rdfs:label "genre"@en .
+fjs:genre  a rdfs:Class .
+fjs:genre  rdfs:seeAlso <http://www.wikidata.org/entity/Q483394> .
+fjs:genre rdfs:subClassOf fjs:class .
+fjs:class a rdfs:Class .
+fjs:class rdfs:label "class"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Hellston> a fjs:archaeological_site .
+fjs:archaeological_site  rdfs:label "archaeological site"@en .
+fjs:archaeological_site  a rdfs:Class .
+fjs:archaeological_site  rdfs:seeAlso <http://www.wikidata.org/entity/Q839954> .
+fjs:archaeological_site rdfs:subClassOf fjs:find_spot .
+fjs:find_spot a rdfs:Class .
+fjs:find_spot rdfs:label "find spot"@en .
+fjs:archaeological_site rdfs:subClassOf fjs:human-geographic_territorial_entity .
+fjs:human-geographic_territorial_entity a rdfs:Class .
+fjs:human-geographic_territorial_entity rdfs:label "human-geographic territorial entity"@en .
+fjs:archaeological_site rdfs:subClassOf fjs:venue .
+fjs:venue a rdfs:Class .
+fjs:venue rdfs:label "venue"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/problem>  rdfs:subClassOf fjs:condition .
+fjs:condition a rdfs:Class .
+fjs:condition rdfs:label "condition"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Victim>  rdfs:subClassOf fjs:person .
+fjs:person a rdfs:Class .
+fjs:person rdfs:label "person"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/business>  rdfs:subClassOf fjs:organization .
+fjs:organization a rdfs:Class .
+fjs:organization rdfs:label "organization"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/business>  rdfs:subClassOf fjs:economic_unit .
+fjs:economic_unit a rdfs:Class .
+fjs:economic_unit rdfs:label "economic unit"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Sense>  rdfs:subClassOf fjs:meaning .
+fjs:meaning a rdfs:Class .
+fjs:meaning rdfs:label "meaning"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/neighbor>  rdfs:subClassOf fjs:human .
+fjs:human a rdfs:Class .
+fjs:human rdfs:label "human"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Africa> a fjs:continent .
+fjs:continent  rdfs:label "continent"@en .
+fjs:continent  a rdfs:Class .
+fjs:continent  rdfs:seeAlso <http://www.wikidata.org/entity/Q5107> .
+fjs:continent rdfs:subClassOf fjs:landmass .
+fjs:landmass a rdfs:Class .
+fjs:landmass rdfs:label "landmass"@en .
+fjs:continent rdfs:subClassOf fjs:geographic_location .
+fjs:geographic_location a rdfs:Class .
+fjs:geographic_location rdfs:label "geographic location"@en .
+fjs:continent rdfs:subClassOf fjs:natural_geographic_object .
+fjs:natural_geographic_object a rdfs:Class .
+fjs:natural_geographic_object rdfs:label "natural geographic object"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Lion_hunter> a fjs:money_box .
+fjs:money_box  rdfs:label "money box"@en .
+fjs:money_box  a rdfs:Class .
+fjs:money_box  rdfs:seeAlso <http://www.wikidata.org/entity/Q18415478> .
+fjs:money_box rdfs:subClassOf fjs:container .
+fjs:container a rdfs:Class .
+fjs:container rdfs:label "container"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Ground>  rdfs:subClassOf fjs:organic_matter .
+fjs:organic_matter a rdfs:Class .
+fjs:organic_matter rdfs:label "organic matter"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Ground>  rdfs:subClassOf fjs:building_material .
+fjs:building_material a rdfs:Class .
+fjs:building_material rdfs:label "building material"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/magnifying_glass> a fjs:corrective_lens .
+fjs:corrective_lens  rdfs:label "corrective lens"@en .
+fjs:corrective_lens  a rdfs:Class .
+fjs:corrective_lens  rdfs:seeAlso <http://www.wikidata.org/entity/Q2143661> .
+fjs:corrective_lens rdfs:subClassOf fjs:optical_instrument .
+fjs:optical_instrument a rdfs:Class .
+fjs:optical_instrument rdfs:label "optical instrument"@en .
+fjs:corrective_lens rdfs:subClassOf fjs:medical_device .
+fjs:medical_device a rdfs:Class .
+fjs:medical_device rdfs:label "medical device"@en .
+fjs:corrective_lens rdfs:subClassOf fjs:lens .
+fjs:lens a rdfs:Class .
+fjs:lens rdfs:label "lens"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Executioner> a fjs:profession .
+fjs:profession  rdfs:label "profession"@en .
+fjs:profession  a rdfs:Class .
+fjs:profession  rdfs:seeAlso <http://www.wikidata.org/entity/Q28640> .
+fjs:profession rdfs:subClassOf fjs:job .
+fjs:job a rdfs:Class .
+fjs:job rdfs:label "job"@en .
+fjs:profession rdfs:subClassOf fjs:occupation .
+fjs:occupation a rdfs:Class .
+fjs:occupation rdfs:label "occupation"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Explorer> a fjs:occupation .
+fjs:occupation  rdfs:label "occupation"@en .
+fjs:occupation  a rdfs:Class .
+fjs:occupation  rdfs:seeAlso <http://www.wikidata.org/entity/Q12737077> .
+fjs:occupation rdfs:subClassOf fjs:human_activity .
+fjs:human_activity a rdfs:Class .
+fjs:human_activity rdfs:label "human activity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/guilt> a fjs:negative_emotion .
+fjs:negative_emotion  rdfs:label "negative emotion"@en .
+fjs:negative_emotion  a rdfs:Class .
+fjs:negative_emotion  rdfs:seeAlso <http://www.wikidata.org/entity/Q60539481> .
+fjs:negative_emotion rdfs:subClassOf fjs:emotion .
+fjs:emotion a rdfs:Class .
+fjs:emotion rdfs:label "emotion"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Outside> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/6_hours>  rdfs:subClassOf fjs:sports_car_racing .
+fjs:sports_car_racing a rdfs:Class .
+fjs:sports_car_racing rdfs:label "sports car racing"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/air> a fjs:gas .
+fjs:gas  rdfs:label "gas"@en .
+fjs:gas  a rdfs:Class .
+fjs:gas  rdfs:seeAlso <http://www.wikidata.org/entity/Q11432> .
+fjs:gas rdfs:subClassOf fjs:fluid .
+fjs:fluid a rdfs:Class .
+fjs:fluid rdfs:label "fluid"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Burning_time> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/bush>  rdfs:subClassOf fjs:perennial_plant .
+fjs:perennial_plant a rdfs:Class .
+fjs:perennial_plant rdfs:label "perennial plant"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/bush>  rdfs:subClassOf fjs:woody_plant .
+fjs:woody_plant a rdfs:Class .
+fjs:woody_plant rdfs:label "woody plant"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/bush>  rdfs:subClassOf fjs:null .
+fjs:null a rdfs:Class .
+fjs:null rdfs:label "null"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Unusual_nature> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Emergency_call> a fjs:television_series .
+fjs:television_series  rdfs:label "television series"@en .
+fjs:television_series  a rdfs:Class .
+fjs:television_series  rdfs:seeAlso <http://www.wikidata.org/entity/Q5398426> .
+fjs:television_series rdfs:subClassOf fjs:television_program .
+fjs:television_program a rdfs:Class .
+fjs:television_program rdfs:label "television program"@en .
+fjs:television_series rdfs:subClassOf fjs:series_of_creative_works .
+fjs:series_of_creative_works a rdfs:Class .
+fjs:series_of_creative_works rdfs:label "series of creative works"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/rare_object> a fjs:literary_work .
+fjs:literary_work  rdfs:label "literary work"@en .
+fjs:literary_work  a rdfs:Class .
+fjs:literary_work  rdfs:seeAlso <http://www.wikidata.org/entity/Q7725634> .
+fjs:literary_work rdfs:subClassOf fjs:creative_work .
+fjs:creative_work a rdfs:Class .
+fjs:creative_work rdfs:label "creative work"@en .
+fjs:literary_work rdfs:subClassOf fjs:text .
+fjs:text a rdfs:Class .
+fjs:text rdfs:label "text"@en .
+fjs:literary_work rdfs:subClassOf fjs:written_work .
+fjs:written_work a rdfs:Class .
+fjs:written_work rdfs:label "written work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Motivation>  rdfs:subClassOf fjs:emotion .
+fjs:emotion a rdfs:Class .
+fjs:emotion rdfs:label "emotion"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Motivation>  rdfs:subClassOf fjs:reason .
+fjs:reason a rdfs:Class .
+fjs:reason rdfs:label "reason"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Inland> a fjs:census-designated_place .
+fjs:census-designated_place  rdfs:label "census-designated place"@en .
+fjs:census-designated_place  a rdfs:Class .
+fjs:census-designated_place  rdfs:seeAlso <http://www.wikidata.org/entity/Q498162> .
+fjs:census-designated_place rdfs:subClassOf fjs:unincorporated_community_in_the_United_States .
+fjs:unincorporated_community_in_the_United_States a rdfs:Class .
+fjs:unincorporated_community_in_the_United_States rdfs:label "unincorporated community in the United States"@en .
+fjs:census-designated_place rdfs:subClassOf fjs:statistical_territorial_entity .
+fjs:statistical_territorial_entity a rdfs:Class .
+fjs:statistical_territorial_entity rdfs:label "statistical territorial entity"@en .
+fjs:census-designated_place rdfs:subClassOf fjs:census_place .
+fjs:census_place a rdfs:Class .
+fjs:census_place rdfs:label "census place"@en .
+fjs:census-designated_place rdfs:subClassOf fjs:human_settlement .
+fjs:human_settlement a rdfs:Class .
+fjs:human_settlement rdfs:label "human settlement"@en .
+fjs:census-designated_place rdfs:subClassOf fjs:geographic_location .
+fjs:geographic_location a rdfs:Class .
+fjs:geographic_location rdfs:label "geographic location"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/mental_hospital>  rdfs:subClassOf fjs:hospital .
+fjs:hospital a rdfs:Class .
+fjs:hospital rdfs:label "hospital"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Human_intention> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Early_spring> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/toxicology> a fjs:medical_specialty .
+fjs:medical_specialty  rdfs:label "medical specialty"@en .
+fjs:medical_specialty  a rdfs:Class .
+fjs:medical_specialty  rdfs:seeAlso <http://www.wikidata.org/entity/Q930752> .
+fjs:medical_specialty rdfs:subClassOf fjs:branch_of_science .
+fjs:branch_of_science a rdfs:Class .
+fjs:branch_of_science rdfs:label "branch of science"@en .
+fjs:medical_specialty rdfs:subClassOf fjs:health_specialty .
+fjs:health_specialty a rdfs:Class .
+fjs:health_specialty rdfs:label "health specialty"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/cottage>  rdfs:subClassOf fjs:house .
+fjs:house a rdfs:Class .
+fjs:house rdfs:label "house"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/nothing> a fjs:concept .
+fjs:concept  rdfs:label "concept"@en .
+fjs:concept  a rdfs:Class .
+fjs:concept  rdfs:seeAlso <http://www.wikidata.org/entity/Q151885> .
+fjs:concept rdfs:subClassOf fjs:mental_representation .
+fjs:mental_representation a rdfs:Class .
+fjs:mental_representation rdfs:label "mental representation"@en .
+fjs:concept rdfs:subClassOf fjs:abstract_object .
+fjs:abstract_object a rdfs:Class .
+fjs:abstract_object rdfs:label "abstract object"@en .
+fjs:concept rdfs:subClassOf fjs:capability .
+fjs:capability a rdfs:Class .
+fjs:capability rdfs:label "capability"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/My_bed> a fjs:sculpture .
+fjs:sculpture  rdfs:label "sculpture"@en .
+fjs:sculpture  a rdfs:Class .
+fjs:sculpture  rdfs:seeAlso <http://www.wikidata.org/entity/Q860861> .
+fjs:sculpture rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:sculpture rdfs:subClassOf fjs:three-dimensional_object .
+fjs:three-dimensional_object a rdfs:Class .
+fjs:three-dimensional_object rdfs:label "three-dimensional object"@en .
+fjs:sculpture rdfs:subClassOf fjs:small_monument .
+fjs:small_monument a rdfs:Class .
+fjs:small_monument rdfs:label "small monument"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Brother> a fjs:kinship .
+fjs:kinship  rdfs:label "kinship"@en .
+fjs:kinship  a rdfs:Class .
+fjs:kinship  rdfs:seeAlso <http://www.wikidata.org/entity/Q171318> .
+fjs:kinship rdfs:subClassOf fjs:social_group .
+fjs:social_group a rdfs:Class .
+fjs:social_group rdfs:label "social group"@en .
+fjs:kinship rdfs:subClassOf fjs:social_relation .
+fjs:social_relation a rdfs:Class .
+fjs:social_relation rdfs:label "social relation"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Gaze>  rdfs:subClassOf fjs:intentional_human_action .
+fjs:intentional_human_action a rdfs:Class .
+fjs:intentional_human_action rdfs:label "intentional human action"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Tennis_shoes> a fjs:shoe_style .
+fjs:shoe_style  rdfs:label "shoe style"@en .
+fjs:shoe_style  a rdfs:Class .
+fjs:shoe_style  rdfs:seeAlso <http://www.wikidata.org/entity/Q18195680> .
+fjs:shoe_style rdfs:subClassOf fjs:fashion .
+fjs:fashion a rdfs:Class .
+fjs:fashion rdfs:label "fashion"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Trust> a fjs:positive_emotion .
+fjs:positive_emotion  rdfs:label "positive emotion"@en .
+fjs:positive_emotion  a rdfs:Class .
+fjs:positive_emotion  rdfs:seeAlso <http://www.wikidata.org/entity/Q60539479> .
+fjs:positive_emotion rdfs:subClassOf fjs:emotion .
+fjs:emotion a rdfs:Class .
+fjs:emotion rdfs:label "emotion"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Expression_of_fear> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Middle-aged_man> a fjs:painting .
+fjs:painting  rdfs:label "painting"@en .
+fjs:painting  a rdfs:Class .
+fjs:painting  rdfs:seeAlso <http://www.wikidata.org/entity/Q3305213> .
+fjs:painting rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Change> a fjs:philosophical_concept .
+fjs:philosophical_concept  rdfs:label "philosophical concept"@en .
+fjs:philosophical_concept  a rdfs:Class .
+fjs:philosophical_concept  rdfs:seeAlso <http://www.wikidata.org/entity/Q33104279> .
+fjs:philosophical_concept rdfs:subClassOf fjs:concept .
+fjs:concept a rdfs:Class .
+fjs:concept rdfs:label "concept"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Starting_point>  rdfs:subClassOf fjs:part_and_whole .
+fjs:part_and_whole a rdfs:Class .
+fjs:part_and_whole rdfs:label "part and whole"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Starting_point>  rdfs:subClassOf fjs:extremity .
+fjs:extremity a rdfs:Class .
+fjs:extremity rdfs:label "extremity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Starting_point>  rdfs:subClassOf fjs:occurrence .
+fjs:occurrence a rdfs:Class .
+fjs:occurrence rdfs:label "occurrence"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Cornwall> a fjs:historic_county_of_the_United_Kingdom .
+fjs:historic_county_of_the_United_Kingdom  rdfs:label "historic county of the United Kingdom"@en .
+fjs:historic_county_of_the_United_Kingdom  a rdfs:Class .
+fjs:historic_county_of_the_United_Kingdom  rdfs:seeAlso <http://www.wikidata.org/entity/Q67376938> .
+fjs:historic_county_of_the_United_Kingdom rdfs:subClassOf fjs:historic_county .
+fjs:historic_county a rdfs:Class .
+fjs:historic_county rdfs:label "historic county"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Early_symptom>  rdfs:subClassOf fjs:symptom .
+fjs:symptom a rdfs:Class .
+fjs:symptom rdfs:label "symptom"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/beard>  rdfs:subClassOf fjs:facial_hair .
+fjs:facial_hair a rdfs:Class .
+fjs:facial_hair rdfs:label "facial hair"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/beard>  rdfs:subClassOf fjs:set_of_facial_hairs .
+fjs:set_of_facial_hairs a rdfs:Class .
+fjs:set_of_facial_hairs rdfs:label "set of facial hairs"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Scent>  rdfs:subClassOf fjs:physical_phenomenon .
+fjs:physical_phenomenon a rdfs:Class .
+fjs:physical_phenomenon rdfs:label "physical phenomenon"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Emotion>  rdfs:subClassOf fjs:mental_process .
+fjs:mental_process a rdfs:Class .
+fjs:mental_process rdfs:label "mental process"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Emotion>  rdfs:subClassOf fjs:qualia .
+fjs:qualia a rdfs:Class .
+fjs:qualia rdfs:label "qualia"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Case_2> a fjs:cell_line .
+fjs:cell_line  rdfs:label "cell line"@en .
+fjs:cell_line  a rdfs:Class .
+fjs:cell_line  rdfs:seeAlso <http://www.wikidata.org/entity/Q21014462> .
+fjs:cell_line rdfs:subClassOf fjs:cell .
+fjs:cell a rdfs:Class .
+fjs:cell rdfs:label "cell"@en .
+fjs:cell_line rdfs:subClassOf fjs:cell_culture .
+fjs:cell_culture a rdfs:Class .
+fjs:cell_culture rdfs:label "cell culture"@en .
+fjs:cell_line rdfs:subClassOf fjs:taxon .
+fjs:taxon a rdfs:Class .
+fjs:taxon rdfs:label "taxon"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Case_1> a fjs:cell_line .
+fjs:cell_line  rdfs:label "cell line"@en .
+fjs:cell_line  a rdfs:Class .
+fjs:cell_line  rdfs:seeAlso <http://www.wikidata.org/entity/Q21014462> .
+fjs:cell_line rdfs:subClassOf fjs:cell .
+fjs:cell a rdfs:Class .
+fjs:cell rdfs:label "cell"@en .
+fjs:cell_line rdfs:subClassOf fjs:cell_culture .
+fjs:cell_culture a rdfs:Class .
+fjs:cell_culture rdfs:label "cell culture"@en .
+fjs:cell_line rdfs:subClassOf fjs:taxon .
+fjs:taxon a rdfs:Class .
+fjs:taxon rdfs:label "taxon"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Plymouth> a fjs:city .
+fjs:city  rdfs:label "city"@en .
+fjs:city  a rdfs:Class .
+fjs:city  rdfs:seeAlso <http://www.wikidata.org/entity/Q515> .
+fjs:city rdfs:subClassOf fjs:community .
+fjs:community a rdfs:Class .
+fjs:community rdfs:label "community"@en .
+fjs:city rdfs:subClassOf fjs:citytown .
+fjs:citytown a rdfs:Class .
+fjs:citytown rdfs:label "city/town"@en .
+fjs:city rdfs:subClassOf fjs:urbanarea .
+fjs:urbanarea a rdfs:Class .
+fjs:urbanarea rdfs:label "urban area"@en .
+fjs:city rdfs:subClassOf fjs:humansettlement .
+fjs:humansettlement a rdfs:Class .
+fjs:humansettlement rdfs:label "human settlement"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/revolver>  rdfs:subClassOf fjs:handgun .
+fjs:handgun a rdfs:Class .
+fjs:handgun rdfs:label "handgun"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/George> a fjs:humanwhomaybefictional .
+fjs:humanwhomaybefictional  rdfs:label "human who may be fictional"@en .
+fjs:humanwhomaybefictional  a rdfs:Class .
+fjs:humanwhomaybefictional  rdfs:seeAlso <http://www.wikidata.org/entity/Q21070568> .
+fjs:humanwhomaybefictional rdfs:subClassOf fjs:narrativeentity .
+fjs:narrativeentity a rdfs:Class .
+fjs:narrativeentity rdfs:label "narrative entity"@en .
+fjs:humanwhomaybefictional rdfs:subClassOf fjs:person .
+fjs:person a rdfs:Class .
+fjs:person rdfs:label "person"@en .
+fjs:humanwhomaybefictional rdfs:subClassOf fjs:human .
+fjs:human a rdfs:Class .
+fjs:human rdfs:label "human"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/GoOut> a fjs:webpage .
+fjs:webpage  rdfs:label "web page"@en .
+fjs:webpage  a rdfs:Class .
+fjs:webpage  rdfs:seeAlso <http://www.wikidata.org/entity/Q36774> .
+fjs:webpage rdfs:subClassOf fjs:electronicpage .
+fjs:electronicpage a rdfs:Class .
+fjs:electronicpage rdfs:label "electronic page"@en .
+fjs:webpage rdfs:subClassOf fjs:document .
+fjs:document a rdfs:Class .
+fjs:document rdfs:label "document"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Agree> a fjs:presentationprogram .
+fjs:presentationprogram  rdfs:label "presentation program"@en .
+fjs:presentationprogram  a rdfs:Class .
+fjs:presentationprogram  rdfs:seeAlso <http://www.wikidata.org/entity/Q2115026> .
+fjs:presentationprogram rdfs:subClassOf fjs:application .
+fjs:application a rdfs:Class .
+fjs:application rdfs:label "application"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/the_case> a fjs:work .
+fjs:work  rdfs:label "work"@en .
+fjs:work  a rdfs:Class .
+fjs:work  rdfs:seeAlso <http://www.wikidata.org/entity/Q386724> .
+fjs:work rdfs:subClassOf fjs:product .
+fjs:product a rdfs:Class .
+fjs:product rdfs:label "product"@en .
+fjs:work rdfs:subClassOf fjs:artificial_entity .
+fjs:artificial_entity a rdfs:Class .
+fjs:artificial_entity rdfs:label "artificial entity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/cottages> a fjs:painting .
+fjs:painting  rdfs:label "painting"@en .
+fjs:painting  a rdfs:Class .
+fjs:painting  rdfs:seeAlso <http://www.wikidata.org/entity/Q3305213> .
+fjs:painting rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/explanation>  rdfs:subClassOf fjs:description .
+fjs:description a rdfs:Class .
+fjs:description rdfs:label "description"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Element> a fjs:second-order_class .
+fjs:second-order_class  rdfs:label "second-order class"@en .
+fjs:second-order_class  a rdfs:Class .
+fjs:second-order_class  rdfs:seeAlso <http://www.wikidata.org/entity/Q24017414> .
+fjs:second-order_class rdfs:subClassOf fjs:fixed-order_class .
+fjs:fixed-order_class a rdfs:Class .
+fjs:fixed-order_class rdfs:label "fixed-order class"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Face_of_fear> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Footprints> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Two_rooms> a fjs:manga_chapter .
+fjs:manga_chapter  rdfs:label "manga chapter"@en .
+fjs:manga_chapter  a rdfs:Class .
+fjs:manga_chapter  rdfs:seeAlso <http://www.wikidata.org/entity/Q53460949> .
+fjs:manga_chapter rdfs:subClassOf fjs:chapter .
+fjs:chapter a rdfs:Class .
+fjs:chapter rdfs:label "chapter"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Passing>  rdfs:subClassOf fjs:maneuver .
+fjs:maneuver a rdfs:Class .
+fjs:maneuver rdfs:label "maneuver"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/In_the_chair> a fjs:written_work .
+fjs:written_work  rdfs:label "written work"@en .
+fjs:written_work  a rdfs:Class .
+fjs:written_work  rdfs:seeAlso <http://www.wikidata.org/entity/Q47461344> .
+fjs:written_work rdfs:subClassOf fjs:creative_work .
+fjs:creative_work a rdfs:Class .
+fjs:creative_work rdfs:label "creative work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/musk> a fjs:organic_compound .
+fjs:organic_compound  rdfs:label "organic compound"@en .
+fjs:organic_compound  a rdfs:Class .
+fjs:organic_compound  rdfs:seeAlso <http://www.wikidata.org/entity/Q174211> .
+fjs:organic_compound rdfs:subClassOf fjs:compound_of_carbon .
+fjs:compound_of_carbon a rdfs:Class .
+fjs:compound_of_carbon rdfs:label "compound of carbon"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Motive>  rdfs:subClassOf fjs:emotion .
+fjs:emotion a rdfs:Class .
+fjs:emotion rdfs:label "emotion"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Motive>  rdfs:subClassOf fjs:reason .
+fjs:reason a rdfs:Class .
+fjs:reason rdfs:label "reason"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Europe> a fjs:continental_area_and_surrounding_islands .
+fjs:continental_area_and_surrounding_islands  rdfs:label "continental area and surrounding islands"@en .
+fjs:continental_area_and_surrounding_islands  a rdfs:Class .
+fjs:continental_area_and_surrounding_islands  rdfs:seeAlso <http://www.wikidata.org/entity/Q2418896> .
+fjs:continental_area_and_surrounding_islands rdfs:subClassOf fjs:territorial_entity .
+fjs:territorial_entity a rdfs:Class .
+fjs:territorial_entity rdfs:label "territorial entity"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/United_Kingdom> a fjs:Commonwealth_realm .
+fjs:Commonwealth_realm  rdfs:label "Commonwealth realm"@en .
+fjs:Commonwealth_realm  a rdfs:Class .
+fjs:Commonwealth_realm  rdfs:seeAlso <http://www.wikidata.org/entity/Q202686> .
+fjs:Commonwealth_realm rdfs:subClassOf fjs:sovereign_state .
+fjs:sovereign_state a rdfs:Class .
+fjs:sovereign_state rdfs:label "sovereign state"@en .
+fjs:Commonwealth_realm rdfs:subClassOf fjs:kingdom .
+fjs:kingdom a rdfs:Class .
+fjs:kingdom rdfs:label "kingdom"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Imagination> a fjs:psychology_term .
+fjs:psychology_term  rdfs:label "psychology term"@en .
+fjs:psychology_term  a rdfs:Class .
+fjs:psychology_term  rdfs:seeAlso <http://www.wikidata.org/entity/Q96634632> .
+fjs:psychology_term rdfs:subClassOf fjs:technical_term .
+fjs:technical_term a rdfs:Class .
+fjs:technical_term rdfs:label "technical term"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Room_air> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/news>  rdfs:subClassOf fjs:communication .
+fjs:communication a rdfs:Class .
+fjs:communication rdfs:label "communication"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/shock> a fjs:syndrome .
+fjs:syndrome  rdfs:label "syndrome"@en .
+fjs:syndrome  a rdfs:Class .
+fjs:syndrome  rdfs:seeAlso <http://www.wikidata.org/entity/Q179630> .
+fjs:syndrome rdfs:subClassOf fjs:physiological_condition .
+fjs:physiological_condition a rdfs:Class .
+fjs:physiological_condition rdfs:label "physiological condition"@en .
+fjs:syndrome rdfs:subClassOf fjs:disease .
+fjs:disease a rdfs:Class .
+fjs:disease rdfs:label "disease"@en .
+fjs:syndrome rdfs:subClassOf fjs:symptom .
+fjs:symptom a rdfs:Class .
+fjs:symptom rdfs:label "symptom"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Calm> a fjs:gene .
+fjs:gene  rdfs:label "gene"@en .
+fjs:gene  a rdfs:Class .
+fjs:gene  rdfs:seeAlso <http://www.wikidata.org/entity/Q7187> .
+fjs:gene rdfs:subClassOf fjs:nucleic_acid_sequence .
+fjs:nucleic_acid_sequence a rdfs:Class .
+fjs:nucleic_acid_sequence rdfs:label "nucleic acid sequence"@en .
+fjs:gene rdfs:subClassOf fjs:biological_region .
+fjs:biological_region a rdfs:Class .
+fjs:biological_region rdfs:label "biological region"@en .
+fjs:gene rdfs:subClassOf fjs:biological_sequence .
+fjs:biological_sequence a rdfs:Class .
+fjs:biological_sequence rdfs:label "biological sequence"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Stay> a fjs:Wikimedia_disambiguation_page .
+fjs:Wikimedia_disambiguation_page  rdfs:label "Wikimedia disambiguation page"@en .
+fjs:Wikimedia_disambiguation_page  a rdfs:Class .
+fjs:Wikimedia_disambiguation_page  rdfs:seeAlso <http://www.wikidata.org/entity/Q4167410> .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:MediaWiki_main-namespace_page .
+fjs:MediaWiki_main-namespace_page a rdfs:Class .
+fjs:MediaWiki_main-namespace_page rdfs:label "MediaWiki main-namespace page"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:list .
+fjs:list a rdfs:Class .
+fjs:list rdfs:label "list"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:Wikimedia_internal_item .
+fjs:Wikimedia_internal_item a rdfs:Class .
+fjs:Wikimedia_internal_item rdfs:label "Wikimedia internal item"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Act> a fjs:mainland_territory_of_Australia .
+fjs:mainland_territory_of_Australia  rdfs:label "mainland territory of Australia"@en .
+fjs:mainland_territory_of_Australia  a rdfs:Class .
+fjs:mainland_territory_of_Australia  rdfs:seeAlso <http://www.wikidata.org/entity/Q14192234> .
+fjs:mainland_territory_of_Australia rdfs:subClassOf fjs:territory_of_Australia .
+fjs:territory_of_Australia a rdfs:Class .
+fjs:territory_of_Australia rdfs:label "territory of Australia"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Baggage> a fjs:product .
+fjs:product  rdfs:label "product"@en .
+fjs:product  a rdfs:Class .
+fjs:product  rdfs:seeAlso <http://www.wikidata.org/entity/Q2424752> .
+fjs:product rdfs:subClassOf fjs:goods .
+fjs:goods a rdfs:Class .
+fjs:goods rdfs:label "goods"@en .
+fjs:product rdfs:subClassOf fjs:artificial_physical_object .
+fjs:artificial_physical_object a rdfs:Class .
+fjs:artificial_physical_object rdfs:label "artificial physical object"@en .
+fjs:product rdfs:subClassOf fjs:product .
+fjs:product a rdfs:Class .
+fjs:product rdfs:label "product"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/ash> a fjs:taxon .
+fjs:taxon  rdfs:label "taxon"@en .
+fjs:taxon  a rdfs:Class .
+fjs:taxon  rdfs:seeAlso <http://www.wikidata.org/entity/Q16521> .
+fjs:taxon rdfs:subClassOf fjs:living_organism_class .
+fjs:living_organism_class a rdfs:Class .
+fjs:living_organism_class rdfs:label "living organism class"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Toxic_air> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Exterior>  rdfs:subClassOf fjs:exterior .
+fjs:exterior a rdfs:Class .
+fjs:exterior rdfs:label "exterior"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Exterior>  rdfs:subClassOf fjs:architectural_structure .
+fjs:architectural_structure a rdfs:Class .
+fjs:architectural_structure rdfs:label "architectural structure"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Exterior>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Exterior>  rdfs:subClassOf fjs:wall .
+fjs:wall a rdfs:Class .
+fjs:wall rdfs:label "wall"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/posture>  rdfs:subClassOf fjs:spatial_arrangement .
+fjs:spatial_arrangement a rdfs:Class .
+fjs:spatial_arrangement rdfs:label "spatial arrangement"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/exterior>  rdfs:subClassOf fjs:exterior .
+fjs:exterior a rdfs:Class .
+fjs:exterior rdfs:label "exterior"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/exterior>  rdfs:subClassOf fjs:architectural_structure .
+fjs:architectural_structure a rdfs:Class .
+fjs:architectural_structure rdfs:label "architectural structure"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/exterior>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/exterior>  rdfs:subClassOf fjs:wall .
+fjs:wall a rdfs:Class .
+fjs:wall rdfs:label "wall"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/flame>  rdfs:subClassOf fjs:chemical_reaction .
+fjs:chemical_reaction a rdfs:Class .
+fjs:chemical_reaction rdfs:label "chemical reaction"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Evil_thing> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/last>  rdfs:subClassOf fjs:element .
+fjs:element a rdfs:Class .
+fjs:element rdfs:label "element"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/last>  rdfs:subClassOf fjs:precedence .
+fjs:precedence a rdfs:Class .
+fjs:precedence rdfs:label "precedence"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/last>  rdfs:subClassOf fjs:object_of_group .
+fjs:object_of_group a rdfs:Class .
+fjs:object_of_group rdfs:label "object of group"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/last>  rdfs:subClassOf fjs:record .
+fjs:record a rdfs:Class .
+fjs:record rdfs:label "record"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Possession> a fjs:role .
+fjs:role  rdfs:label "role"@en .
+fjs:role  a rdfs:Class .
+fjs:role  rdfs:seeAlso <http://www.wikidata.org/entity/Q4897819> .
+fjs:role rdfs:subClassOf fjs:entity .
+fjs:entity a rdfs:Class .
+fjs:entity rdfs:label "entity"@en .
+fjs:role rdfs:subClassOf fjs:quality .
+fjs:quality a rdfs:Class .
+fjs:quality rdfs:label "quality"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Immediate_family> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Hear> a fjs:school_building .
+fjs:school_building  rdfs:label "school building"@en .
+fjs:school_building  a rdfs:Class .
+fjs:school_building  rdfs:seeAlso <http://www.wikidata.org/entity/Q1244442> .
+fjs:school_building rdfs:subClassOf fjs:building .
+fjs:building a rdfs:Class .
+fjs:building rdfs:label "building"@en .
+fjs:school_building rdfs:subClassOf fjs:facility .
+fjs:facility a rdfs:Class .
+fjs:facility rdfs:label "facility"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Make> a fjs:build_automation .
+fjs:build_automation  rdfs:label "build automation"@en .
+fjs:build_automation  a rdfs:Class .
+fjs:build_automation  rdfs:seeAlso <http://www.wikidata.org/entity/Q2727468> .
+fjs:build_automation rdfs:subClassOf fjs:programming_tool .
+fjs:programming_tool a rdfs:Class .
+fjs:programming_tool rdfs:label "programming tool"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/blind>  rdfs:subClassOf fjs:visual_impairment .
+fjs:visual_impairment a rdfs:Class .
+fjs:visual_impairment rdfs:label "visual impairment"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/blind>  rdfs:subClassOf fjs:eye_disease .
+fjs:eye_disease a rdfs:Class .
+fjs:eye_disease rdfs:label "eye disease"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/blind>  rdfs:subClassOf fjs:vision_symptom .
+fjs:vision_symptom a rdfs:Class .
+fjs:vision_symptom rdfs:label "vision symptom"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Exhaust> a fjs:symptom .
+fjs:symptom  rdfs:label "symptom"@en .
+fjs:symptom  a rdfs:Class .
+fjs:symptom  rdfs:seeAlso <http://www.wikidata.org/entity/Q169872> .
+fjs:symptom rdfs:subClassOf fjs:health_problem .
+fjs:health_problem a rdfs:Class .
+fjs:health_problem rdfs:label "health problem"@en .
+fjs:symptom rdfs:subClassOf fjs:clinical_finding .
+fjs:clinical_finding a rdfs:Class .
+fjs:clinical_finding rdfs:label "clinical finding"@en .
+fjs:symptom rdfs:subClassOf fjs:physiological_condition .
+fjs:physiological_condition a rdfs:Class .
+fjs:physiological_condition rdfs:label "physiological condition"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Cottage>  rdfs:subClassOf fjs:house .
+fjs:house a rdfs:Class .
+fjs:house rdfs:label "house"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/both_sides> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Carry>  rdfs:subClassOf fjs:financial_transaction .
+fjs:financial_transaction a rdfs:Class .
+fjs:financial_transaction rdfs:label "financial transaction"@en .
+<http://kgc.knowledge-graph.jp/data/DevilsFoot/Mortimer> a fjs:family_name .
+fjs:family_name  rdfs:label "family name"@en .
+fjs:family_name  a rdfs:Class .
+fjs:family_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q101352> .
+fjs:family_name rdfs:subClassOf fjs:anthroponym .
+fjs:anthroponym a rdfs:Class .
+fjs:anthroponym rdfs:label "anthroponym"@en .

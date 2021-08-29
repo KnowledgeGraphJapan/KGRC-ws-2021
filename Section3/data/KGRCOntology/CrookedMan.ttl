@@ -1,0 +1,1121 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fjs: <http://challenge2021.labs.fujitsu.com/ontology/kgc.owl#> . 
+
+<http://kgc.knowledge-graph.jp/data/CrookedMan/fear> a fjs:basic_emotion .
+fjs:basic_emotion  rdfs:label "basic emotion"@en .
+fjs:basic_emotion  a rdfs:Class .
+fjs:basic_emotion  rdfs:seeAlso <http://www.wikidata.org/entity/Q16748867> .
+fjs:basic_emotion rdfs:subClassOf fjs:emotion .
+fjs:emotion a rdfs:Class .
+fjs:emotion rdfs:label "emotion"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/end>  rdfs:subClassOf fjs:part_and_whole .
+fjs:part_and_whole a rdfs:Class .
+fjs:part_and_whole rdfs:label "part and whole"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/end>  rdfs:subClassOf fjs:extremity .
+fjs:extremity a rdfs:Class .
+fjs:extremity rdfs:label "extremity"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/end>  rdfs:subClassOf fjs:location .
+fjs:location a rdfs:Class .
+fjs:location rdfs:label "location"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/incident>  rdfs:subClassOf fjs:occurrence .
+fjs:occurrence a rdfs:Class .
+fjs:occurrence rdfs:label "occurrence"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/lie> a fjs:sovereign_state .
+fjs:sovereign_state  rdfs:label "sovereign state"@en .
+fjs:sovereign_state  a rdfs:Class .
+fjs:sovereign_state  rdfs:seeAlso <http://www.wikidata.org/entity/Q3624078> .
+fjs:sovereign_state rdfs:subClassOf fjs:state .
+fjs:state a rdfs:Class .
+fjs:state rdfs:label "state"@en .
+fjs:sovereign_state rdfs:subClassOf fjs:country .
+fjs:country a rdfs:Class .
+fjs:country rdfs:label "country"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/house>  rdfs:subClassOf fjs:residential_building .
+fjs:residential_building a rdfs:Class .
+fjs:residential_building rdfs:label "residential building"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/house>  rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/door>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/door>  rdfs:subClassOf fjs:device .
+fjs:device a rdfs:Class .
+fjs:device rdfs:label "device"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/door>  rdfs:subClassOf fjs:obstacle .
+fjs:obstacle a rdfs:Class .
+fjs:obstacle rdfs:label "obstacle"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/name>  rdfs:subClassOf fjs:word .
+fjs:word a rdfs:Class .
+fjs:word rdfs:label "word"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/name>  rdfs:subClassOf fjs:sign .
+fjs:sign a rdfs:Class .
+fjs:sign rdfs:label "sign"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/key> a fjs:color .
+fjs:color  rdfs:label "color"@en .
+fjs:color  a rdfs:Class .
+fjs:color  rdfs:seeAlso <http://www.wikidata.org/entity/Q1075> .
+fjs:color rdfs:subClassOf fjs:absorbed_or_reflected_object_light .
+fjs:absorbed_or_reflected_object_light a rdfs:Class .
+fjs:absorbed_or_reflected_object_light rdfs:label "absorbed or reflected object light"@en .
+fjs:color rdfs:subClassOf fjs:optical_phenomenon .
+fjs:optical_phenomenon a rdfs:Class .
+fjs:optical_phenomenon rdfs:label "optical phenomenon"@en .
+fjs:color rdfs:subClassOf fjs:quality .
+fjs:quality a rdfs:Class .
+fjs:quality rdfs:label "quality"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/face> a fjs:anatomical_structure .
+fjs:anatomical_structure  rdfs:label "anatomical structure"@en .
+fjs:anatomical_structure  a rdfs:Class .
+fjs:anatomical_structure  rdfs:seeAlso <http://www.wikidata.org/entity/Q4936952> .
+fjs:anatomical_structure rdfs:subClassOf fjs:biological_component .
+fjs:biological_component a rdfs:Class .
+fjs:biological_component rdfs:label "biological component"@en .
+fjs:anatomical_structure rdfs:subClassOf fjs:material_anatomical_entity .
+fjs:material_anatomical_entity a rdfs:Class .
+fjs:material_anatomical_entity rdfs:label "material anatomical entity"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/father> a fjs:kinship .
+fjs:kinship  rdfs:label "kinship"@en .
+fjs:kinship  a rdfs:Class .
+fjs:kinship  rdfs:seeAlso <http://www.wikidata.org/entity/Q171318> .
+fjs:kinship rdfs:subClassOf fjs:social_group .
+fjs:social_group a rdfs:Class .
+fjs:social_group rdfs:label "social group"@en .
+fjs:kinship rdfs:subClassOf fjs:social_relation .
+fjs:social_relation a rdfs:Class .
+fjs:social_relation rdfs:label "social relation"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/fireplace> a fjs:technological_component .
+fjs:technological_component  rdfs:label "technological component"@en .
+fjs:technological_component  a rdfs:Class .
+fjs:technological_component  rdfs:seeAlso <http://www.wikidata.org/entity/Q811909> .
+fjs:technological_component rdfs:subClassOf fjs:component .
+fjs:component a rdfs:Class .
+fjs:component rdfs:label "component"@en .
+fjs:technological_component rdfs:subClassOf fjs:artificial_entity .
+fjs:artificial_entity a rdfs:Class .
+fjs:artificial_entity rdfs:label "artificial entity"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Holmes> a fjs:family_name .
+fjs:family_name  rdfs:label "family name"@en .
+fjs:family_name  a rdfs:Class .
+fjs:family_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q101352> .
+fjs:family_name rdfs:subClassOf fjs:anthroponym .
+fjs:anthroponym a rdfs:Class .
+fjs:anthroponym rdfs:label "anthroponym"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/body> a fjs:type_of_object .
+fjs:type_of_object  rdfs:label "type of object"@en .
+fjs:type_of_object  a rdfs:Class .
+fjs:type_of_object  rdfs:seeAlso <http://www.wikidata.org/entity/Q96251598> .
+fjs:type_of_object rdfs:subClassOf fjs:type .
+fjs:type a rdfs:Class .
+fjs:type rdfs:label "type"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/window>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/lamp>  rdfs:subClassOf fjs:light_source .
+fjs:light_source a rdfs:Class .
+fjs:light_source rdfs:label "light source"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/lamp>  rdfs:subClassOf fjs:artificial_physical_object .
+fjs:artificial_physical_object a rdfs:Class .
+fjs:artificial_physical_object rdfs:label "artificial physical object"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/lamp>  rdfs:subClassOf fjs:furniture .
+fjs:furniture a rdfs:Class .
+fjs:furniture rdfs:label "furniture"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/lamp>  rdfs:subClassOf fjs:light_fixture .
+fjs:light_fixture a rdfs:Class .
+fjs:light_fixture rdfs:label "light fixture"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/wall>  rdfs:subClassOf fjs:architectural_structure .
+fjs:architectural_structure a rdfs:Class .
+fjs:architectural_structure rdfs:label "architectural structure"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/wall>  rdfs:subClassOf fjs:support .
+fjs:support a rdfs:Class .
+fjs:support rdfs:label "support"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/wall>  rdfs:subClassOf fjs:null .
+fjs:null a rdfs:Class .
+fjs:null rdfs:label "null"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/money>  rdfs:subClassOf fjs:legal_tender .
+fjs:legal_tender a rdfs:Class .
+fjs:legal_tender rdfs:label "legal tender"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/money>  rdfs:subClassOf fjs:nominal_good .
+fjs:nominal_good a rdfs:Class .
+fjs:nominal_good rdfs:label "nominal good"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/money>  rdfs:subClassOf fjs:standard_of_deferred_payment .
+fjs:standard_of_deferred_payment a rdfs:Class .
+fjs:standard_of_deferred_payment rdfs:label "standard of deferred payment"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/story> a fjs:form .
+fjs:form  rdfs:label "form"@en .
+fjs:form  a rdfs:Class .
+fjs:form  rdfs:seeAlso <http://www.wikidata.org/entity/Q1437361> .
+fjs:form rdfs:subClassOf fjs:format .
+fjs:format a rdfs:Class .
+fjs:format rdfs:label "format"@en .
+fjs:form rdfs:subClassOf fjs:form .
+fjs:form a rdfs:Class .
+fjs:form rdfs:label "form"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/knee>  rdfs:subClassOf fjs:lower_limb_segment .
+fjs:lower_limb_segment a rdfs:Class .
+fjs:lower_limb_segment rdfs:label "lower limb segment"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/knee>  rdfs:subClassOf fjs:free_lower_limb_segment .
+fjs:free_lower_limb_segment a rdfs:Class .
+fjs:free_lower_limb_segment rdfs:label "free lower limb segment"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/voice>  rdfs:subClassOf fjs:animal_vocalization .
+fjs:animal_vocalization a rdfs:Class .
+fjs:animal_vocalization rdfs:label "animal vocalization"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/chair>  rdfs:subClassOf fjs:seat .
+fjs:seat a rdfs:Class .
+fjs:seat rdfs:label "seat"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/chair>  rdfs:subClassOf fjs:furniture .
+fjs:furniture a rdfs:Class .
+fjs:furniture rdfs:label "furniture"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/marriage> a fjs:legal_institution .
+fjs:legal_institution  rdfs:label "legal institution"@en .
+fjs:legal_institution  a rdfs:Class .
+fjs:legal_institution  rdfs:seeAlso <http://www.wikidata.org/entity/Q1938208> .
+fjs:legal_institution rdfs:subClassOf fjs:legislation .
+fjs:legislation a rdfs:Class .
+fjs:legislation rdfs:label "legislation"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/living_room>  rdfs:subClassOf fjs:room .
+fjs:room a rdfs:Class .
+fjs:room rdfs:label "room"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/India> a fjs:country .
+fjs:country  rdfs:label "country"@en .
+fjs:country  a rdfs:Class .
+fjs:country  rdfs:seeAlso <http://www.wikidata.org/entity/Q6256> .
+fjs:country rdfs:subClassOf fjs:political_territorial_entity .
+fjs:political_territorial_entity a rdfs:Class .
+fjs:political_territorial_entity rdfs:label "political territorial entity"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/home>  rdfs:subClassOf fjs:location .
+fjs:location a rdfs:Class .
+fjs:location rdfs:label "location"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/home>  rdfs:subClassOf fjs:architectural_structure .
+fjs:architectural_structure a rdfs:Class .
+fjs:architectural_structure rdfs:label "architectural structure"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/room> a fjs:facility .
+fjs:facility  rdfs:label "facility"@en .
+fjs:facility  a rdfs:Class .
+fjs:facility  rdfs:seeAlso <http://www.wikidata.org/entity/Q13226383> .
+fjs:facility rdfs:subClassOf fjs:geographic_location .
+fjs:geographic_location a rdfs:Class .
+fjs:geographic_location rdfs:label "geographic location"@en .
+fjs:facility rdfs:subClassOf fjs:artificial_geographic_entity .
+fjs:artificial_geographic_entity a rdfs:Class .
+fjs:artificial_geographic_entity rdfs:label "artificial geographic entity"@en .
+fjs:facility rdfs:subClassOf fjs:geographical_object .
+fjs:geographical_object a rdfs:Class .
+fjs:geographical_object rdfs:label "geographical object"@en .
+fjs:facility rdfs:subClassOf fjs:organization .
+fjs:organization a rdfs:Class .
+fjs:organization rdfs:label "organization"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/character> a fjs:literary_element .
+fjs:literary_element  rdfs:label "literary element"@en .
+fjs:literary_element  a rdfs:Class .
+fjs:literary_element  rdfs:seeAlso <http://www.wikidata.org/entity/Q6647660> .
+fjs:literary_element rdfs:subClassOf fjs:part_and_whole .
+fjs:part_and_whole a rdfs:Class .
+fjs:part_and_whole rdfs:label "part and whole"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/help> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/twice> a fjs:girl_group .
+fjs:girl_group  rdfs:label "girl group"@en .
+fjs:girl_group  a rdfs:Class .
+fjs:girl_group  rdfs:seeAlso <http://www.wikidata.org/entity/Q641066> .
+fjs:girl_group rdfs:subClassOf fjs:pop_group .
+fjs:pop_group a rdfs:Class .
+fjs:pop_group rdfs:label "pop group"@en .
+fjs:girl_group rdfs:subClassOf fjs:all-female_band .
+fjs:all-female_band a rdfs:Class .
+fjs:all-female_band rdfs:label "all-female band"@en .
+fjs:girl_group rdfs:subClassOf fjs:vocal_group .
+fjs:vocal_group a rdfs:Class .
+fjs:vocal_group rdfs:label "vocal group"@en .
+fjs:girl_group rdfs:subClassOf fjs:pop_music .
+fjs:pop_music a rdfs:Class .
+fjs:pop_music rdfs:label "pop music"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/head>  rdfs:subClassOf fjs:cardinal_body_part .
+fjs:cardinal_body_part a rdfs:Class .
+fjs:cardinal_body_part rdfs:label "cardinal body part"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/head>  rdfs:subClassOf fjs:sistema_endocri .
+fjs:sistema_endocri a rdfs:Class .
+fjs:sistema_endocri rdfs:label "sistema endocri"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/meeting>  rdfs:subClassOf fjs:meeting .
+fjs:meeting a rdfs:Class .
+fjs:meeting rdfs:label "meeting"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/meeting>  rdfs:subClassOf fjs:event .
+fjs:event a rdfs:Class .
+fjs:event rdfs:label "event"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/friendly>  rdfs:subClassOf fjs:interpersonal_relationship .
+fjs:interpersonal_relationship a rdfs:Class .
+fjs:interpersonal_relationship rdfs:label "interpersonal relationship"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/together> a fjs:political_party .
+fjs:political_party  rdfs:label "political party"@en .
+fjs:political_party  a rdfs:Class .
+fjs:political_party  rdfs:seeAlso <http://www.wikidata.org/entity/Q7278> .
+fjs:political_party rdfs:subClassOf fjs:non-governmental_organization .
+fjs:non-governmental_organization a rdfs:Class .
+fjs:non-governmental_organization rdfs:label "non-governmental organization"@en .
+fjs:political_party rdfs:subClassOf fjs:juridical_person .
+fjs:juridical_person a rdfs:Class .
+fjs:juridical_person rdfs:label "juridical person"@en .
+fjs:political_party rdfs:subClassOf fjs:political_organisation .
+fjs:political_organisation a rdfs:Class .
+fjs:political_organisation rdfs:label "political organisation"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/company> a fjs:type_of_organisation .
+fjs:type_of_organisation  rdfs:label "type of organisation"@en .
+fjs:type_of_organisation  a rdfs:Class .
+fjs:type_of_organisation  rdfs:seeAlso <http://www.wikidata.org/entity/Q17197366> .
+fjs:type_of_organisation rdfs:subClassOf fjs:class .
+fjs:class a rdfs:Class .
+fjs:class rdfs:label "class"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/truth> a fjs:academic_discipline .
+fjs:academic_discipline  rdfs:label "academic discipline"@en .
+fjs:academic_discipline  a rdfs:Class .
+fjs:academic_discipline  rdfs:seeAlso <http://www.wikidata.org/entity/Q11862829> .
+fjs:academic_discipline rdfs:subClassOf fjs:specialty .
+fjs:specialty a rdfs:Class .
+fjs:specialty rdfs:label "specialty"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Garden>  rdfs:subClassOf fjs:landscape .
+fjs:landscape a rdfs:Class .
+fjs:landscape rdfs:label "landscape"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Garden>  rdfs:subClassOf fjs:exterior_space .
+fjs:exterior_space a rdfs:Class .
+fjs:exterior_space rdfs:label "exterior space"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Garden>  rdfs:subClassOf fjs:land_use .
+fjs:land_use a rdfs:Class .
+fjs:land_use rdfs:label "land use"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Garden>  rdfs:subClassOf fjs:workplace .
+fjs:workplace a rdfs:Class .
+fjs:workplace rdfs:label "workplace"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Garden>  rdfs:subClassOf fjs:venue .
+fjs:venue a rdfs:Class .
+fjs:venue rdfs:label "venue"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Garden>  rdfs:subClassOf fjs:green_space .
+fjs:green_space a rdfs:Class .
+fjs:green_space rdfs:label "green space"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Garden>  rdfs:subClassOf fjs:human-made_landform .
+fjs:human-made_landform a rdfs:Class .
+fjs:human-made_landform rdfs:label "human-made landform"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Garden>  rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/guilt> a fjs:negative_emotion .
+fjs:negative_emotion  rdfs:label "negative emotion"@en .
+fjs:negative_emotion  a rdfs:Class .
+fjs:negative_emotion  rdfs:seeAlso <http://www.wikidata.org/entity/Q60539481> .
+fjs:negative_emotion rdfs:subClassOf fjs:emotion .
+fjs:emotion a rdfs:Class .
+fjs:emotion rdfs:label "emotion"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/foot> a fjs:unit_of_length .
+fjs:unit_of_length  rdfs:label "unit of length"@en .
+fjs:unit_of_length  a rdfs:Class .
+fjs:unit_of_length  rdfs:seeAlso <http://www.wikidata.org/entity/Q1978718> .
+fjs:unit_of_length rdfs:subClassOf fjs:unit_of_measurement .
+fjs:unit_of_measurement a rdfs:Class .
+fjs:unit_of_measurement rdfs:label "unit of measurement"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/passionately> a fjs:painting .
+fjs:painting  rdfs:label "painting"@en .
+fjs:painting  a rdfs:Class .
+fjs:painting  rdfs:seeAlso <http://www.wikidata.org/entity/Q3305213> .
+fjs:painting rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/lodge>  rdfs:subClassOf fjs:building .
+fjs:building a rdfs:Class .
+fjs:building rdfs:label "building"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/old_friend> a fjs:compilation_album .
+fjs:compilation_album  rdfs:label "compilation album"@en .
+fjs:compilation_album  a rdfs:Class .
+fjs:compilation_album  rdfs:seeAlso <http://www.wikidata.org/entity/Q222910> .
+fjs:compilation_album rdfs:subClassOf fjs:album .
+fjs:album a rdfs:Class .
+fjs:album rdfs:label "album"@en .
+fjs:compilation_album rdfs:subClassOf fjs:anthology .
+fjs:anthology a rdfs:Class .
+fjs:anthology rdfs:label "anthology"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Berkeley> a fjs:public_research_university .
+fjs:public_research_university  rdfs:label "public research university"@en .
+fjs:public_research_university  a rdfs:Class .
+fjs:public_research_university  rdfs:seeAlso <http://www.wikidata.org/entity/Q62078547> .
+fjs:public_research_university rdfs:subClassOf fjs:public_university .
+fjs:public_university a rdfs:Class .
+fjs:public_university rdfs:label "public university"@en .
+fjs:public_research_university rdfs:subClassOf fjs:research_university .
+fjs:research_university a rdfs:Class .
+fjs:research_university rdfs:label "research university"@en .
+fjs:public_research_university rdfs:subClassOf fjs:academic_institution .
+fjs:academic_institution a rdfs:Class .
+fjs:academic_institution rdfs:label "academic institution"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/apoplexia> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/early> a fjs:term .
+fjs:term  rdfs:label "term"@en .
+fjs:term  a rdfs:Class .
+fjs:term  rdfs:seeAlso <http://www.wikidata.org/entity/Q1969448> .
+fjs:term rdfs:subClassOf fjs:concept .
+fjs:concept a rdfs:Class .
+fjs:concept rdfs:label "concept"@en .
+fjs:term rdfs:subClassOf fjs:lexical_item .
+fjs:lexical_item a rdfs:Class .
+fjs:lexical_item rdfs:label "lexical item"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/marten> a fjs:male_given_name .
+fjs:male_given_name  rdfs:label "male given name"@en .
+fjs:male_given_name  a rdfs:Class .
+fjs:male_given_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q12308941> .
+fjs:male_given_name rdfs:subClassOf fjs:given_name .
+fjs:given_name a rdfs:Class .
+fjs:given_name rdfs:label "given name"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/almost> a fjs:state_of_the_United_States .
+fjs:state_of_the_United_States  rdfs:label "state of the United States"@en .
+fjs:state_of_the_United_States  a rdfs:Class .
+fjs:state_of_the_United_States  rdfs:seeAlso <http://www.wikidata.org/entity/Q35657> .
+fjs:state_of_the_United_States rdfs:subClassOf fjs:administrative_territorial_entity_of_the_United_States .
+fjs:administrative_territorial_entity_of_the_United_States a rdfs:Class .
+fjs:administrative_territorial_entity_of_the_United_States rdfs:label "administrative territorial entity of the United States"@en .
+fjs:state_of_the_United_States rdfs:subClassOf fjs:federated_state .
+fjs:federated_state a rdfs:Class .
+fjs:federated_state rdfs:label "federated state"@en .
+fjs:state_of_the_United_States rdfs:subClassOf fjs:first-level_administrative_country_subdivision .
+fjs:first-level_administrative_country_subdivision a rdfs:Class .
+fjs:first-level_administrative_country_subdivision rdfs:label "first-level administrative country subdivision"@en .
+fjs:state_of_the_United_States rdfs:subClassOf fjs:electoral_district .
+fjs:electoral_district a rdfs:Class .
+fjs:electoral_district rdfs:label "electoral district"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/stick>  rdfs:subClassOf fjs:tobacco_product .
+fjs:tobacco_product a rdfs:Class .
+fjs:tobacco_product rdfs:label "tobacco product"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Nancy> a fjs:commune_of_France .
+fjs:commune_of_France  rdfs:label "commune of France"@en .
+fjs:commune_of_France  a rdfs:Class .
+fjs:commune_of_France  rdfs:seeAlso <http://www.wikidata.org/entity/Q484170> .
+fjs:commune_of_France rdfs:subClassOf fjs:territorial_collectivity_of_France .
+fjs:territorial_collectivity_of_France a rdfs:Class .
+fjs:territorial_collectivity_of_France rdfs:label "territorial collectivity of France"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:LAU_2 .
+fjs:LAU_2 a rdfs:Class .
+fjs:LAU_2 rdfs:label "LAU 2"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:municipality .
+fjs:municipality a rdfs:Class .
+fjs:municipality rdfs:label "municipality"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:fourth-level_administrative_country_subdivision .
+fjs:fourth-level_administrative_country_subdivision a rdfs:Class .
+fjs:fourth-level_administrative_country_subdivision rdfs:label "fourth-level administrative country subdivision"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:fifth-level_administrative_country_subdivision .
+fjs:fifth-level_administrative_country_subdivision a rdfs:Class .
+fjs:fifth-level_administrative_country_subdivision rdfs:label "fifth-level administrative country subdivision"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:commune .
+fjs:commune a rdfs:Class .
+fjs:commune rdfs:label "commune"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:electoral_district .
+fjs:electoral_district a rdfs:Class .
+fjs:electoral_district rdfs:label "electoral district"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:human_settlement .
+fjs:human_settlement a rdfs:Class .
+fjs:human_settlement rdfs:label "human settlement"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/curtain>  rdfs:subClassOf fjs:linens .
+fjs:linens a rdfs:Class .
+fjs:linens rdfs:label "linens"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/daughter> a fjs:kinship .
+fjs:kinship  rdfs:label "kinship"@en .
+fjs:kinship  a rdfs:Class .
+fjs:kinship  rdfs:seeAlso <http://www.wikidata.org/entity/Q171318> .
+fjs:kinship rdfs:subClassOf fjs:social_group .
+fjs:social_group a rdfs:Class .
+fjs:social_group rdfs:label "social group"@en .
+fjs:kinship rdfs:subClassOf fjs:social_relation .
+fjs:social_relation a rdfs:Class .
+fjs:social_relation rdfs:label "social relation"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/nose>  rdfs:subClassOf fjs:animal_organ .
+fjs:animal_organ a rdfs:Class .
+fjs:animal_organ rdfs:label "animal organ"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/superstition>  rdfs:subClassOf fjs:human_behaviour .
+fjs:human_behaviour a rdfs:Class .
+fjs:human_behaviour rdfs:label "human behaviour"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/superstition>  rdfs:subClassOf fjs:activity .
+fjs:activity a rdfs:Class .
+fjs:activity rdfs:label "activity"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/footprint>  rdfs:subClassOf fjs:trace .
+fjs:trace a rdfs:Class .
+fjs:trace rdfs:label "trace"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Davide> a fjs:male_given_name .
+fjs:male_given_name  rdfs:label "male given name"@en .
+fjs:male_given_name  a rdfs:Class .
+fjs:male_given_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q12308941> .
+fjs:male_given_name rdfs:subClassOf fjs:given_name .
+fjs:given_name a rdfs:Class .
+fjs:given_name rdfs:label "given name"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/2_feet> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/blunt_weapon>  rdfs:subClassOf fjs:close_combat_weapon .
+fjs:close_combat_weapon a rdfs:Class .
+fjs:close_combat_weapon rdfs:label "close combat weapon"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Morrison> a fjs:human .
+fjs:human  rdfs:label "human"@en .
+fjs:human  a rdfs:Class .
+fjs:human  rdfs:seeAlso <http://www.wikidata.org/entity/Q5> .
+fjs:human rdfs:subClassOf fjs:person .
+fjs:person a rdfs:Class .
+fjs:person rdfs:label "person"@en .
+fjs:human rdfs:subClassOf fjs:natural_person .
+fjs:natural_person a rdfs:Class .
+fjs:natural_person rdfs:label "natural person"@en .
+fjs:human rdfs:subClassOf fjs:omnivore .
+fjs:omnivore a rdfs:Class .
+fjs:omnivore rdfs:label "omnivore"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Indian_Rebellion> a fjs:war .
+fjs:war  rdfs:label "war"@en .
+fjs:war  a rdfs:Class .
+fjs:war  rdfs:seeAlso <http://www.wikidata.org/entity/Q198> .
+fjs:war rdfs:subClassOf fjs:armed_conflict .
+fjs:armed_conflict a rdfs:Class .
+fjs:armed_conflict rdfs:label "armed conflict"@en .
+fjs:war rdfs:subClassOf fjs:social_issue .
+fjs:social_issue a rdfs:Class .
+fjs:social_issue rdfs:label "social issue"@en .
+fjs:war rdfs:subClassOf fjs:occurrence .
+fjs:occurrence a rdfs:Class .
+fjs:occurrence rdfs:label "occurrence"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/size> a fjs:partial_order .
+fjs:partial_order  rdfs:label "partial order"@en .
+fjs:partial_order  a rdfs:Class .
+fjs:partial_order  rdfs:seeAlso <http://www.wikidata.org/entity/Q1069998> .
+fjs:partial_order rdfs:subClassOf fjs:preorder .
+fjs:preorder a rdfs:Class .
+fjs:preorder rdfs:label "preorder"@en .
+fjs:partial_order rdfs:subClassOf fjs:antisymmetric_relation .
+fjs:antisymmetric_relation a rdfs:Class .
+fjs:antisymmetric_relation rdfs:label "antisymmetric relation"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/sunshade>  rdfs:subClassOf fjs:umbrella .
+fjs:umbrella a rdfs:Class .
+fjs:umbrella rdfs:label "umbrella"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/sunshade>  rdfs:subClassOf fjs:costume_accessory .
+fjs:costume_accessory a rdfs:Class .
+fjs:costume_accessory rdfs:label "costume accessory"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Henry> a fjs:male_given_name .
+fjs:male_given_name  rdfs:label "male given name"@en .
+fjs:male_given_name  a rdfs:Class .
+fjs:male_given_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q12308941> .
+fjs:male_given_name rdfs:subClassOf fjs:given_name .
+fjs:given_name a rdfs:Class .
+fjs:given_name rdfs:label "given name"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/weapon>  rdfs:subClassOf fjs:tool .
+fjs:tool a rdfs:Class .
+fjs:tool rdfs:label "tool"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/weapon>  rdfs:subClassOf fjs:military_equipment .
+fjs:military_equipment a rdfs:Class .
+fjs:military_equipment rdfs:label "military equipment"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/performance> a fjs:academic_major .
+fjs:academic_major  rdfs:label "academic major"@en .
+fjs:academic_major  a rdfs:Class .
+fjs:academic_major  rdfs:seeAlso <http://www.wikidata.org/entity/Q4671286> .
+fjs:academic_major rdfs:subClassOf fjs:academic_discipline .
+fjs:academic_discipline a rdfs:Class .
+fjs:academic_discipline rdfs:label "academic discipline"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/army> a fjs:military_academy .
+fjs:military_academy  rdfs:label "military academy"@en .
+fjs:military_academy  a rdfs:Class .
+fjs:military_academy  rdfs:seeAlso <http://www.wikidata.org/entity/Q917182> .
+fjs:military_academy rdfs:subClassOf fjs:military_school .
+fjs:military_school a rdfs:Class .
+fjs:military_school rdfs:label "military school"@en .
+fjs:military_academy rdfs:subClassOf fjs:academy .
+fjs:academy a rdfs:Class .
+fjs:academy rdfs:label "academy"@en .
+fjs:military_academy rdfs:subClassOf fjs:higher_education_institution .
+fjs:higher_education_institution a rdfs:Class .
+fjs:higher_education_institution rdfs:label "higher education institution"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/preface>  rdfs:subClassOf fjs:prologue .
+fjs:prologue a rdfs:Class .
+fjs:prologue rdfs:label "prologue"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Old_Testament> a fjs:literary_work .
+fjs:literary_work  rdfs:label "literary work"@en .
+fjs:literary_work  a rdfs:Class .
+fjs:literary_work  rdfs:seeAlso <http://www.wikidata.org/entity/Q7725634> .
+fjs:literary_work rdfs:subClassOf fjs:creative_work .
+fjs:creative_work a rdfs:Class .
+fjs:creative_work rdfs:label "creative work"@en .
+fjs:literary_work rdfs:subClassOf fjs:text .
+fjs:text a rdfs:Class .
+fjs:text rdfs:label "text"@en .
+fjs:literary_work rdfs:subClassOf fjs:written_work .
+fjs:written_work a rdfs:Class .
+fjs:written_work rdfs:label "written work"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/tea>  rdfs:subClassOf fjs:infusion .
+fjs:infusion a rdfs:Class .
+fjs:infusion rdfs:label "infusion"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/tea>  rdfs:subClassOf fjs:hot_beverage .
+fjs:hot_beverage a rdfs:Class .
+fjs:hot_beverage rdfs:label "hot beverage"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/tea>  rdfs:subClassOf fjs:stimulant_foodstuff .
+fjs:stimulant_foodstuff a rdfs:Class .
+fjs:stimulant_foodstuff rdfs:label "stimulant foodstuff"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/tea>  rdfs:subClassOf fjs:tea .
+fjs:tea a rdfs:Class .
+fjs:tea rdfs:label "tea"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/tea>  rdfs:subClassOf fjs:non-alcoholic_beverage .
+fjs:non-alcoholic_beverage a rdfs:Class .
+fjs:non-alcoholic_beverage rdfs:label "non-alcoholic beverage"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/first_battalion> a fjs:video_game .
+fjs:video_game  rdfs:label "video game"@en .
+fjs:video_game  a rdfs:Class .
+fjs:video_game  rdfs:seeAlso <http://www.wikidata.org/entity/Q7889> .
+fjs:video_game rdfs:subClassOf fjs:electronic_game .
+fjs:electronic_game a rdfs:Class .
+fjs:electronic_game rdfs:label "electronic game"@en .
+fjs:video_game rdfs:subClassOf fjs:entertainment_software .
+fjs:entertainment_software a rdfs:Class .
+fjs:entertainment_software rdfs:label "entertainment software"@en .
+fjs:video_game rdfs:subClassOf fjs:creative_work .
+fjs:creative_work a rdfs:Class .
+fjs:creative_work rdfs:label "creative work"@en .
+fjs:video_game rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:video_game rdfs:subClassOf fjs:application .
+fjs:application a rdfs:Class .
+fjs:application rdfs:label "application"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/total_length> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Hair> a fjs:anatomical_structure .
+fjs:anatomical_structure  rdfs:label "anatomical structure"@en .
+fjs:anatomical_structure  a rdfs:Class .
+fjs:anatomical_structure  rdfs:seeAlso <http://www.wikidata.org/entity/Q4936952> .
+fjs:anatomical_structure rdfs:subClassOf fjs:biological_component .
+fjs:biological_component a rdfs:Class .
+fjs:biological_component rdfs:label "biological component"@en .
+fjs:anatomical_structure rdfs:subClassOf fjs:material_anatomical_entity .
+fjs:material_anatomical_entity a rdfs:Class .
+fjs:material_anatomical_entity rdfs:label "material anatomical entity"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/boy_scout> a fjs:Dahlia_cultivar .
+fjs:Dahlia_cultivar  rdfs:label "Dahlia cultivar"@en .
+fjs:Dahlia_cultivar  a rdfs:Class .
+fjs:Dahlia_cultivar  rdfs:seeAlso <http://www.wikidata.org/entity/Q21160573> .
+fjs:Dahlia_cultivar rdfs:subClassOf fjs:cultivar .
+fjs:cultivar a rdfs:Class .
+fjs:cultivar rdfs:label "cultivar"@en .
+fjs:Dahlia_cultivar rdfs:subClassOf fjs:Dahlia .
+fjs:Dahlia a rdfs:Class .
+fjs:Dahlia rdfs:label "Dahlia"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/3_inches> a fjs:musical_group .
+fjs:musical_group  rdfs:label "musical group"@en .
+fjs:musical_group  a rdfs:Class .
+fjs:musical_group  rdfs:seeAlso <http://www.wikidata.org/entity/Q215380> .
+fjs:musical_group rdfs:subClassOf fjs:musical_ensemble .
+fjs:musical_ensemble a rdfs:Class .
+fjs:musical_ensemble rdfs:label "musical ensemble"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/magic> a fjs:supernatural .
+fjs:supernatural  rdfs:label "supernatural"@en .
+fjs:supernatural  a rdfs:Class .
+fjs:supernatural  rdfs:seeAlso <http://www.wikidata.org/entity/Q80837> .
+fjs:supernatural rdfs:subClassOf fjs:paranormal_phenomenon .
+fjs:paranormal_phenomenon a rdfs:Class .
+fjs:paranormal_phenomenon rdfs:label "paranormal phenomenon"@en .
+fjs:supernatural rdfs:subClassOf fjs:supernaturalism .
+fjs:supernaturalism a rdfs:Class .
+fjs:supernaturalism rdfs:label "supernaturalism"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/getAhead> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Samuel> a fjs:male_given_name .
+fjs:male_given_name  rdfs:label "male given name"@en .
+fjs:male_given_name  a rdfs:Class .
+fjs:male_given_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q12308941> .
+fjs:male_given_name rdfs:subClassOf fjs:given_name .
+fjs:given_name a rdfs:Class .
+fjs:given_name rdfs:label "given name"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/postscript> a fjs:programming_language .
+fjs:programming_language  rdfs:label "programming language"@en .
+fjs:programming_language  a rdfs:Class .
+fjs:programming_language  rdfs:seeAlso <http://www.wikidata.org/entity/Q9143> .
+fjs:programming_language rdfs:subClassOf fjs:computer_language .
+fjs:computer_language a rdfs:Class .
+fjs:computer_language rdfs:label "computer language"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/motive>  rdfs:subClassOf fjs:emotion .
+fjs:emotion a rdfs:Class .
+fjs:emotion rdfs:label "emotion"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/motive>  rdfs:subClassOf fjs:reason .
+fjs:reason a rdfs:Class .
+fjs:reason rdfs:label "reason"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Indian_rupee> a fjs:currency .
+fjs:currency  rdfs:label "currency"@en .
+fjs:currency  a rdfs:Class .
+fjs:currency  rdfs:seeAlso <http://www.wikidata.org/entity/Q8142> .
+fjs:currency rdfs:subClassOf fjs:medium_of_exchange .
+fjs:medium_of_exchange a rdfs:Class .
+fjs:medium_of_exchange rdfs:label "medium of exchange"@en .
+fjs:currency rdfs:subClassOf fjs:unit_of_measurement .
+fjs:unit_of_measurement a rdfs:Class .
+fjs:unit_of_measurement rdfs:label "unit of measurement"@en .
+fjs:currency rdfs:subClassOf fjs:money .
+fjs:money a rdfs:Class .
+fjs:money rdfs:label "money"@en .
+fjs:currency rdfs:subClassOf fjs:null .
+fjs:null a rdfs:Class .
+fjs:null rdfs:label "null"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/agreeable> a fjs:sensation .
+fjs:sensation  rdfs:label "sensation"@en .
+fjs:sensation  a rdfs:Class .
+fjs:sensation  rdfs:seeAlso <http://www.wikidata.org/entity/Q3955369> .
+fjs:sensation rdfs:subClassOf fjs:detection .
+fjs:detection a rdfs:Class .
+fjs:detection rdfs:label "detection"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/many_times> a fjs:extended_play .
+fjs:extended_play  rdfs:label "extended play"@en .
+fjs:extended_play  a rdfs:Class .
+fjs:extended_play  rdfs:seeAlso <http://www.wikidata.org/entity/Q169930> .
+fjs:extended_play rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:extended_play rdfs:subClassOf fjs:type_of_manufactured_good .
+fjs:type_of_manufactured_good a rdfs:Class .
+fjs:type_of_manufactured_good rdfs:label "type of manufactured good"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/atonement> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/iron_fence> a fjs:drawing .
+fjs:drawing  rdfs:label "drawing"@en .
+fjs:drawing  a rdfs:Class .
+fjs:drawing  rdfs:seeAlso <http://www.wikidata.org/entity/Q93184> .
+fjs:drawing rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:drawing rdfs:subClassOf fjs:communication_medium .
+fjs:communication_medium a rdfs:Class .
+fjs:communication_medium rdfs:label "communication medium"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/house_of_Henry> a fjs:building .
+fjs:building  rdfs:label "building"@en .
+fjs:building  a rdfs:Class .
+fjs:building  rdfs:seeAlso <http://www.wikidata.org/entity/Q41176> .
+fjs:building rdfs:subClassOf fjs:architectural_structure .
+fjs:architectural_structure a rdfs:Class .
+fjs:architectural_structure rdfs:label "architectural structure"@en .
+fjs:building rdfs:subClassOf fjs:facility .
+fjs:facility a rdfs:Class .
+fjs:facility rdfs:label "facility"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/stride> a fjs:music_genre .
+fjs:music_genre  rdfs:label "music genre"@en .
+fjs:music_genre  a rdfs:Class .
+fjs:music_genre  rdfs:seeAlso <http://www.wikidata.org/entity/Q188451> .
+fjs:music_genre rdfs:subClassOf fjs:art_genre .
+fjs:art_genre a rdfs:Class .
+fjs:art_genre rdfs:label "art genre"@en .
+fjs:music_genre rdfs:subClassOf fjs:aspect_of_music .
+fjs:aspect_of_music a rdfs:Class .
+fjs:aspect_of_music rdfs:label "aspect of music"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/common_sense> a fjs:human .
+fjs:human  rdfs:label "human"@en .
+fjs:human  a rdfs:Class .
+fjs:human  rdfs:seeAlso <http://www.wikidata.org/entity/Q5> .
+fjs:human rdfs:subClassOf fjs:person .
+fjs:person a rdfs:Class .
+fjs:person rdfs:label "person"@en .
+fjs:human rdfs:subClassOf fjs:natural_person .
+fjs:natural_person a rdfs:Class .
+fjs:natural_person rdfs:label "natural person"@en .
+fjs:human rdfs:subClassOf fjs:omnivore .
+fjs:omnivore a rdfs:Class .
+fjs:omnivore rdfs:label "omnivore"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/important_event> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/in_front> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/dining_room>  rdfs:subClassOf fjs:room .
+fjs:room a rdfs:Class .
+fjs:room rdfs:label "room"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/box>  rdfs:subClassOf fjs:artificial_physical_object .
+fjs:artificial_physical_object a rdfs:Class .
+fjs:artificial_physical_object rdfs:label "artificial physical object"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/box>  rdfs:subClassOf fjs:tool .
+fjs:tool a rdfs:Class .
+fjs:tool rdfs:label "tool"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/box>  rdfs:subClassOf fjs:storage .
+fjs:storage a rdfs:Class .
+fjs:storage rdfs:label "storage"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/owner> a fjs:occupation .
+fjs:occupation  rdfs:label "occupation"@en .
+fjs:occupation  a rdfs:Class .
+fjs:occupation  rdfs:seeAlso <http://www.wikidata.org/entity/Q12737077> .
+fjs:occupation rdfs:subClassOf fjs:human_activity .
+fjs:human_activity a rdfs:Class .
+fjs:human_activity rdfs:label "human activity"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/secret> a fjs:relative_quality .
+fjs:relative_quality  rdfs:label "relative quality"@en .
+fjs:relative_quality  a rdfs:Class .
+fjs:relative_quality  rdfs:seeAlso <http://www.wikidata.org/entity/Q100195948> .
+fjs:relative_quality rdfs:subClassOf fjs:quality .
+fjs:quality a rdfs:Class .
+fjs:quality rdfs:label "quality"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/slave> a fjs:social_class .
+fjs:social_class  rdfs:label "social class"@en .
+fjs:social_class  a rdfs:Class .
+fjs:social_class  rdfs:seeAlso <http://www.wikidata.org/entity/Q187588> .
+fjs:social_class rdfs:subClassOf fjs:social_group .
+fjs:social_group a rdfs:Class .
+fjs:social_group rdfs:label "social group"@en .
+fjs:social_class rdfs:subClassOf fjs:social_stratification .
+fjs:social_stratification a rdfs:Class .
+fjs:social_stratification rdfs:label "social stratification"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/middle-aged_couple> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/crime>  rdfs:subClassOf fjs:violation_of_law .
+fjs:violation_of_law a rdfs:Class .
+fjs:violation_of_law rdfs:label "violation of law"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/crime>  rdfs:subClassOf fjs:offense .
+fjs:offense a rdfs:Class .
+fjs:offense rdfs:label "offense"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/crime>  rdfs:subClassOf fjs:social_issue .
+fjs:social_issue a rdfs:Class .
+fjs:social_issue rdfs:label "social issue"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/crime>  rdfs:subClassOf fjs:statutory_law .
+fjs:statutory_law a rdfs:Class .
+fjs:statutory_law rdfs:label "statutory law"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/cage>  rdfs:subClassOf fjs:container .
+fjs:container a rdfs:Class .
+fjs:container rdfs:label "container"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/cage>  rdfs:subClassOf fjs:artificial_animal_shelter .
+fjs:artificial_animal_shelter a rdfs:Class .
+fjs:artificial_animal_shelter rdfs:label "artificial animal shelter"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/usually> a fjs:term .
+fjs:term  rdfs:label "term"@en .
+fjs:term  a rdfs:Class .
+fjs:term  rdfs:seeAlso <http://www.wikidata.org/entity/Q1969448> .
+fjs:term rdfs:subClassOf fjs:concept .
+fjs:concept a rdfs:Class .
+fjs:concept rdfs:label "concept"@en .
+fjs:term rdfs:subClassOf fjs:lexical_item .
+fjs:lexical_item a rdfs:Class .
+fjs:lexical_item rdfs:label "lexical item"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/short_leg> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/magician> a fjs:profession .
+fjs:profession  rdfs:label "profession"@en .
+fjs:profession  a rdfs:Class .
+fjs:profession  rdfs:seeAlso <http://www.wikidata.org/entity/Q28640> .
+fjs:profession rdfs:subClassOf fjs:job .
+fjs:job a rdfs:Class .
+fjs:job rdfs:label "job"@en .
+fjs:profession rdfs:subClassOf fjs:occupation .
+fjs:occupation a rdfs:Class .
+fjs:occupation rdfs:label "occupation"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/entertainer> a fjs:profession .
+fjs:profession  rdfs:label "profession"@en .
+fjs:profession  a rdfs:Class .
+fjs:profession  rdfs:seeAlso <http://www.wikidata.org/entity/Q28640> .
+fjs:profession rdfs:subClassOf fjs:job .
+fjs:job a rdfs:Class .
+fjs:job rdfs:label "job"@en .
+fjs:profession rdfs:subClassOf fjs:occupation .
+fjs:occupation a rdfs:Class .
+fjs:occupation rdfs:label "occupation"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/whole_body> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/young_woman>  rdfs:subClassOf fjs:teenager .
+fjs:teenager a rdfs:Class .
+fjs:teenager rdfs:label "teenager"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/young_woman>  rdfs:subClassOf fjs:woman .
+fjs:woman a rdfs:Class .
+fjs:woman rdfs:label "woman"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/wrinkle>  rdfs:subClassOf fjs:wrinkle .
+fjs:wrinkle a rdfs:Class .
+fjs:wrinkle rdfs:label "wrinkle"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/eye> a fjs:anatomical_structure .
+fjs:anatomical_structure  rdfs:label "anatomical structure"@en .
+fjs:anatomical_structure  a rdfs:Class .
+fjs:anatomical_structure  rdfs:seeAlso <http://www.wikidata.org/entity/Q4936952> .
+fjs:anatomical_structure rdfs:subClassOf fjs:biological_component .
+fjs:biological_component a rdfs:Class .
+fjs:biological_component rdfs:label "biological component"@en .
+fjs:anatomical_structure rdfs:subClassOf fjs:material_anatomical_entity .
+fjs:material_anatomical_entity a rdfs:Class .
+fjs:material_anatomical_entity rdfs:label "material anatomical entity"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/progress> a fjs:property .
+fjs:property  rdfs:label "property"@en .
+fjs:property  a rdfs:Class .
+fjs:property  rdfs:seeAlso <http://www.wikidata.org/entity/Q937228> .
+fjs:property rdfs:subClassOf fjs:entity .
+fjs:entity a rdfs:Class .
+fjs:entity rdfs:label "entity"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/witness>  rdfs:subClassOf fjs:person_linked_to_the_law .
+fjs:person_linked_to_the_law a rdfs:Class .
+fjs:person_linked_to_the_law rdfs:label "person linked to the law"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/the_large_glass> a fjs:sculpture .
+fjs:sculpture  rdfs:label "sculpture"@en .
+fjs:sculpture  a rdfs:Class .
+fjs:sculpture  rdfs:seeAlso <http://www.wikidata.org/entity/Q860861> .
+fjs:sculpture rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:sculpture rdfs:subClassOf fjs:three-dimensional_object .
+fjs:three-dimensional_object a rdfs:Class .
+fjs:three-dimensional_object rdfs:label "three-dimensional object"@en .
+fjs:sculpture rdfs:subClassOf fjs:small_monument .
+fjs:small_monument a rdfs:Class .
+fjs:small_monument rdfs:label "small monument"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/cause> a fjs:role .
+fjs:role  rdfs:label "role"@en .
+fjs:role  a rdfs:Class .
+fjs:role  rdfs:seeAlso <http://www.wikidata.org/entity/Q4897819> .
+fjs:role rdfs:subClassOf fjs:entity .
+fjs:entity a rdfs:Class .
+fjs:entity rdfs:label "entity"@en .
+fjs:role rdfs:subClassOf fjs:quality .
+fjs:quality a rdfs:Class .
+fjs:quality rdfs:label "quality"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/weasel> a fjs:taxon .
+fjs:taxon  rdfs:label "taxon"@en .
+fjs:taxon  a rdfs:Class .
+fjs:taxon  rdfs:seeAlso <http://www.wikidata.org/entity/Q16521> .
+fjs:taxon rdfs:subClassOf fjs:living_organism_class .
+fjs:living_organism_class a rdfs:Class .
+fjs:living_organism_class rdfs:label "living organism class"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/extreme> a fjs:musical_group .
+fjs:musical_group  rdfs:label "musical group"@en .
+fjs:musical_group  a rdfs:Class .
+fjs:musical_group  rdfs:seeAlso <http://www.wikidata.org/entity/Q215380> .
+fjs:musical_group rdfs:subClassOf fjs:musical_ensemble .
+fjs:musical_ensemble a rdfs:Class .
+fjs:musical_ensemble rdfs:label "musical ensemble"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/episode>  rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/long_claws> a fjs:village .
+fjs:village  rdfs:label "village"@en .
+fjs:village  a rdfs:Class .
+fjs:village  rdfs:seeAlso <http://www.wikidata.org/entity/Q532> .
+fjs:village rdfs:subClassOf fjs:rural_settlement .
+fjs:rural_settlement a rdfs:Class .
+fjs:rural_settlement rdfs:label "rural settlement"@en .
+fjs:village rdfs:subClassOf fjs:rural_area .
+fjs:rural_area a rdfs:Class .
+fjs:rural_area rdfs:label "rural area"@en .
+fjs:village rdfs:subClassOf fjs:human_settlement .
+fjs:human_settlement a rdfs:Class .
+fjs:human_settlement rdfs:label "human settlement"@en .
+fjs:village rdfs:subClassOf fjs:community .
+fjs:community a rdfs:Class .
+fjs:community rdfs:label "community"@en .
+fjs:village rdfs:subClassOf fjs:locality .
+fjs:locality a rdfs:Class .
+fjs:locality rdfs:label "locality"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Rasheen> a fjs:forest .
+fjs:forest  rdfs:label "forest"@en .
+fjs:forest  a rdfs:Class .
+fjs:forest  rdfs:seeAlso <http://www.wikidata.org/entity/Q4421> .
+fjs:forest rdfs:subClassOf fjs:ecosystem .
+fjs:ecosystem a rdfs:Class .
+fjs:ecosystem rdfs:label "ecosystem"@en .
+fjs:forest rdfs:subClassOf fjs:vegetation_zone .
+fjs:vegetation_zone a rdfs:Class .
+fjs:vegetation_zone rdfs:label "vegetation zone"@en .
+fjs:forest rdfs:subClassOf fjs:biome .
+fjs:biome a rdfs:Class .
+fjs:biome rdfs:label "biome"@en .
+fjs:forest rdfs:subClassOf fjs:biocoenosis .
+fjs:biocoenosis a rdfs:Class .
+fjs:biocoenosis rdfs:label "biocoenosis"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/mountain>  rdfs:subClassOf fjs:landform .
+fjs:landform a rdfs:Class .
+fjs:landform rdfs:label "landform"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/mountain>  rdfs:subClassOf fjs:geographic_location .
+fjs:geographic_location a rdfs:Class .
+fjs:geographic_location rdfs:label "geographic location"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/rarely> a fjs:value .
+fjs:value  rdfs:label "value"@en .
+fjs:value  a rdfs:Class .
+fjs:value  rdfs:seeAlso <http://www.wikidata.org/entity/Q19798642> .
+fjs:value rdfs:subClassOf fjs:Wikibase_data_model_element .
+fjs:Wikibase_data_model_element a rdfs:Class .
+fjs:Wikibase_data_model_element rdfs:label "Wikibase data model element"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/ermine> a fjs:taxon .
+fjs:taxon  rdfs:label "taxon"@en .
+fjs:taxon  a rdfs:Class .
+fjs:taxon  rdfs:seeAlso <http://www.wikidata.org/entity/Q16521> .
+fjs:taxon rdfs:subClassOf fjs:living_organism_class .
+fjs:living_organism_class a rdfs:Class .
+fjs:living_organism_class rdfs:label "living organism class"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/former_sergeant> a fjs:architectural_structure .
+fjs:architectural_structure  rdfs:label "architectural structure"@en .
+fjs:architectural_structure  a rdfs:Class .
+fjs:architectural_structure  rdfs:seeAlso <http://www.wikidata.org/entity/Q811979> .
+fjs:architectural_structure rdfs:subClassOf fjs:artificial_physical_structure .
+fjs:artificial_physical_structure a rdfs:Class .
+fjs:artificial_physical_structure rdfs:label "artificial physical structure"@en .
+fjs:architectural_structure rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+fjs:architectural_structure rdfs:subClassOf fjs:geographical_object .
+fjs:geographical_object a rdfs:Class .
+fjs:geographical_object rdfs:label "geographical object"@en .
+fjs:architectural_structure rdfs:subClassOf fjs:human-made_geographic_feature .
+fjs:human-made_geographic_feature a rdfs:Class .
+fjs:human-made_geographic_feature rdfs:label "human-made geographic feature"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/Darjeeling> a fjs:Municipality_of_West_Bengal .
+fjs:Municipality_of_West_Bengal  rdfs:label "Municipality of West Bengal"@en .
+fjs:Municipality_of_West_Bengal  a rdfs:Class .
+fjs:Municipality_of_West_Bengal  rdfs:seeAlso <http://www.wikidata.org/entity/Q18918041> .
+fjs:Municipality_of_West_Bengal rdfs:subClassOf fjs:municipality .
+fjs:municipality a rdfs:Class .
+fjs:municipality rdfs:label "municipality"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/back> a fjs:cardinal_body_part .
+fjs:cardinal_body_part  rdfs:label "cardinal body part"@en .
+fjs:cardinal_body_part  a rdfs:Class .
+fjs:cardinal_body_part  rdfs:seeAlso <http://www.wikidata.org/entity/Q17781690> .
+fjs:cardinal_body_part rdfs:subClassOf fjs:anatomical_structure .
+fjs:anatomical_structure a rdfs:Class .
+fjs:anatomical_structure rdfs:label "anatomical structure"@en .
+fjs:cardinal_body_part rdfs:subClassOf fjs:multicellular_structure .
+fjs:multicellular_structure a rdfs:Class .
+fjs:multicellular_structure rdfs:label "multicellular structure"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/strange_word> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/information>  rdfs:subClassOf fjs:abstract_object .
+fjs:abstract_object a rdfs:Class .
+fjs:abstract_object rdfs:label "abstract object"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/dwellers> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/CrookedMan/one> a fjs:natural_number .
+fjs:natural_number  rdfs:label "natural number"@en .
+fjs:natural_number  a rdfs:Class .
+fjs:natural_number  rdfs:seeAlso <http://www.wikidata.org/entity/Q21199> .
+fjs:natural_number rdfs:subClassOf fjs:non-negative_integer .
+fjs:non-negative_integer a rdfs:Class .
+fjs:non-negative_integer rdfs:label "non-negative integer"@en .
+fjs:natural_number rdfs:subClassOf fjs:rational_number .
+fjs:rational_number a rdfs:Class .
+fjs:rational_number rdfs:label "rational number"@en .

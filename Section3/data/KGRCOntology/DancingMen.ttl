@@ -1,0 +1,939 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fjs: <http://challenge2021.labs.fujitsu.com/ontology/kgc.owl#> . 
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/end>  rdfs:subClassOf fjs:part_and_whole .
+fjs:part_and_whole a rdfs:Class .
+fjs:part_and_whole rdfs:label "part and whole"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/end>  rdfs:subClassOf fjs:extremity .
+fjs:extremity a rdfs:Class .
+fjs:extremity rdfs:label "extremity"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/end>  rdfs:subClassOf fjs:location .
+fjs:location a rdfs:Class .
+fjs:location rdfs:label "location"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/suicide> a fjs:manner_of_death .
+fjs:manner_of_death  rdfs:label "manner of death"@en .
+fjs:manner_of_death  a rdfs:Class .
+fjs:manner_of_death  rdfs:seeAlso <http://www.wikidata.org/entity/Q2438541> .
+fjs:manner_of_death rdfs:subClassOf fjs:cause_of_death .
+fjs:cause_of_death a rdfs:Class .
+fjs:cause_of_death rdfs:label "cause of death"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/smoke>  rdfs:subClassOf fjs:aerosol .
+fjs:aerosol a rdfs:Class .
+fjs:aerosol rdfs:label "aerosol"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/smoke>  rdfs:subClassOf fjs:lithometeor .
+fjs:lithometeor a rdfs:Class .
+fjs:lithometeor rdfs:label "lithometeor"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/smoke>  rdfs:subClassOf fjs:particulates .
+fjs:particulates a rdfs:Class .
+fjs:particulates rdfs:label "particulates"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/smoke>  rdfs:subClassOf fjs:combustion_product .
+fjs:combustion_product a rdfs:Class .
+fjs:combustion_product rdfs:label "combustion product"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/something> a fjs:variable-order_class .
+fjs:variable-order_class  rdfs:label "variable-order class"@en .
+fjs:variable-order_class  a rdfs:Class .
+fjs:variable-order_class  rdfs:seeAlso <http://www.wikidata.org/entity/Q23958852> .
+fjs:variable-order_class rdfs:subClassOf fjs:(meta)class .
+fjs:(meta)class a rdfs:Class .
+fjs:(meta)class rdfs:label "(meta)class"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/door>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/door>  rdfs:subClassOf fjs:device .
+fjs:device a rdfs:Class .
+fjs:device rdfs:label "device"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/door>  rdfs:subClassOf fjs:obstacle .
+fjs:obstacle a rdfs:Class .
+fjs:obstacle rdfs:label "obstacle"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/police>  rdfs:subClassOf fjs:law_enforcement_agency .
+fjs:law_enforcement_agency a rdfs:Class .
+fjs:law_enforcement_agency rdfs:label "law enforcement agency"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/police>  rdfs:subClassOf fjs:occupation .
+fjs:occupation a rdfs:Class .
+fjs:occupation rdfs:label "occupation"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Door>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Door>  rdfs:subClassOf fjs:device .
+fjs:device a rdfs:Class .
+fjs:device rdfs:label "device"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Door>  rdfs:subClassOf fjs:obstacle .
+fjs:obstacle a rdfs:Class .
+fjs:obstacle rdfs:label "obstacle"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/face> a fjs:anatomical_structure .
+fjs:anatomical_structure  rdfs:label "anatomical structure"@en .
+fjs:anatomical_structure  a rdfs:Class .
+fjs:anatomical_structure  rdfs:seeAlso <http://www.wikidata.org/entity/Q4936952> .
+fjs:anatomical_structure rdfs:subClassOf fjs:biological_component .
+fjs:biological_component a rdfs:Class .
+fjs:biological_component rdfs:label "biological component"@en .
+fjs:anatomical_structure rdfs:subClassOf fjs:material_anatomical_entity .
+fjs:material_anatomical_entity a rdfs:Class .
+fjs:material_anatomical_entity rdfs:label "material anatomical entity"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/father> a fjs:kinship .
+fjs:kinship  rdfs:label "kinship"@en .
+fjs:kinship  a rdfs:Class .
+fjs:kinship  rdfs:seeAlso <http://www.wikidata.org/entity/Q171318> .
+fjs:kinship rdfs:subClassOf fjs:social_group .
+fjs:social_group a rdfs:Class .
+fjs:social_group rdfs:label "social group"@en .
+fjs:kinship rdfs:subClassOf fjs:social_relation .
+fjs:social_relation a rdfs:Class .
+fjs:social_relation rdfs:label "social relation"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/fireplace> a fjs:technological_component .
+fjs:technological_component  rdfs:label "technological component"@en .
+fjs:technological_component  a rdfs:Class .
+fjs:technological_component  rdfs:seeAlso <http://www.wikidata.org/entity/Q811909> .
+fjs:technological_component rdfs:subClassOf fjs:component .
+fjs:component a rdfs:Class .
+fjs:component rdfs:label "component"@en .
+fjs:technological_component rdfs:subClassOf fjs:artificial_entity .
+fjs:artificial_entity a rdfs:Class .
+fjs:artificial_entity rdfs:label "artificial entity"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/window>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/money>  rdfs:subClassOf fjs:legal_tender .
+fjs:legal_tender a rdfs:Class .
+fjs:legal_tender rdfs:label "legal tender"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/money>  rdfs:subClassOf fjs:nominal_good .
+fjs:nominal_good a rdfs:Class .
+fjs:nominal_good rdfs:label "nominal good"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/money>  rdfs:subClassOf fjs:standard_of_deferred_payment .
+fjs:standard_of_deferred_payment a rdfs:Class .
+fjs:standard_of_deferred_payment rdfs:label "standard of deferred payment"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/desk>  rdfs:subClassOf fjs:table .
+fjs:table a rdfs:Class .
+fjs:table rdfs:label "table"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/desk>  rdfs:subClassOf fjs:furniture .
+fjs:furniture a rdfs:Class .
+fjs:furniture rdfs:label "furniture"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/this_morning> a fjs:television_series .
+fjs:television_series  rdfs:label "television series"@en .
+fjs:television_series  a rdfs:Class .
+fjs:television_series  rdfs:seeAlso <http://www.wikidata.org/entity/Q5398426> .
+fjs:television_series rdfs:subClassOf fjs:television_program .
+fjs:television_program a rdfs:Class .
+fjs:television_program rdfs:label "television program"@en .
+fjs:television_series rdfs:subClassOf fjs:series_of_creative_works .
+fjs:series_of_creative_works a rdfs:Class .
+fjs:series_of_creative_works rdfs:label "series of creative works"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/tube>  rdfs:subClassOf fjs:lamp .
+fjs:lamp a rdfs:Class .
+fjs:lamp rdfs:label "lamp"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/tube>  rdfs:subClassOf fjs:nonbiological_component .
+fjs:nonbiological_component a rdfs:Class .
+fjs:nonbiological_component rdfs:label "nonbiological component"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/tube>  rdfs:subClassOf fjs:electric_light .
+fjs:electric_light a rdfs:Class .
+fjs:electric_light rdfs:label "electric light"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/storage>  rdfs:subClassOf fjs:recording_medium .
+fjs:recording_medium a rdfs:Class .
+fjs:recording_medium rdfs:label "recording medium"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/storage>  rdfs:subClassOf fjs:machine-readable_medium .
+fjs:machine-readable_medium a rdfs:Class .
+fjs:machine-readable_medium rdfs:label "machine-readable medium"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/storage>  rdfs:subClassOf fjs:storage .
+fjs:storage a rdfs:Class .
+fjs:storage rdfs:label "storage"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/storage>  rdfs:subClassOf fjs:computer_hardware .
+fjs:computer_hardware a rdfs:Class .
+fjs:computer_hardware rdfs:label "computer hardware"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Persuasion>  rdfs:subClassOf fjs:communication .
+fjs:communication a rdfs:Class .
+fjs:communication rdfs:label "communication"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Persuasion>  rdfs:subClassOf fjs:social_influence .
+fjs:social_influence a rdfs:Class .
+fjs:social_influence rdfs:label "social influence"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Shadow>  rdfs:subClassOf fjs:zone .
+fjs:zone a rdfs:Class .
+fjs:zone rdfs:label "zone"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Shadow>  rdfs:subClassOf fjs:physical_phenomenon .
+fjs:physical_phenomenon a rdfs:Class .
+fjs:physical_phenomenon rdfs:label "physical phenomenon"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Shadow>  rdfs:subClassOf fjs:projection .
+fjs:projection a rdfs:Class .
+fjs:projection rdfs:label "projection"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Shadow>  rdfs:subClassOf fjs:absence .
+fjs:absence a rdfs:Class .
+fjs:absence rdfs:label "absence"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/June> a fjs:calendar_month .
+fjs:calendar_month  rdfs:label "calendar month"@en .
+fjs:calendar_month  a rdfs:Class .
+fjs:calendar_month  rdfs:seeAlso <http://www.wikidata.org/entity/Q47018901> .
+fjs:calendar_month rdfs:subClassOf fjs:month .
+fjs:month a rdfs:Class .
+fjs:month rdfs:label "month"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Sentence_I> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Sentence_H> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/gunfire> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Say> a fjs:human .
+fjs:human  rdfs:label "human"@en .
+fjs:human  a rdfs:Class .
+fjs:human  rdfs:seeAlso <http://www.wikidata.org/entity/Q5> .
+fjs:human rdfs:subClassOf fjs:person .
+fjs:person a rdfs:Class .
+fjs:person rdfs:label "person"@en .
+fjs:human rdfs:subClassOf fjs:natural_person .
+fjs:natural_person a rdfs:Class .
+fjs:natural_person rdfs:label "natural person"@en .
+fjs:human rdfs:subClassOf fjs:omnivore .
+fjs:omnivore a rdfs:Class .
+fjs:omnivore rdfs:label "omnivore"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Meaning>  rdfs:subClassOf fjs:description .
+fjs:description a rdfs:Class .
+fjs:description rdfs:label "description"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Meaning>  rdfs:subClassOf fjs:statement .
+fjs:statement a rdfs:Class .
+fjs:statement rdfs:label "statement"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Window_frame> a fjs:window_frames_and_window_frame_components .
+fjs:window_frames_and_window_frame_components  rdfs:label "window frames and window frame components"@en .
+fjs:window_frames_and_window_frame_components  a rdfs:Class .
+fjs:window_frames_and_window_frame_components  rdfs:seeAlso <http://www.wikidata.org/entity/Q56147859> .
+fjs:window_frames_and_window_frame_components rdfs:subClassOf fjs:building_division .
+fjs:building_division a rdfs:Class .
+fjs:building_division rdfs:label "building division"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/four_times> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/first_position> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Sundial>  rdfs:subClassOf fjs:timepiece .
+fjs:timepiece a rdfs:Class .
+fjs:timepiece rdfs:label "timepiece"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Sundial>  rdfs:subClassOf fjs:astronomical_instrument .
+fjs:astronomical_instrument a rdfs:Class .
+fjs:astronomical_instrument rdfs:label "astronomical instrument"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Sundial>  rdfs:subClassOf fjs:human-made_geographic_feature .
+fjs:human-made_geographic_feature a rdfs:Class .
+fjs:human-made_geographic_feature rdfs:label "human-made geographic feature"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Sundial>  rdfs:subClassOf fjs:small_monument .
+fjs:small_monument a rdfs:Class .
+fjs:small_monument rdfs:label "small monument"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Know>  rdfs:subClassOf fjs:computer_science .
+fjs:computer_science a rdfs:Class .
+fjs:computer_science rdfs:label "computer science"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Know>  rdfs:subClassOf fjs:statistics .
+fjs:statistics a rdfs:Class .
+fjs:statistics rdfs:label "statistics"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Know>  rdfs:subClassOf fjs:discovery .
+fjs:discovery a rdfs:Class .
+fjs:discovery rdfs:label "discovery"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Know>  rdfs:subClassOf fjs:analysis .
+fjs:analysis a rdfs:Class .
+fjs:analysis rdfs:label "analysis"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Know>  rdfs:subClassOf fjs:text_and_data_mining .
+fjs:text_and_data_mining a rdfs:Class .
+fjs:text_and_data_mining rdfs:label "text and data mining"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/heart> a fjs:organ_type .
+fjs:organ_type  rdfs:label "organ type"@en .
+fjs:organ_type  a rdfs:Class .
+fjs:organ_type  rdfs:seeAlso <http://www.wikidata.org/entity/Q103812529> .
+fjs:organ_type rdfs:subClassOf fjs:anatomical_structure_type .
+fjs:anatomical_structure_type a rdfs:Class .
+fjs:anatomical_structure_type rdfs:label "anatomical structure type"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Desk>  rdfs:subClassOf fjs:table .
+fjs:table a rdfs:Class .
+fjs:table rdfs:label "table"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Desk>  rdfs:subClassOf fjs:furniture .
+fjs:furniture a rdfs:Class .
+fjs:furniture rdfs:label "furniture"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Bad_memories> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/handcuffs>  rdfs:subClassOf fjs:tool .
+fjs:tool a rdfs:Class .
+fjs:tool rdfs:label "tool"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/handcuffs>  rdfs:subClassOf fjs:physical_restraint .
+fjs:physical_restraint a rdfs:Class .
+fjs:physical_restraint rdfs:label "physical restraint"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/handcuffs>  rdfs:subClassOf fjs:law_enforcement_equipment .
+fjs:law_enforcement_equipment a rdfs:Class .
+fjs:law_enforcement_equipment rdfs:label "law enforcement equipment"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Board_2> a fjs:position .
+fjs:position  rdfs:label "position"@en .
+fjs:position  a rdfs:Class .
+fjs:position  rdfs:seeAlso <http://www.wikidata.org/entity/Q1781513> .
+fjs:position rdfs:subClassOf fjs:role .
+fjs:role a rdfs:Class .
+fjs:role rdfs:label "role"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Board_1> a fjs:position .
+fjs:position  rdfs:label "position"@en .
+fjs:position  a rdfs:Class .
+fjs:position  rdfs:seeAlso <http://www.wikidata.org/entity/Q1781513> .
+fjs:position rdfs:subClassOf fjs:role .
+fjs:role a rdfs:Class .
+fjs:role rdfs:label "role"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/pencil>  rdfs:subClassOf fjs:drawing_instrument .
+fjs:drawing_instrument a rdfs:Class .
+fjs:drawing_instrument rdfs:label "drawing instrument"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/pencil>  rdfs:subClassOf fjs:painting_material .
+fjs:painting_material a rdfs:Class .
+fjs:painting_material rdfs:label "painting material"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/pencil>  rdfs:subClassOf fjs:writing_implement .
+fjs:writing_implement a rdfs:Class .
+fjs:writing_implement rdfs:label "writing implement"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Glass_window> a fjs:leadlight .
+fjs:leadlight  rdfs:label "leadlight"@en .
+fjs:leadlight  a rdfs:Class .
+fjs:leadlight  rdfs:seeAlso <http://www.wikidata.org/entity/Q488094> .
+fjs:leadlight rdfs:subClassOf fjs:window .
+fjs:window a rdfs:Class .
+fjs:window rdfs:label "window"@en .
+fjs:leadlight rdfs:subClassOf fjs:stained_glass .
+fjs:stained_glass a rdfs:Class .
+fjs:stained_glass rdfs:label "stained glass"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Identity>  rdfs:subClassOf fjs:quality .
+fjs:quality a rdfs:Class .
+fjs:quality rdfs:label "quality"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Identity>  rdfs:subClassOf fjs:self-concept .
+fjs:self-concept a rdfs:Class .
+fjs:self-concept rdfs:label "self-concept"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/horse_boy> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/frame>  rdfs:subClassOf fjs:artificial_physical_object .
+fjs:artificial_physical_object a rdfs:Class .
+fjs:artificial_physical_object rdfs:label "artificial physical object"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/candles> a fjs:energy_storage .
+fjs:energy_storage  rdfs:label "energy storage"@en .
+fjs:energy_storage  a rdfs:Class .
+fjs:energy_storage  rdfs:seeAlso <http://www.wikidata.org/entity/Q837718> .
+fjs:energy_storage rdfs:subClassOf fjs:manufactured_good .
+fjs:manufactured_good a rdfs:Class .
+fjs:manufactured_good rdfs:label "manufactured good"@en .
+fjs:energy_storage rdfs:subClassOf fjs:goods .
+fjs:goods a rdfs:Class .
+fjs:goods rdfs:label "goods"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Hit> a fjs:university .
+fjs:university  rdfs:label "university"@en .
+fjs:university  a rdfs:Class .
+fjs:university  rdfs:seeAlso <http://www.wikidata.org/entity/Q3918> .
+fjs:university rdfs:subClassOf fjs:higher_education_institution .
+fjs:higher_education_institution a rdfs:Class .
+fjs:higher_education_institution rdfs:label "higher education institution"@en .
+fjs:university rdfs:subClassOf fjs:academic_institution .
+fjs:academic_institution a rdfs:Class .
+fjs:academic_institution rdfs:label "academic institution"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/casual_wear> a fjs:dress_code .
+fjs:dress_code  rdfs:label "dress code"@en .
+fjs:dress_code  a rdfs:Class .
+fjs:dress_code  rdfs:seeAlso <http://www.wikidata.org/entity/Q286300> .
+fjs:dress_code rdfs:subClassOf fjs:social_norm .
+fjs:social_norm a rdfs:Class .
+fjs:social_norm rdfs:label "social norm"@en .
+fjs:dress_code rdfs:subClassOf fjs:dress .
+fjs:dress a rdfs:Class .
+fjs:dress rdfs:label "dress"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/banknote> a fjs:collectible .
+fjs:collectible  rdfs:label "collectible"@en .
+fjs:collectible  a rdfs:Class .
+fjs:collectible  rdfs:seeAlso <http://www.wikidata.org/entity/Q2342494> .
+fjs:collectible rdfs:subClassOf fjs:object .
+fjs:object a rdfs:Class .
+fjs:object rdfs:label "object"@en .
+fjs:collectible rdfs:subClassOf fjs:physical_object .
+fjs:physical_object a rdfs:Class .
+fjs:physical_object rdfs:label "physical object"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Alphabet>  rdfs:subClassOf fjs:writing_system .
+fjs:writing_system a rdfs:Class .
+fjs:writing_system rdfs:label "writing system"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Alphabet>  rdfs:subClassOf fjs:set .
+fjs:set a rdfs:Class .
+fjs:set rdfs:label "set"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Alphabet>  rdfs:subClassOf fjs:segmental_writing_system .
+fjs:segmental_writing_system a rdfs:Class .
+fjs:segmental_writing_system rdfs:label "segmental writing system"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/three_characters> a fjs:painting .
+fjs:painting  rdfs:label "painting"@en .
+fjs:painting  a rdfs:Class .
+fjs:painting  rdfs:seeAlso <http://www.wikidata.org/entity/Q3305213> .
+fjs:painting rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/a_short_time> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Force>  rdfs:subClassOf fjs:contributing_factor .
+fjs:contributing_factor a rdfs:Class .
+fjs:contributing_factor rdfs:label "contributing factor"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Force>  rdfs:subClassOf fjs:ISQ_derived_quantity .
+fjs:ISQ_derived_quantity a rdfs:Class .
+fjs:ISQ_derived_quantity rdfs:label "ISQ derived quantity"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Force>  rdfs:subClassOf fjs:vector_quantity .
+fjs:vector_quantity a rdfs:Class .
+fjs:vector_quantity rdfs:label "vector quantity"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Force>  rdfs:subClassOf fjs:physical_quantity .
+fjs:physical_quantity a rdfs:Class .
+fjs:physical_quantity rdfs:label "physical quantity"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/investigation>  rdfs:subClassOf fjs:planned_process .
+fjs:planned_process a rdfs:Class .
+fjs:planned_process rdfs:label "planned process"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Bullet> a fjs:weapon_family .
+fjs:weapon_family  rdfs:label "weapon family"@en .
+fjs:weapon_family  a rdfs:Class .
+fjs:weapon_family  rdfs:seeAlso <http://www.wikidata.org/entity/Q15142889> .
+fjs:weapon_family rdfs:subClassOf fjs:class .
+fjs:class a rdfs:Class .
+fjs:class rdfs:label "class"@en .
+fjs:weapon_family rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/old_family> a fjs:collection .
+fjs:collection  rdfs:label "collection"@en .
+fjs:collection  a rdfs:Class .
+fjs:collection  rdfs:seeAlso <http://www.wikidata.org/entity/Q2668072> .
+fjs:collection rdfs:subClassOf fjs:artificial_entity .
+fjs:artificial_entity a rdfs:Class .
+fjs:artificial_entity rdfs:label "artificial entity"@en .
+fjs:collection rdfs:subClassOf fjs:group .
+fjs:group a rdfs:Class .
+fjs:group rdfs:label "group"@en .
+fjs:collection rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+fjs:collection rdfs:subClassOf fjs:physical_object .
+fjs:physical_object a rdfs:Class .
+fjs:physical_object rdfs:label "physical object"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Signs>  rdfs:subClassOf fjs:sign .
+fjs:sign a rdfs:Class .
+fjs:sign rdfs:label "sign"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Signs>  rdfs:subClassOf fjs:manifestation .
+fjs:manifestation a rdfs:Class .
+fjs:manifestation rdfs:label "manifestation"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Signs>  rdfs:subClassOf fjs:method .
+fjs:method a rdfs:Class .
+fjs:method rdfs:label "method"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Signs>  rdfs:subClassOf fjs:physical_object .
+fjs:physical_object a rdfs:Class .
+fjs:physical_object rdfs:label "physical object"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Window>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Moved> a fjs:key_event .
+fjs:key_event  rdfs:label "key event"@en .
+fjs:key_event  a rdfs:Class .
+fjs:key_event  rdfs:seeAlso <http://www.wikidata.org/entity/Q2245405> .
+fjs:key_event rdfs:subClassOf fjs:occurrence .
+fjs:occurrence a rdfs:Class .
+fjs:occurrence rdfs:label "occurrence"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Doll>  rdfs:subClassOf fjs:toy .
+fjs:toy a rdfs:Class .
+fjs:toy rdfs:label "toy"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Chalk>  rdfs:subClassOf fjs:limestone .
+fjs:limestone a rdfs:Class .
+fjs:limestone rdfs:label "limestone"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Chalk>  rdfs:subClassOf fjs:painting_material .
+fjs:painting_material a rdfs:Class .
+fjs:painting_material rdfs:label "painting material"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/bullets> a fjs:basketball_team .
+fjs:basketball_team  rdfs:label "basketball team"@en .
+fjs:basketball_team  a rdfs:Class .
+fjs:basketball_team  rdfs:seeAlso <http://www.wikidata.org/entity/Q13393265> .
+fjs:basketball_team rdfs:subClassOf fjs:sports_team .
+fjs:sports_team a rdfs:Class .
+fjs:sports_team rdfs:label "sports team"@en .
+fjs:basketball_team rdfs:subClassOf fjs:sports_club .
+fjs:sports_club a rdfs:Class .
+fjs:sports_club rdfs:label "sports club"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/evil>  rdfs:subClassOf fjs:immorality .
+fjs:immorality a rdfs:Class .
+fjs:immorality rdfs:label "immorality"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Message>  rdfs:subClassOf fjs:document .
+fjs:document a rdfs:Class .
+fjs:document rdfs:label "document"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Message>  rdfs:subClassOf fjs:personal_testimonial .
+fjs:personal_testimonial a rdfs:Class .
+fjs:personal_testimonial rdfs:label "personal testimonial"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Message>  rdfs:subClassOf fjs:message .
+fjs:message a rdfs:Class .
+fjs:message rdfs:label "message"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Message>  rdfs:subClassOf fjs:literary_work .
+fjs:literary_work a rdfs:Class .
+fjs:literary_work rdfs:label "literary work"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Handgun>  rdfs:subClassOf fjs:firearm .
+fjs:firearm a rdfs:Class .
+fjs:firearm rdfs:label "firearm"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Handgun>  rdfs:subClassOf fjs:side_arm .
+fjs:side_arm a rdfs:Class .
+fjs:side_arm rdfs:label "side arm"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Handgun>  rdfs:subClassOf fjs:short_gun .
+fjs:short_gun a rdfs:Class .
+fjs:short_gun rdfs:label "short gun"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Letter_Z> a fjs:print .
+fjs:print  rdfs:label "print"@en .
+fjs:print  a rdfs:Class .
+fjs:print  rdfs:seeAlso <http://www.wikidata.org/entity/Q11060274> .
+fjs:print rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:print rdfs:subClassOf fjs:work_with_multiple_executions .
+fjs:work_with_multiple_executions a rdfs:Class .
+fjs:work_with_multiple_executions rdfs:label "work with multiple executions"@en .
+fjs:print rdfs:subClassOf fjs:version,_edition,_or_translation .
+fjs:version,_edition,_or_translation a rdfs:Class .
+fjs:version,_edition,_or_translation rdfs:label "version, edition, or translation"@en .
+fjs:print rdfs:subClassOf fjs:copy .
+fjs:copy a rdfs:Class .
+fjs:copy rdfs:label "copy"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Letter_Y> a fjs:woodcut_print .
+fjs:woodcut_print  rdfs:label "woodcut print"@en .
+fjs:woodcut_print  a rdfs:Class .
+fjs:woodcut_print  rdfs:seeAlso <http://www.wikidata.org/entity/Q18219090> .
+fjs:woodcut_print rdfs:subClassOf fjs:engraving .
+fjs:engraving a rdfs:Class .
+fjs:engraving rdfs:label "engraving"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Exist>  rdfs:subClassOf fjs:quantifier .
+fjs:quantifier a rdfs:Class .
+fjs:quantifier rdfs:label "quantifier"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/handbag>  rdfs:subClassOf fjs:bag .
+fjs:bag a rdfs:Class .
+fjs:bag rdfs:label "bag"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/nightwear>  rdfs:subClassOf fjs:clothing .
+fjs:clothing a rdfs:Class .
+fjs:clothing rdfs:label "clothing"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/boss> a fjs:occupation .
+fjs:occupation  rdfs:label "occupation"@en .
+fjs:occupation  a rdfs:Class .
+fjs:occupation  rdfs:seeAlso <http://www.wikidata.org/entity/Q12737077> .
+fjs:occupation rdfs:subClassOf fjs:human_activity .
+fjs:human_activity a rdfs:Class .
+fjs:human_activity rdfs:label "human activity"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Smell>  rdfs:subClassOf fjs:physical_phenomenon .
+fjs:physical_phenomenon a rdfs:Class .
+fjs:physical_phenomenon rdfs:label "physical phenomenon"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/flag>  rdfs:subClassOf fjs:flag_or_coat_of_arms .
+fjs:flag_or_coat_of_arms a rdfs:Class .
+fjs:flag_or_coat_of_arms rdfs:label "flag or coat of arms"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/flag>  rdfs:subClassOf fjs:identifying_artifact .
+fjs:identifying_artifact a rdfs:Class .
+fjs:identifying_artifact rdfs:label "identifying artifact"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/flag>  rdfs:subClassOf fjs:banner .
+fjs:banner a rdfs:Class .
+fjs:banner rdfs:label "banner"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/character> a fjs:literary_element .
+fjs:literary_element  rdfs:label "literary element"@en .
+fjs:literary_element  a rdfs:Class .
+fjs:literary_element  rdfs:seeAlso <http://www.wikidata.org/entity/Q6647660> .
+fjs:literary_element rdfs:subClassOf fjs:part_and_whole .
+fjs:part_and_whole a rdfs:Class .
+fjs:part_and_whole rdfs:label "part and whole"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/dolls> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Send>  rdfs:subClassOf fjs:process .
+fjs:process a rdfs:Class .
+fjs:process rdfs:label "process"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/gown>  rdfs:subClassOf fjs:clothing .
+fjs:clothing a rdfs:Class .
+fjs:clothing rdfs:label "clothing"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> a fjs:musical_group .
+fjs:musical_group  rdfs:label "musical group"@en .
+fjs:musical_group  a rdfs:Class .
+fjs:musical_group  rdfs:seeAlso <http://www.wikidata.org/entity/Q215380> .
+fjs:musical_group rdfs:subClassOf fjs:musical_ensemble .
+fjs:musical_ensemble a rdfs:Class .
+fjs:musical_ensemble rdfs:label "musical ensemble"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Letter_L> a fjs:print .
+fjs:print  rdfs:label "print"@en .
+fjs:print  a rdfs:Class .
+fjs:print  rdfs:seeAlso <http://www.wikidata.org/entity/Q11060274> .
+fjs:print rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:print rdfs:subClassOf fjs:work_with_multiple_executions .
+fjs:work_with_multiple_executions a rdfs:Class .
+fjs:work_with_multiple_executions rdfs:label "work with multiple executions"@en .
+fjs:print rdfs:subClassOf fjs:version,_edition,_or_translation .
+fjs:version,_edition,_or_translation a rdfs:Class .
+fjs:version,_edition,_or_translation rdfs:label "version, edition, or translation"@en .
+fjs:print rdfs:subClassOf fjs:copy .
+fjs:copy a rdfs:Class .
+fjs:copy rdfs:label "copy"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Storage>  rdfs:subClassOf fjs:recording_medium .
+fjs:recording_medium a rdfs:Class .
+fjs:recording_medium rdfs:label "recording medium"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Storage>  rdfs:subClassOf fjs:machine-readable_medium .
+fjs:machine-readable_medium a rdfs:Class .
+fjs:machine-readable_medium rdfs:label "machine-readable medium"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Storage>  rdfs:subClassOf fjs:storage .
+fjs:storage a rdfs:Class .
+fjs:storage rdfs:label "storage"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Storage>  rdfs:subClassOf fjs:computer_hardware .
+fjs:computer_hardware a rdfs:Class .
+fjs:computer_hardware rdfs:label "computer hardware"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/cipher>  rdfs:subClassOf fjs:algorithm .
+fjs:algorithm a rdfs:Class .
+fjs:algorithm rdfs:label "algorithm"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/cryptography> a fjs:science .
+fjs:science  rdfs:label "science"@en .
+fjs:science  a rdfs:Class .
+fjs:science  rdfs:seeAlso <http://www.wikidata.org/entity/Q336> .
+fjs:science rdfs:subClassOf fjs:academic_discipline .
+fjs:academic_discipline a rdfs:Class .
+fjs:academic_discipline rdfs:label "academic discipline"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/findings> a fjs:version,_edition,_or_translation .
+fjs:version,_edition,_or_translation  rdfs:label "version, edition, or translation"@en .
+fjs:version,_edition,_or_translation  a rdfs:Class .
+fjs:version,_edition,_or_translation  rdfs:seeAlso <http://www.wikidata.org/entity/Q3331189> .
+fjs:version,_edition,_or_translation rdfs:subClassOf fjs:manifestation .
+fjs:manifestation a rdfs:Class .
+fjs:manifestation rdfs:label "manifestation"@en .
+fjs:version,_edition,_or_translation rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+fjs:version,_edition,_or_translation rdfs:subClassOf fjs:publication .
+fjs:publication a rdfs:Class .
+fjs:publication rdfs:label "publication"@en .
+fjs:version,_edition,_or_translation rdfs:subClassOf fjs:second-order_class .
+fjs:second-order_class a rdfs:Class .
+fjs:second-order_class rdfs:label "second-order class"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/bullet> a fjs:weapon_family .
+fjs:weapon_family  rdfs:label "weapon family"@en .
+fjs:weapon_family  a rdfs:Class .
+fjs:weapon_family  rdfs:seeAlso <http://www.wikidata.org/entity/Q15142889> .
+fjs:weapon_family rdfs:subClassOf fjs:class .
+fjs:class a rdfs:Class .
+fjs:class rdfs:label "class"@en .
+fjs:weapon_family rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/telegram> a fjs:instant_messaging_client .
+fjs:instant_messaging_client  rdfs:label "instant messaging client"@en .
+fjs:instant_messaging_client  a rdfs:Class .
+fjs:instant_messaging_client  rdfs:seeAlso <http://www.wikidata.org/entity/Q2462003> .
+fjs:instant_messaging_client rdfs:subClassOf fjs:client .
+fjs:client a rdfs:Class .
+fjs:client rdfs:label "client"@en .
+fjs:instant_messaging_client rdfs:subClassOf fjs:communication_software .
+fjs:communication_software a rdfs:Class .
+fjs:communication_software rdfs:label "communication software"@en .
+fjs:instant_messaging_client rdfs:subClassOf fjs:communication_medium .
+fjs:communication_medium a rdfs:Class .
+fjs:communication_medium rdfs:label "communication medium"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/2_times> a fjs:single .
+fjs:single  rdfs:label "single"@en .
+fjs:single  a rdfs:Class .
+fjs:single  rdfs:seeAlso <http://www.wikidata.org/entity/Q134556> .
+fjs:single rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:single rdfs:subClassOf fjs:audio_storage_device .
+fjs:audio_storage_device a rdfs:Class .
+fjs:audio_storage_device rdfs:label "audio storage device"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/priority>  rdfs:subClassOf fjs:activity .
+fjs:activity a rdfs:Class .
+fjs:activity rdfs:label "activity"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/priority>  rdfs:subClassOf fjs:optimization .
+fjs:optimization a rdfs:Class .
+fjs:optimization rdfs:label "optimization"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/priority>  rdfs:subClassOf fjs:choice .
+fjs:choice a rdfs:Class .
+fjs:choice rdfs:label "choice"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/gang>  rdfs:subClassOf fjs:criminal_organization .
+fjs:criminal_organization a rdfs:Class .
+fjs:criminal_organization rdfs:label "criminal organization"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/study_room>  rdfs:subClassOf fjs:room .
+fjs:room a rdfs:Class .
+fjs:room rdfs:label "room"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/study_room>  rdfs:subClassOf fjs:workplace .
+fjs:workplace a rdfs:Class .
+fjs:workplace rdfs:label "workplace"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/the_second_day> a fjs:television_series_episode .
+fjs:television_series_episode  rdfs:label "television series episode"@en .
+fjs:television_series_episode  a rdfs:Class .
+fjs:television_series_episode  rdfs:seeAlso <http://www.wikidata.org/entity/Q21191270> .
+fjs:television_series_episode rdfs:subClassOf fjs:episode .
+fjs:episode a rdfs:Class .
+fjs:episode rdfs:label "episode"@en .
+fjs:television_series_episode rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:television_series_episode rdfs:subClassOf fjs:television_program .
+fjs:television_program a rdfs:Class .
+fjs:television_program rdfs:label "television program"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Candle> a fjs:energy_storage .
+fjs:energy_storage  rdfs:label "energy storage"@en .
+fjs:energy_storage  a rdfs:Class .
+fjs:energy_storage  rdfs:seeAlso <http://www.wikidata.org/entity/Q837718> .
+fjs:energy_storage rdfs:subClassOf fjs:manufactured_good .
+fjs:manufactured_good a rdfs:Class .
+fjs:manufactured_good rdfs:label "manufactured good"@en .
+fjs:energy_storage rdfs:subClassOf fjs:goods .
+fjs:goods a rdfs:Class .
+fjs:goods rdfs:label "goods"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/the_first_position> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/most_often> a fjs:print .
+fjs:print  rdfs:label "print"@en .
+fjs:print  a rdfs:Class .
+fjs:print  rdfs:seeAlso <http://www.wikidata.org/entity/Q11060274> .
+fjs:print rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:print rdfs:subClassOf fjs:work_with_multiple_executions .
+fjs:work_with_multiple_executions a rdfs:Class .
+fjs:work_with_multiple_executions rdfs:label "work with multiple executions"@en .
+fjs:print rdfs:subClassOf fjs:version,_edition,_or_translation .
+fjs:version,_edition,_or_translation a rdfs:Class .
+fjs:version,_edition,_or_translation rdfs:label "version, edition, or translation"@en .
+fjs:print rdfs:subClassOf fjs:copy .
+fjs:copy a rdfs:Class .
+fjs:copy rdfs:label "copy"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Traces> a fjs:Wikimedia_disambiguation_page .
+fjs:Wikimedia_disambiguation_page  rdfs:label "Wikimedia disambiguation page"@en .
+fjs:Wikimedia_disambiguation_page  a rdfs:Class .
+fjs:Wikimedia_disambiguation_page  rdfs:seeAlso <http://www.wikidata.org/entity/Q4167410> .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:MediaWiki_main-namespace_page .
+fjs:MediaWiki_main-namespace_page a rdfs:Class .
+fjs:MediaWiki_main-namespace_page rdfs:label "MediaWiki main-namespace page"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:list .
+fjs:list a rdfs:Class .
+fjs:list rdfs:label "list"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:Wikimedia_internal_item .
+fjs:Wikimedia_internal_item a rdfs:Class .
+fjs:Wikimedia_internal_item rdfs:label "Wikimedia internal item"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/sundial>  rdfs:subClassOf fjs:timepiece .
+fjs:timepiece a rdfs:Class .
+fjs:timepiece rdfs:label "timepiece"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/sundial>  rdfs:subClassOf fjs:astronomical_instrument .
+fjs:astronomical_instrument a rdfs:Class .
+fjs:astronomical_instrument rdfs:label "astronomical instrument"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/sundial>  rdfs:subClassOf fjs:human-made_geographic_feature .
+fjs:human-made_geographic_feature a rdfs:Class .
+fjs:human-made_geographic_feature rdfs:label "human-made geographic feature"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/sundial>  rdfs:subClassOf fjs:small_monument .
+fjs:small_monument a rdfs:Class .
+fjs:small_monument rdfs:label "small monument"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/protect>  rdfs:subClassOf fjs:protective_device .
+fjs:protective_device a rdfs:Class .
+fjs:protective_device rdfs:label "protective device"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/three_sides> a fjs:live_album .
+fjs:live_album  rdfs:label "live album"@en .
+fjs:live_album  a rdfs:Class .
+fjs:live_album  rdfs:seeAlso <http://www.wikidata.org/entity/Q209939> .
+fjs:live_album rdfs:subClassOf fjs:album .
+fjs:album a rdfs:Class .
+fjs:album rdfs:label "album"@en .
+fjs:live_album rdfs:subClassOf fjs:live_release .
+fjs:live_release a rdfs:Class .
+fjs:live_release rdfs:label "live release"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/three_times> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/note>  rdfs:subClassOf fjs:document .
+fjs:document a rdfs:Class .
+fjs:document rdfs:label "document"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/note>  rdfs:subClassOf fjs:personal_testimonial .
+fjs:personal_testimonial a rdfs:Class .
+fjs:personal_testimonial rdfs:label "personal testimonial"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/note>  rdfs:subClassOf fjs:message .
+fjs:message a rdfs:Class .
+fjs:message rdfs:label "message"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/note>  rdfs:subClassOf fjs:literary_work .
+fjs:literary_work a rdfs:Class .
+fjs:literary_work rdfs:label "literary work"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/evening> a fjs:time_of_the_day .
+fjs:time_of_the_day  rdfs:label "time of the day"@en .
+fjs:time_of_the_day  a rdfs:Class .
+fjs:time_of_the_day  rdfs:seeAlso <http://www.wikidata.org/entity/Q1260524> .
+fjs:time_of_the_day rdfs:subClassOf fjs:occurrence .
+fjs:occurrence a rdfs:Class .
+fjs:occurrence rdfs:label "occurrence"@en .
+fjs:time_of_the_day rdfs:subClassOf fjs:time_interval .
+fjs:time_interval a rdfs:Class .
+fjs:time_interval rdfs:label "time interval"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Past> a fjs:sense .
+fjs:sense  rdfs:label "sense"@en .
+fjs:sense  a rdfs:Class .
+fjs:sense  rdfs:seeAlso <http://www.wikidata.org/entity/Q173253> .
+fjs:sense rdfs:subClassOf fjs:capability .
+fjs:capability a rdfs:Class .
+fjs:capability rdfs:label "capability"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Pebble>  rdfs:subClassOf fjs:rock_fragment .
+fjs:rock_fragment a rdfs:Class .
+fjs:rock_fragment rdfs:label "rock fragment"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Bookshelf>  rdfs:subClassOf fjs:cabinet .
+fjs:cabinet a rdfs:Class .
+fjs:cabinet rdfs:label "cabinet"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Bookshelf>  rdfs:subClassOf fjs:rack_of_shelves .
+fjs:rack_of_shelves a rdfs:Class .
+fjs:rack_of_shelves rdfs:label "rack of shelves"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/flower_bed>  rdfs:subClassOf fjs:bedding .
+fjs:bedding a rdfs:Class .
+fjs:bedding rdfs:label "bedding"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/prayer> a fjs:religious_concept .
+fjs:religious_concept  rdfs:label "religious concept"@en .
+fjs:religious_concept  a rdfs:Class .
+fjs:religious_concept  rdfs:seeAlso <http://www.wikidata.org/entity/Q23847174> .
+fjs:religious_concept rdfs:subClassOf fjs:concept .
+fjs:concept a rdfs:Class .
+fjs:concept rdfs:label "concept"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Threat>  rdfs:subClassOf fjs:signal .
+fjs:signal a rdfs:Class .
+fjs:signal rdfs:label "signal"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Threat>  rdfs:subClassOf fjs:null .
+fjs:null a rdfs:Class .
+fjs:null rdfs:label "null"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Threat>  rdfs:subClassOf fjs:offense_against_personal_freedom .
+fjs:offense_against_personal_freedom a rdfs:Class .
+fjs:offense_against_personal_freedom rdfs:label "offense against personal freedom"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/Threat>  rdfs:subClassOf fjs:persuasion .
+fjs:persuasion a rdfs:Class .
+fjs:persuasion rdfs:label "persuasion"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/paper>  rdfs:subClassOf fjs:intermediate_product .
+fjs:intermediate_product a rdfs:Class .
+fjs:intermediate_product rdfs:label "intermediate product"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/paper>  rdfs:subClassOf fjs:writing_surface .
+fjs:writing_surface a rdfs:Class .
+fjs:writing_surface rdfs:label "writing surface"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/paper>  rdfs:subClassOf fjs:manifestation .
+fjs:manifestation a rdfs:Class .
+fjs:manifestation rdfs:label "manifestation"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/paper>  rdfs:subClassOf fjs:paleographical_writing_material .
+fjs:paleographical_writing_material a rdfs:Class .
+fjs:paleographical_writing_material rdfs:label "paleographical writing material"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/promise>  rdfs:subClassOf fjs:activity .
+fjs:activity a rdfs:Class .
+fjs:activity rdfs:label "activity"@en .
+<http://kgc.knowledge-graph.jp/data/DancingMen/promise>  rdfs:subClassOf fjs:commitment .
+fjs:commitment a rdfs:Class .
+fjs:commitment rdfs:label "commitment"@en .
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/7.0-milestone-1/userguide/command_line_interface.html#sec:command_line_warnings

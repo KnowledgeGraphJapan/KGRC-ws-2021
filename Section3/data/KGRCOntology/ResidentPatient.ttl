@@ -1,0 +1,1501 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fjs: <http://challenge2021.labs.fujitsu.com/ontology/kgc.owl#> . 
+
+<http://kgc.knowledge-graph.jp/data/predicate/Provide> a fjs:state_or_insular_area_capital_in_the_United_States .
+fjs:state_or_insular_area_capital_in_the_United_States  rdfs:label "state or insular area capital in the United States"@en .
+fjs:state_or_insular_area_capital_in_the_United_States  a rdfs:Class .
+fjs:state_or_insular_area_capital_in_the_United_States  rdfs:seeAlso <http://www.wikidata.org/entity/Q21518270> .
+fjs:state_or_insular_area_capital_in_the_United_States rdfs:subClassOf fjs:state_capital .
+fjs:state_capital a rdfs:Class .
+fjs:state_capital rdfs:label "state capital"@en .
+fjs:state_or_insular_area_capital_in_the_United_States rdfs:subClassOf fjs:administrative_territorial_entity_of_the_United_States .
+fjs:administrative_territorial_entity_of_the_United_States a rdfs:Class .
+fjs:administrative_territorial_entity_of_the_United_States rdfs:label "administrative territorial entity of the United States"@en .
+fjs:state_or_insular_area_capital_in_the_United_States rdfs:subClassOf fjs:city_of_the_United_States .
+fjs:city_of_the_United_States a rdfs:Class .
+fjs:city_of_the_United_States rdfs:label "city of the United States"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/screw> a fjs:type_of_machine_element .
+fjs:type_of_machine_element  rdfs:label "type of machine element"@en .
+fjs:type_of_machine_element  a rdfs:Class .
+fjs:type_of_machine_element  rdfs:seeAlso <http://www.wikidata.org/entity/Q44409287> .
+fjs:type_of_machine_element rdfs:subClassOf fjs:type .
+fjs:type a rdfs:Class .
+fjs:type rdfs:label "type"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Some> a fjs:island_group .
+fjs:island_group  rdfs:label "island group"@en .
+fjs:island_group  a rdfs:Class .
+fjs:island_group  rdfs:seeAlso <http://www.wikidata.org/entity/Q1402592> .
+fjs:island_group rdfs:subClassOf fjs:physico-geographical_object .
+fjs:physico-geographical_object a rdfs:Class .
+fjs:physico-geographical_object rdfs:label "physico-geographical object"@en .
+fjs:island_group rdfs:subClassOf fjs:landform .
+fjs:landform a rdfs:Class .
+fjs:landform rdfs:label "landform"@en .
+fjs:island_group rdfs:subClassOf fjs:group .
+fjs:group a rdfs:Class .
+fjs:group rdfs:label "group"@en .
+fjs:island_group rdfs:subClassOf fjs:cluster .
+fjs:cluster a rdfs:Class .
+fjs:cluster rdfs:label "cluster"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/fear> a fjs:basic_emotion .
+fjs:basic_emotion  rdfs:label "basic emotion"@en .
+fjs:basic_emotion  a rdfs:Class .
+fjs:basic_emotion  rdfs:seeAlso <http://www.wikidata.org/entity/Q16748867> .
+fjs:basic_emotion rdfs:subClassOf fjs:emotion .
+fjs:emotion a rdfs:Class .
+fjs:emotion rdfs:label "emotion"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Circular>  rdfs:subClassOf fjs:pamphlet .
+fjs:pamphlet a rdfs:Class .
+fjs:pamphlet rdfs:label "pamphlet"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/the_intruder> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/the_robbers> a fjs:play .
+fjs:play  rdfs:label "play"@en .
+fjs:play  a rdfs:Class .
+fjs:play  rdfs:seeAlso <http://www.wikidata.org/entity/Q25379> .
+fjs:play rdfs:subClassOf fjs:drama .
+fjs:drama a rdfs:Class .
+fjs:drama rdfs:label "drama"@en .
+fjs:play rdfs:subClassOf fjs:performance_work .
+fjs:performance_work a rdfs:Class .
+fjs:performance_work rdfs:label "performance work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/very> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Doctors> a fjs:television_series .
+fjs:television_series  rdfs:label "television series"@en .
+fjs:television_series  a rdfs:Class .
+fjs:television_series  rdfs:seeAlso <http://www.wikidata.org/entity/Q5398426> .
+fjs:television_series rdfs:subClassOf fjs:television_program .
+fjs:television_program a rdfs:Class .
+fjs:television_program rdfs:label "television program"@en .
+fjs:television_series rdfs:subClassOf fjs:series_of_creative_works .
+fjs:series_of_creative_works a rdfs:Class .
+fjs:series_of_creative_works rdfs:label "series of creative works"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Medical_examination>  rdfs:subClassOf fjs:medical_diagnosis .
+fjs:medical_diagnosis a rdfs:Class .
+fjs:medical_diagnosis rdfs:label "medical diagnosis"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Medical_examination>  rdfs:subClassOf fjs:health_assessment .
+fjs:health_assessment a rdfs:Class .
+fjs:health_assessment rdfs:label "health assessment"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Imprisonment>  rdfs:subClassOf fjs:sentence .
+fjs:sentence a rdfs:Class .
+fjs:sentence rdfs:label "sentence"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Imprisonment>  rdfs:subClassOf fjs:captivity .
+fjs:captivity a rdfs:Class .
+fjs:captivity rdfs:label "captivity"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Furniture>  rdfs:subClassOf fjs:furnishing .
+fjs:furnishing a rdfs:Class .
+fjs:furnishing rdfs:label "furnishing"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Furniture>  rdfs:subClassOf fjs:utensil .
+fjs:utensil a rdfs:Class .
+fjs:utensil rdfs:label "utensil"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Furniture>  rdfs:subClassOf fjs:product .
+fjs:product a rdfs:Class .
+fjs:product rdfs:label "product"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Furniture>  rdfs:subClassOf fjs:artificial_physical_object .
+fjs:artificial_physical_object a rdfs:Class .
+fjs:artificial_physical_object rdfs:label "artificial physical object"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Listen> a fjs:single .
+fjs:single  rdfs:label "single"@en .
+fjs:single  a rdfs:Class .
+fjs:single  rdfs:seeAlso <http://www.wikidata.org/entity/Q134556> .
+fjs:single rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:single rdfs:subClassOf fjs:audio_storage_device .
+fjs:audio_storage_device a rdfs:Class .
+fjs:audio_storage_device rdfs:label "audio storage device"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Instead> a fjs:game_engine .
+fjs:game_engine  rdfs:label "game engine"@en .
+fjs:game_engine  a rdfs:Class .
+fjs:game_engine  rdfs:seeAlso <http://www.wikidata.org/entity/Q193564> .
+fjs:game_engine rdfs:subClassOf fjs:software_engine .
+fjs:software_engine a rdfs:Class .
+fjs:software_engine rdfs:label "software engine"@en .
+fjs:game_engine rdfs:subClassOf fjs:middleware .
+fjs:middleware a rdfs:Class .
+fjs:middleware rdfs:label "middleware"@en .
+fjs:game_engine rdfs:subClassOf fjs:utility_software .
+fjs:utility_software a rdfs:Class .
+fjs:utility_software rdfs:label "utility software"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Four> a fjs:natural_number .
+fjs:natural_number  rdfs:label "natural number"@en .
+fjs:natural_number  a rdfs:Class .
+fjs:natural_number  rdfs:seeAlso <http://www.wikidata.org/entity/Q21199> .
+fjs:natural_number rdfs:subClassOf fjs:non-negative_integer .
+fjs:non-negative_integer a rdfs:Class .
+fjs:non-negative_integer rdfs:label "non-negative integer"@en .
+fjs:natural_number rdfs:subClassOf fjs:rational_number .
+fjs:rational_number a rdfs:Class .
+fjs:rational_number rdfs:label "rational number"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Sounds> a fjs:baseball_team .
+fjs:baseball_team  rdfs:label "baseball team"@en .
+fjs:baseball_team  a rdfs:Class .
+fjs:baseball_team  rdfs:seeAlso <http://www.wikidata.org/entity/Q13027888> .
+fjs:baseball_team rdfs:subClassOf fjs:sports_team .
+fjs:sports_team a rdfs:Class .
+fjs:sports_team rdfs:label "sports team"@en .
+fjs:baseball_team rdfs:subClassOf fjs:sports_club .
+fjs:sports_club a rdfs:Class .
+fjs:sports_club rdfs:label "sports club"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Dress>  rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Dress>  rdfs:subClassOf fjs:product .
+fjs:product a rdfs:Class .
+fjs:product rdfs:label "product"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Percy_Trevelyan> a fjs:human .
+fjs:human  rdfs:label "human"@en .
+fjs:human  a rdfs:Class .
+fjs:human  rdfs:seeAlso <http://www.wikidata.org/entity/Q5> .
+fjs:human rdfs:subClassOf fjs:person .
+fjs:person a rdfs:Class .
+fjs:person rdfs:label "person"@en .
+fjs:human rdfs:subClassOf fjs:natural_person .
+fjs:natural_person a rdfs:Class .
+fjs:natural_person rdfs:label "natural person"@en .
+fjs:human rdfs:subClassOf fjs:omnivore .
+fjs:omnivore a rdfs:Class .
+fjs:omnivore rdfs:label "omnivore"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Percy_Trevelyan> a fjs:human .
+fjs:human  rdfs:label "human"@en .
+fjs:human  a rdfs:Class .
+fjs:human  rdfs:seeAlso <http://www.wikidata.org/entity/Q5> .
+fjs:human rdfs:subClassOf fjs:person .
+fjs:person a rdfs:Class .
+fjs:person rdfs:label "person"@en .
+fjs:human rdfs:subClassOf fjs:natural_person .
+fjs:natural_person a rdfs:Class .
+fjs:natural_person rdfs:label "natural person"@en .
+fjs:human rdfs:subClassOf fjs:omnivore .
+fjs:omnivore a rdfs:Class .
+fjs:omnivore rdfs:label "omnivore"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Fear> a fjs:basic_emotion .
+fjs:basic_emotion  rdfs:label "basic emotion"@en .
+fjs:basic_emotion  a rdfs:Class .
+fjs:basic_emotion  rdfs:seeAlso <http://www.wikidata.org/entity/Q16748867> .
+fjs:basic_emotion rdfs:subClassOf fjs:emotion .
+fjs:emotion a rdfs:Class .
+fjs:emotion rdfs:label "emotion"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/the_cigar> a fjs:painting .
+fjs:painting  rdfs:label "painting"@en .
+fjs:painting  a rdfs:Class .
+fjs:painting  rdfs:seeAlso <http://www.wikidata.org/entity/Q3305213> .
+fjs:painting rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Wheel>  rdfs:subClassOf fjs:simple_machine .
+fjs:simple_machine a rdfs:Class .
+fjs:simple_machine rdfs:label "simple machine"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/end>  rdfs:subClassOf fjs:part_and_whole .
+fjs:part_and_whole a rdfs:Class .
+fjs:part_and_whole rdfs:label "part and whole"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/end>  rdfs:subClassOf fjs:extremity .
+fjs:extremity a rdfs:Class .
+fjs:extremity rdfs:label "extremity"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/end>  rdfs:subClassOf fjs:location .
+fjs:location a rdfs:Class .
+fjs:location rdfs:label "location"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Tiptoe> a fjs:posture .
+fjs:posture  rdfs:label "posture"@en .
+fjs:posture  a rdfs:Class .
+fjs:posture  rdfs:seeAlso <http://www.wikidata.org/entity/Q8514257> .
+fjs:posture rdfs:subClassOf fjs:spatial_arrangement .
+fjs:spatial_arrangement a rdfs:Class .
+fjs:spatial_arrangement rdfs:label "spatial arrangement"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/muscle> a fjs:anatomical_structure_class_type .
+fjs:anatomical_structure_class_type  rdfs:label "anatomical structure class type"@en .
+fjs:anatomical_structure_class_type  a rdfs:Class .
+fjs:anatomical_structure_class_type  rdfs:seeAlso <http://www.wikidata.org/entity/Q103914748> .
+fjs:anatomical_structure_class_type rdfs:subClassOf fjs:anatomical_entity_class_type .
+fjs:anatomical_entity_class_type a rdfs:Class .
+fjs:anatomical_entity_class_type rdfs:label "anatomical entity class type"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/the_treatment> a fjs:musical_group .
+fjs:musical_group  rdfs:label "musical group"@en .
+fjs:musical_group  a rdfs:Class .
+fjs:musical_group  rdfs:seeAlso <http://www.wikidata.org/entity/Q215380> .
+fjs:musical_group rdfs:subClassOf fjs:musical_ensemble .
+fjs:musical_ensemble a rdfs:Class .
+fjs:musical_ensemble rdfs:label "musical ensemble"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/The_rest> a fjs:painting .
+fjs:painting  rdfs:label "painting"@en .
+fjs:painting  a rdfs:Class .
+fjs:painting  rdfs:seeAlso <http://www.wikidata.org/entity/Q3305213> .
+fjs:painting rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/incident>  rdfs:subClassOf fjs:occurrence .
+fjs:occurrence a rdfs:Class .
+fjs:occurrence rdfs:label "occurrence"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/goOut> a fjs:web_page .
+fjs:web_page  rdfs:label "web page"@en .
+fjs:web_page  a rdfs:Class .
+fjs:web_page  rdfs:seeAlso <http://www.wikidata.org/entity/Q36774> .
+fjs:web_page rdfs:subClassOf fjs:electronic_page .
+fjs:electronic_page a rdfs:Class .
+fjs:electronic_page rdfs:label "electronic page"@en .
+fjs:web_page rdfs:subClassOf fjs:document .
+fjs:document a rdfs:Class .
+fjs:document rdfs:label "document"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/catalepsy> a fjs:psychopathological_symptom .
+fjs:psychopathological_symptom  rdfs:label "psychopathological symptom"@en .
+fjs:psychopathological_symptom  a rdfs:Class .
+fjs:psychopathological_symptom  rdfs:seeAlso <http://www.wikidata.org/entity/Q30897648> .
+fjs:psychopathological_symptom rdfs:subClassOf fjs:psychopathological_syndrome .
+fjs:psychopathological_syndrome a rdfs:Class .
+fjs:psychopathological_syndrome rdfs:label "psychopathological syndrome"@en .
+fjs:psychopathological_symptom rdfs:subClassOf fjs:clinical_finding .
+fjs:clinical_finding a rdfs:Class .
+fjs:clinical_finding rdfs:label "clinical finding"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Hand>  rdfs:subClassOf fjs:cardinal_body_part .
+fjs:cardinal_body_part a rdfs:Class .
+fjs:cardinal_body_part rdfs:label "cardinal body part"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Hand>  rdfs:subClassOf fjs:autopod_region .
+fjs:autopod_region a rdfs:Class .
+fjs:autopod_region rdfs:label "autopod region"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Event>  rdfs:subClassOf fjs:temporal_entity .
+fjs:temporal_entity a rdfs:Class .
+fjs:temporal_entity rdfs:label "temporal entity"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/wire>  rdfs:subClassOf fjs:string .
+fjs:string a rdfs:Class .
+fjs:string rdfs:label "string"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/wire>  rdfs:subClassOf fjs:material .
+fjs:material a rdfs:Class .
+fjs:material rdfs:label "material"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/wire>  rdfs:subClassOf fjs:electrical_conductor .
+fjs:electrical_conductor a rdfs:Class .
+fjs:electrical_conductor rdfs:label "electrical conductor"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/bed>  rdfs:subClassOf fjs:furniture .
+fjs:furniture a rdfs:Class .
+fjs:furniture rdfs:label "furniture"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/bed>  rdfs:subClassOf fjs:sleeping_place .
+fjs:sleeping_place a rdfs:Class .
+fjs:sleeping_place rdfs:label "sleeping place"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/unexpected_events> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Blessington> a fjs:human_settlement .
+fjs:human_settlement  rdfs:label "human settlement"@en .
+fjs:human_settlement  a rdfs:Class .
+fjs:human_settlement  rdfs:seeAlso <http://www.wikidata.org/entity/Q486972> .
+fjs:human_settlement rdfs:subClassOf fjs:geographic_region .
+fjs:geographic_region a rdfs:Class .
+fjs:geographic_region rdfs:label "geographic region"@en .
+fjs:human_settlement rdfs:subClassOf fjs:artificial_geographic_entity .
+fjs:artificial_geographic_entity a rdfs:Class .
+fjs:artificial_geographic_entity rdfs:label "artificial geographic entity"@en .
+fjs:human_settlement rdfs:subClassOf fjs:community .
+fjs:community a rdfs:Class .
+fjs:community rdfs:label "community"@en .
+fjs:human_settlement rdfs:subClassOf fjs:geographic_location .
+fjs:geographic_location a rdfs:Class .
+fjs:geographic_location rdfs:label "geographic location"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Daily_routine> a fjs:short_film .
+fjs:short_film  rdfs:label "short film"@en .
+fjs:short_film  a rdfs:Class .
+fjs:short_film  rdfs:seeAlso <http://www.wikidata.org/entity/Q24862> .
+fjs:short_film rdfs:subClassOf fjs:film .
+fjs:film a rdfs:Class .
+fjs:film rdfs:label "film"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/those> a fjs:village_development_committee_of_Nepal .
+fjs:village_development_committee_of_Nepal  rdfs:label "village development committee of Nepal"@en .
+fjs:village_development_committee_of_Nepal  a rdfs:Class .
+fjs:village_development_committee_of_Nepal  rdfs:seeAlso <http://www.wikidata.org/entity/Q1530705> .
+fjs:village_development_committee_of_Nepal rdfs:subClassOf fjs:administrative_territorial_entity_of_Nepal .
+fjs:administrative_territorial_entity_of_Nepal a rdfs:Class .
+fjs:administrative_territorial_entity_of_Nepal rdfs:label "administrative territorial entity of Nepal"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Room> a fjs:facility .
+fjs:facility  rdfs:label "facility"@en .
+fjs:facility  a rdfs:Class .
+fjs:facility  rdfs:seeAlso <http://www.wikidata.org/entity/Q13226383> .
+fjs:facility rdfs:subClassOf fjs:geographic_location .
+fjs:geographic_location a rdfs:Class .
+fjs:geographic_location rdfs:label "geographic location"@en .
+fjs:facility rdfs:subClassOf fjs:artificial_geographic_entity .
+fjs:artificial_geographic_entity a rdfs:Class .
+fjs:artificial_geographic_entity rdfs:label "artificial geographic entity"@en .
+fjs:facility rdfs:subClassOf fjs:geographical_object .
+fjs:geographical_object a rdfs:Class .
+fjs:geographical_object rdfs:label "geographical object"@en .
+fjs:facility rdfs:subClassOf fjs:organization .
+fjs:organization a rdfs:Class .
+fjs:organization rdfs:label "organization"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/myth> a fjs:literary_form .
+fjs:literary_form  rdfs:label "literary form"@en .
+fjs:literary_form  a rdfs:Class .
+fjs:literary_form  rdfs:seeAlso <http://www.wikidata.org/entity/Q4263830> .
+fjs:literary_form rdfs:subClassOf fjs:form .
+fjs:form a rdfs:Class .
+fjs:form rdfs:label "form"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/a_line> a fjs:light_rail_line .
+fjs:light_rail_line  rdfs:label "light rail line"@en .
+fjs:light_rail_line  a rdfs:Class .
+fjs:light_rail_line  rdfs:seeAlso <http://www.wikidata.org/entity/Q15145537> .
+fjs:light_rail_line rdfs:subClassOf fjs:railway_line .
+fjs:railway_line a rdfs:Class .
+fjs:railway_line rdfs:label "railway line"@en .
+fjs:light_rail_line rdfs:subClassOf fjs:service .
+fjs:service a rdfs:Class .
+fjs:service rdfs:label "service"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Sleepwear>  rdfs:subClassOf fjs:clothing .
+fjs:clothing a rdfs:Class .
+fjs:clothing rdfs:label "clothing"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/touched> a fjs:television_series_episode .
+fjs:television_series_episode  rdfs:label "television series episode"@en .
+fjs:television_series_episode  a rdfs:Class .
+fjs:television_series_episode  rdfs:seeAlso <http://www.wikidata.org/entity/Q21191270> .
+fjs:television_series_episode rdfs:subClassOf fjs:episode .
+fjs:episode a rdfs:Class .
+fjs:episode rdfs:label "episode"@en .
+fjs:television_series_episode rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:television_series_episode rdfs:subClassOf fjs:television_program .
+fjs:television_program a rdfs:Class .
+fjs:television_program rdfs:label "television program"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/newspaper>  rdfs:subClassOf fjs:mass_media .
+fjs:mass_media a rdfs:Class .
+fjs:mass_media rdfs:label "mass media"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/newspaper>  rdfs:subClassOf fjs:periodical .
+fjs:periodical a rdfs:Class .
+fjs:periodical rdfs:label "periodical"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/newspaper>  rdfs:subClassOf fjs:goods .
+fjs:goods a rdfs:Class .
+fjs:goods rdfs:label "goods"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/newspaper>  rdfs:subClassOf fjs:organization .
+fjs:organization a rdfs:Class .
+fjs:organization rdfs:label "organization"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/newspaper>  rdfs:subClassOf fjs:written_news_media .
+fjs:written_news_media a rdfs:Class .
+fjs:written_news_media rdfs:label "written news media"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/newspaper>  rdfs:subClassOf fjs:business .
+fjs:business a rdfs:Class .
+fjs:business rdfs:label "business"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/chest>  rdfs:subClassOf fjs:furniture .
+fjs:furniture a rdfs:Class .
+fjs:furniture rdfs:label "furniture"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/chest>  rdfs:subClassOf fjs:container .
+fjs:container a rdfs:Class .
+fjs:container rdfs:label "container"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/elderly_man> a fjs:painting .
+fjs:painting  rdfs:label "painting"@en .
+fjs:painting  a rdfs:Class .
+fjs:painting  rdfs:seeAlso <http://www.wikidata.org/entity/Q3305213> .
+fjs:painting rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Note>  rdfs:subClassOf fjs:document .
+fjs:document a rdfs:Class .
+fjs:document rdfs:label "document"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Note>  rdfs:subClassOf fjs:personal_testimonial .
+fjs:personal_testimonial a rdfs:Class .
+fjs:personal_testimonial rdfs:label "personal testimonial"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Note>  rdfs:subClassOf fjs:message .
+fjs:message a rdfs:Class .
+fjs:message rdfs:label "message"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Note>  rdfs:subClassOf fjs:literary_work .
+fjs:literary_work a rdfs:Class .
+fjs:literary_work rdfs:label "literary work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Chair>  rdfs:subClassOf fjs:seat .
+fjs:seat a rdfs:Class .
+fjs:seat rdfs:label "seat"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Chair>  rdfs:subClassOf fjs:furniture .
+fjs:furniture a rdfs:Class .
+fjs:furniture rdfs:label "furniture"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/something> a fjs:variable-order_class .
+fjs:variable-order_class  rdfs:label "variable-order class"@en .
+fjs:variable-order_class  a rdfs:Class .
+fjs:variable-order_class  rdfs:seeAlso <http://www.wikidata.org/entity/Q23958852> .
+fjs:variable-order_class rdfs:subClassOf fjs:(meta)class .
+fjs:(meta)class a rdfs:Class .
+fjs:(meta)class rdfs:label "(meta)class"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Tell>  rdfs:subClassOf fjs:archaeological_site .
+fjs:archaeological_site a rdfs:Class .
+fjs:archaeological_site rdfs:label "archaeological site"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Tell>  rdfs:subClassOf fjs:mound .
+fjs:mound a rdfs:Class .
+fjs:mound rdfs:label "mound"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Body_temperature>  rdfs:subClassOf fjs:temperature .
+fjs:temperature a rdfs:Class .
+fjs:temperature rdfs:label "temperature"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Body_temperature>  rdfs:subClassOf fjs:vital_signs .
+fjs:vital_signs a rdfs:Class .
+fjs:vital_signs rdfs:label "vital signs"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Director> a fjs:filmmaking_occupation .
+fjs:filmmaking_occupation  rdfs:label "filmmaking occupation"@en .
+fjs:filmmaking_occupation  a rdfs:Class .
+fjs:filmmaking_occupation  rdfs:seeAlso <http://www.wikidata.org/entity/Q4220920> .
+fjs:filmmaking_occupation rdfs:subClassOf fjs:profession .
+fjs:profession a rdfs:Class .
+fjs:profession rdfs:label "profession"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/doctor> a fjs:medical_profession .
+fjs:medical_profession  rdfs:label "medical profession"@en .
+fjs:medical_profession  a rdfs:Class .
+fjs:medical_profession  rdfs:seeAlso <http://www.wikidata.org/entity/Q66811410> .
+fjs:medical_profession rdfs:subClassOf fjs:health_profession .
+fjs:health_profession a rdfs:Class .
+fjs:health_profession rdfs:label "health profession"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/the_jacket> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Examination> a fjs:type_of_test .
+fjs:type_of_test  rdfs:label "type of test"@en .
+fjs:type_of_test  a rdfs:Class .
+fjs:type_of_test  rdfs:seeAlso <http://www.wikidata.org/entity/Q96273743> .
+fjs:type_of_test rdfs:subClassOf fjs:type .
+fjs:type a rdfs:Class .
+fjs:type rdfs:label "type"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/wheel>  rdfs:subClassOf fjs:simple_machine .
+fjs:simple_machine a rdfs:Class .
+fjs:simple_machine rdfs:label "simple machine"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/hand>  rdfs:subClassOf fjs:cardinal_body_part .
+fjs:cardinal_body_part a rdfs:Class .
+fjs:cardinal_body_part rdfs:label "cardinal body part"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/hand>  rdfs:subClassOf fjs:autopod_region .
+fjs:autopod_region a rdfs:Class .
+fjs:autopod_region rdfs:label "autopod region"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/cigar>  rdfs:subClassOf fjs:tobacco_product .
+fjs:tobacco_product a rdfs:Class .
+fjs:tobacco_product rdfs:label "tobacco product"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/the_indentation> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/decisive_factor> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/an_elderly_man> a fjs:painting .
+fjs:painting  rdfs:label "painting"@en .
+fjs:painting  a rdfs:Class .
+fjs:painting  rdfs:seeAlso <http://www.wikidata.org/entity/Q3305213> .
+fjs:painting rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Predict> a fjs:Wikimedia_disambiguation_page .
+fjs:Wikimedia_disambiguation_page  rdfs:label "Wikimedia disambiguation page"@en .
+fjs:Wikimedia_disambiguation_page  a rdfs:Class .
+fjs:Wikimedia_disambiguation_page  rdfs:seeAlso <http://www.wikidata.org/entity/Q4167410> .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:MediaWiki_main-namespace_page .
+fjs:MediaWiki_main-namespace_page a rdfs:Class .
+fjs:MediaWiki_main-namespace_page rdfs:label "MediaWiki main-namespace page"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:list .
+fjs:list a rdfs:Class .
+fjs:list rdfs:label "list"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:Wikimedia_internal_item .
+fjs:Wikimedia_internal_item a rdfs:Class .
+fjs:Wikimedia_internal_item rdfs:label "Wikimedia internal item"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/ice>  rdfs:subClassOf fjs:water .
+fjs:water a rdfs:Class .
+fjs:water rdfs:label "water"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/ice>  rdfs:subClassOf fjs:solid .
+fjs:solid a rdfs:Class .
+fjs:solid rdfs:label "solid"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/letter>  rdfs:subClassOf fjs:document .
+fjs:document a rdfs:Class .
+fjs:document rdfs:label "document"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/letter>  rdfs:subClassOf fjs:personal_testimonial .
+fjs:personal_testimonial a rdfs:Class .
+fjs:personal_testimonial rdfs:label "personal testimonial"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/letter>  rdfs:subClassOf fjs:message .
+fjs:message a rdfs:Class .
+fjs:message rdfs:label "message"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/letter>  rdfs:subClassOf fjs:literary_work .
+fjs:literary_work a rdfs:Class .
+fjs:literary_work rdfs:label "literary work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/neck>  rdfs:subClassOf fjs:cardinal_body_part .
+fjs:cardinal_body_part a rdfs:Class .
+fjs:cardinal_body_part rdfs:label "cardinal body part"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/neck>  rdfs:subClassOf fjs:subdivision_of_body_proper .
+fjs:subdivision_of_body_proper a rdfs:Class .
+fjs:subdivision_of_body_proper rdfs:label "subdivision of body proper"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/carpet>  rdfs:subClassOf fjs:floor_covering .
+fjs:floor_covering a rdfs:Class .
+fjs:floor_covering rdfs:label "floor covering"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/question>  rdfs:subClassOf fjs:information_request .
+fjs:information_request a rdfs:Class .
+fjs:information_request rdfs:label "information request"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/sclerosis> a fjs:health_problem .
+fjs:health_problem  rdfs:label "health problem"@en .
+fjs:health_problem  a rdfs:Class .
+fjs:health_problem  rdfs:seeAlso <http://www.wikidata.org/entity/Q2057971> .
+fjs:health_problem rdfs:subClassOf fjs:physiological_condition .
+fjs:physiological_condition a rdfs:Class .
+fjs:physiological_condition rdfs:label "physiological condition"@en .
+fjs:health_problem rdfs:subClassOf fjs:problem .
+fjs:problem a rdfs:Class .
+fjs:problem rdfs:label "problem"@en .
+fjs:health_problem rdfs:subClassOf fjs:medical_finding .
+fjs:medical_finding a rdfs:Class .
+fjs:medical_finding rdfs:label "medical finding"@en .
+fjs:health_problem rdfs:subClassOf fjs:health_risk .
+fjs:health_risk a rdfs:Class .
+fjs:health_risk rdfs:label "health risk"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Stratagem>  rdfs:subClassOf fjs:fraud .
+fjs:fraud a rdfs:Class .
+fjs:fraud rdfs:label "fraud"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Stratagem>  rdfs:subClassOf fjs:financial_crime .
+fjs:financial_crime a rdfs:Class .
+fjs:financial_crime rdfs:label "financial crime"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/date>  rdfs:subClassOf fjs:day .
+fjs:day a rdfs:Class .
+fjs:day rdfs:label "day"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/date>  rdfs:subClassOf fjs:point_in_time .
+fjs:point_in_time a rdfs:Class .
+fjs:point_in_time rdfs:label "point in time"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/door>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/door>  rdfs:subClassOf fjs:device .
+fjs:device a rdfs:Class .
+fjs:device rdfs:label "device"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/door>  rdfs:subClassOf fjs:obstacle .
+fjs:obstacle a rdfs:Class .
+fjs:obstacle rdfs:label "obstacle"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Power> a fjs:sociological_concept .
+fjs:sociological_concept  rdfs:label "sociological concept"@en .
+fjs:sociological_concept  a rdfs:Class .
+fjs:sociological_concept  rdfs:seeAlso <http://www.wikidata.org/entity/Q33104129> .
+fjs:sociological_concept rdfs:subClassOf fjs:concept .
+fjs:concept a rdfs:Class .
+fjs:concept rdfs:label "concept"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/intruder> a fjs:aircraft_family .
+fjs:aircraft_family  rdfs:label "aircraft family"@en .
+fjs:aircraft_family  a rdfs:Class .
+fjs:aircraft_family  rdfs:seeAlso <http://www.wikidata.org/entity/Q15056993> .
+fjs:aircraft_family rdfs:subClassOf fjs:aircraft_model .
+fjs:aircraft_model a rdfs:Class .
+fjs:aircraft_model rdfs:label "aircraft model"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/all> a fjs:universe .
+fjs:universe  rdfs:label "universe"@en .
+fjs:universe  a rdfs:Class .
+fjs:universe  rdfs:seeAlso <http://www.wikidata.org/entity/Q36906466> .
+fjs:universe rdfs:subClassOf fjs:physical_system .
+fjs:physical_system a rdfs:Class .
+fjs:physical_system rdfs:label "physical system"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/tobacco> a fjs:taxon .
+fjs:taxon  rdfs:label "taxon"@en .
+fjs:taxon  a rdfs:Class .
+fjs:taxon  rdfs:seeAlso <http://www.wikidata.org/entity/Q16521> .
+fjs:taxon rdfs:subClassOf fjs:living_organism_class .
+fjs:living_organism_class a rdfs:Class .
+fjs:living_organism_class rdfs:label "living organism class"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Source_Date> a fjs:environment_variable .
+fjs:environment_variable  rdfs:label "environment variable"@en .
+fjs:environment_variable  a rdfs:Class .
+fjs:environment_variable  rdfs:seeAlso <http://www.wikidata.org/entity/Q400857> .
+fjs:environment_variable rdfs:subClassOf fjs:assignable_variable .
+fjs:assignable_variable a rdfs:Class .
+fjs:assignable_variable rdfs:label "assignable variable"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Kind> a fjs:metaclass .
+fjs:metaclass  rdfs:label "metaclass"@en .
+fjs:metaclass  a rdfs:Class .
+fjs:metaclass  rdfs:seeAlso <http://www.wikidata.org/entity/Q19478619> .
+fjs:metaclass rdfs:subClassOf fjs:class .
+fjs:class a rdfs:Class .
+fjs:class rdfs:label "class"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/the_daily_routine> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Guess> a fjs:business .
+fjs:business  rdfs:label "business"@en .
+fjs:business  a rdfs:Class .
+fjs:business  rdfs:seeAlso <http://www.wikidata.org/entity/Q4830453> .
+fjs:business rdfs:subClassOf fjs:organization .
+fjs:organization a rdfs:Class .
+fjs:organization rdfs:label "organization"@en .
+fjs:business rdfs:subClassOf fjs:economic_unit .
+fjs:economic_unit a rdfs:Class .
+fjs:economic_unit rdfs:label "economic unit"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Robbery>  rdfs:subClassOf fjs:violent_crime .
+fjs:violent_crime a rdfs:Class .
+fjs:violent_crime rdfs:label "violent crime"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Robbery>  rdfs:subClassOf fjs:theft .
+fjs:theft a rdfs:Class .
+fjs:theft rdfs:label "theft"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/sanity> a fjs:condition .
+fjs:condition  rdfs:label "condition"@en .
+fjs:condition  a rdfs:Class .
+fjs:condition  rdfs:seeAlso <http://www.wikidata.org/entity/Q813912> .
+fjs:condition rdfs:subClassOf fjs:state .
+fjs:state a rdfs:Class .
+fjs:state rdfs:label "state"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Major_event> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Door>  rdfs:subClassOf fjs:architectural_element .
+fjs:architectural_element a rdfs:Class .
+fjs:architectural_element rdfs:label "architectural element"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Door>  rdfs:subClassOf fjs:device .
+fjs:device a rdfs:Class .
+fjs:device rdfs:label "device"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Door>  rdfs:subClassOf fjs:obstacle .
+fjs:obstacle a rdfs:Class .
+fjs:obstacle rdfs:label "obstacle"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/a_good_coach> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Answer>  rdfs:subClassOf fjs:statement .
+fjs:statement a rdfs:Class .
+fjs:statement rdfs:label "statement"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Story> a fjs:form .
+fjs:form  rdfs:label "form"@en .
+fjs:form  a rdfs:Class .
+fjs:form  rdfs:seeAlso <http://www.wikidata.org/entity/Q1437361> .
+fjs:form rdfs:subClassOf fjs:format .
+fjs:format a rdfs:Class .
+fjs:format rdfs:label "format"@en .
+fjs:form rdfs:subClassOf fjs:form .
+fjs:form a rdfs:Class .
+fjs:form rdfs:label "form"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Means>  rdfs:subClassOf fjs:action .
+fjs:action a rdfs:Class .
+fjs:action rdfs:label "action"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/the_next_day> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Life> a fjs:property .
+fjs:property  rdfs:label "property"@en .
+fjs:property  a rdfs:Class .
+fjs:property  rdfs:seeAlso <http://www.wikidata.org/entity/Q937228> .
+fjs:property rdfs:subClassOf fjs:entity .
+fjs:entity a rdfs:Class .
+fjs:entity rdfs:label "entity"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Out> a fjs:gene .
+fjs:gene  rdfs:label "gene"@en .
+fjs:gene  a rdfs:Class .
+fjs:gene  rdfs:seeAlso <http://www.wikidata.org/entity/Q7187> .
+fjs:gene rdfs:subClassOf fjs:nucleic_acid_sequence .
+fjs:nucleic_acid_sequence a rdfs:Class .
+fjs:nucleic_acid_sequence rdfs:label "nucleic acid sequence"@en .
+fjs:gene rdfs:subClassOf fjs:biological_region .
+fjs:biological_region a rdfs:Class .
+fjs:biological_region rdfs:label "biological region"@en .
+fjs:gene rdfs:subClassOf fjs:biological_sequence .
+fjs:biological_sequence a rdfs:Class .
+fjs:biological_sequence rdfs:label "biological sequence"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Moderator> a fjs:Wikimedia_disambiguation_page .
+fjs:Wikimedia_disambiguation_page  rdfs:label "Wikimedia disambiguation page"@en .
+fjs:Wikimedia_disambiguation_page  a rdfs:Class .
+fjs:Wikimedia_disambiguation_page  rdfs:seeAlso <http://www.wikidata.org/entity/Q4167410> .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:MediaWiki_main-namespace_page .
+fjs:MediaWiki_main-namespace_page a rdfs:Class .
+fjs:MediaWiki_main-namespace_page rdfs:label "MediaWiki main-namespace page"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:list .
+fjs:list a rdfs:Class .
+fjs:list rdfs:label "list"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:Wikimedia_internal_item .
+fjs:Wikimedia_internal_item a rdfs:Class .
+fjs:Wikimedia_internal_item rdfs:label "Wikimedia internal item"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Tobin> a fjs:family_name .
+fjs:family_name  rdfs:label "family name"@en .
+fjs:family_name  a rdfs:Class .
+fjs:family_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q101352> .
+fjs:family_name rdfs:subClassOf fjs:anthroponym .
+fjs:anthroponym a rdfs:Class .
+fjs:anthroponym rdfs:label "anthroponym"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/The_strength> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/the_incident> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Two-thirds> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/shoulder>  rdfs:subClassOf fjs:cardinal_body_part .
+fjs:cardinal_body_part a rdfs:Class .
+fjs:cardinal_body_part rdfs:label "cardinal body part"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/shoulder>  rdfs:subClassOf fjs:subdivision_of_pectoral_girdle .
+fjs:subdivision_of_pectoral_girdle a rdfs:Class .
+fjs:subdivision_of_pectoral_girdle rdfs:label "subdivision of pectoral girdle"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Pistol>  rdfs:subClassOf fjs:short_gun .
+fjs:short_gun a rdfs:Class .
+fjs:short_gun rdfs:label "short gun"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Pistol>  rdfs:subClassOf fjs:handgun .
+fjs:handgun a rdfs:Class .
+fjs:handgun rdfs:label "handgun"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Pistol>  rdfs:subClassOf fjs:firearm .
+fjs:firearm a rdfs:Class .
+fjs:firearm rdfs:label "firearm"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/the_length> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Plan>  rdfs:subClassOf fjs:abstract_object .
+fjs:abstract_object a rdfs:Class .
+fjs:abstract_object rdfs:label "abstract object"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Voice>  rdfs:subClassOf fjs:animal_vocalization .
+fjs:animal_vocalization a rdfs:Class .
+fjs:animal_vocalization rdfs:label "animal vocalization"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Scratch>  rdfs:subClassOf fjs:protest_vote .
+fjs:protest_vote a rdfs:Class .
+fjs:protest_vote rdfs:label "protest vote"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/revenge>  rdfs:subClassOf fjs:behavior .
+fjs:behavior a rdfs:Class .
+fjs:behavior rdfs:label "behavior"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Money>  rdfs:subClassOf fjs:legal_tender .
+fjs:legal_tender a rdfs:Class .
+fjs:legal_tender rdfs:label "legal tender"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Money>  rdfs:subClassOf fjs:nominal_good .
+fjs:nominal_good a rdfs:Class .
+fjs:nominal_good rdfs:label "nominal good"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Money>  rdfs:subClassOf fjs:standard_of_deferred_payment .
+fjs:standard_of_deferred_payment a rdfs:Class .
+fjs:standard_of_deferred_payment rdfs:label "standard of deferred payment"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/The_contents> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/The_identity> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/bracket>  rdfs:subClassOf fjs:character .
+fjs:character a rdfs:Class .
+fjs:character rdfs:label "character"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Account_book>  rdfs:subClassOf fjs:document .
+fjs:document a rdfs:Class .
+fjs:document rdfs:label "document"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Account_book>  rdfs:subClassOf fjs:management_tool .
+fjs:management_tool a rdfs:Class .
+fjs:management_tool rdfs:label "management tool"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/The_morning> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Neurological_disorder> a fjs:disease .
+fjs:disease  rdfs:label "disease"@en .
+fjs:disease  a rdfs:Class .
+fjs:disease  rdfs:seeAlso <http://www.wikidata.org/entity/Q12136> .
+fjs:disease rdfs:subClassOf fjs:health_problem .
+fjs:health_problem a rdfs:Class .
+fjs:health_problem rdfs:label "health problem"@en .
+fjs:disease rdfs:subClassOf fjs:anomaly .
+fjs:anomaly a rdfs:Class .
+fjs:anomaly rdfs:label "anomaly"@en .
+fjs:disease rdfs:subClassOf fjs:physiological_condition .
+fjs:physiological_condition a rdfs:Class .
+fjs:physiological_condition rdfs:label "physiological condition"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Consultation>  rdfs:subClassOf fjs:medical_diagnosis .
+fjs:medical_diagnosis a rdfs:Class .
+fjs:medical_diagnosis rdfs:label "medical diagnosis"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Consultation>  rdfs:subClassOf fjs:doctor/patient_encounter .
+fjs:doctor/patient_encounter a rdfs:Class .
+fjs:doctor/patient_encounter rdfs:label "doctor/patient encounter"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Consultation>  rdfs:subClassOf fjs:consultancy .
+fjs:consultancy a rdfs:Class .
+fjs:consultancy rdfs:label "consultancy"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Consultation>  rdfs:subClassOf fjs:meeting .
+fjs:meeting a rdfs:Class .
+fjs:meeting rdfs:label "meeting"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Young_man> a fjs:given_name .
+fjs:given_name  rdfs:label "given name"@en .
+fjs:given_name  a rdfs:Class .
+fjs:given_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q202444> .
+fjs:given_name rdfs:subClassOf fjs:anthroponym .
+fjs:anthroponym a rdfs:Class .
+fjs:anthroponym rdfs:label "anthroponym"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/conviction>  rdfs:subClassOf fjs:verdict .
+fjs:verdict a rdfs:Class .
+fjs:verdict rdfs:label "verdict"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/conviction>  rdfs:subClassOf fjs:legal_proceeding .
+fjs:legal_proceeding a rdfs:Class .
+fjs:legal_proceeding rdfs:label "legal proceeding"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/name>  rdfs:subClassOf fjs:word .
+fjs:word a rdfs:Class .
+fjs:word rdfs:label "word"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/name>  rdfs:subClassOf fjs:sign .
+fjs:sign a rdfs:Class .
+fjs:sign rdfs:label "sign"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/butts> a fjs:family_name .
+fjs:family_name  rdfs:label "family name"@en .
+fjs:family_name  a rdfs:Class .
+fjs:family_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q101352> .
+fjs:family_name rdfs:subClassOf fjs:anthroponym .
+fjs:anthroponym a rdfs:Class .
+fjs:anthroponym rdfs:label "anthroponym"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/A_study> a fjs:painting .
+fjs:painting  rdfs:label "painting"@en .
+fjs:painting  a rdfs:Class .
+fjs:painting  rdfs:seeAlso <http://www.wikidata.org/entity/Q3305213> .
+fjs:painting rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/the_window> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Notification> a fjs:Wikimedia_disambiguation_page .
+fjs:Wikimedia_disambiguation_page  rdfs:label "Wikimedia disambiguation page"@en .
+fjs:Wikimedia_disambiguation_page  a rdfs:Class .
+fjs:Wikimedia_disambiguation_page  rdfs:seeAlso <http://www.wikidata.org/entity/Q4167410> .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:MediaWiki_main-namespace_page .
+fjs:MediaWiki_main-namespace_page a rdfs:Class .
+fjs:MediaWiki_main-namespace_page rdfs:label "MediaWiki main-namespace page"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:list .
+fjs:list a rdfs:Class .
+fjs:list rdfs:label "list"@en .
+fjs:Wikimedia_disambiguation_page rdfs:subClassOf fjs:Wikimedia_internal_item .
+fjs:Wikimedia_internal_item a rdfs:Class .
+fjs:Wikimedia_internal_item rdfs:label "Wikimedia internal item"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Proposal>  rdfs:subClassOf fjs:plan .
+fjs:plan a rdfs:Class .
+fjs:plan rdfs:label "plan"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Proposal>  rdfs:subClassOf fjs:request .
+fjs:request a rdfs:Class .
+fjs:request rdfs:label "request"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Proposal>  rdfs:subClassOf fjs:process .
+fjs:process a rdfs:Class .
+fjs:process rdfs:label "process"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/key> a fjs:color .
+fjs:color  rdfs:label "color"@en .
+fjs:color  a rdfs:Class .
+fjs:color  rdfs:seeAlso <http://www.wikidata.org/entity/Q1075> .
+fjs:color rdfs:subClassOf fjs:absorbed_or_reflected_object_light .
+fjs:absorbed_or_reflected_object_light a rdfs:Class .
+fjs:absorbed_or_reflected_object_light rdfs:label "absorbed or reflected object light"@en .
+fjs:color rdfs:subClassOf fjs:optical_phenomenon .
+fjs:optical_phenomenon a rdfs:Class .
+fjs:optical_phenomenon rdfs:label "optical phenomenon"@en .
+fjs:color rdfs:subClassOf fjs:quality .
+fjs:quality a rdfs:Class .
+fjs:quality rdfs:label "quality"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/a_walk> a fjs:single .
+fjs:single  rdfs:label "single"@en .
+fjs:single  a rdfs:Class .
+fjs:single  rdfs:seeAlso <http://www.wikidata.org/entity/Q134556> .
+fjs:single rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:single rdfs:subClassOf fjs:audio_storage_device .
+fjs:audio_storage_device a rdfs:Class .
+fjs:audio_storage_device rdfs:label "audio storage device"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/screwdriver> a fjs:tool .
+fjs:tool  rdfs:label "tool"@en .
+fjs:tool  a rdfs:Class .
+fjs:tool  rdfs:seeAlso <http://www.wikidata.org/entity/Q39546> .
+fjs:tool rdfs:subClassOf fjs:equipment .
+fjs:equipment a rdfs:Class .
+fjs:equipment rdfs:label "equipment"@en .
+fjs:tool rdfs:subClassOf fjs:converter .
+fjs:converter a rdfs:Class .
+fjs:converter rdfs:label "converter"@en .
+fjs:tool rdfs:subClassOf fjs:product .
+fjs:product a rdfs:Class .
+fjs:product rdfs:label "product"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Ash> a fjs:taxon .
+fjs:taxon  rdfs:label "taxon"@en .
+fjs:taxon  a rdfs:Class .
+fjs:taxon  rdfs:seeAlso <http://www.wikidata.org/entity/Q16521> .
+fjs:taxon rdfs:subClassOf fjs:living_organism_class .
+fjs:living_organism_class a rdfs:Class .
+fjs:living_organism_class rdfs:label "living organism class"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Hanging> a fjs:cause_of_death .
+fjs:cause_of_death  rdfs:label "cause of death"@en .
+fjs:cause_of_death  a rdfs:Class .
+fjs:cause_of_death  rdfs:seeAlso <http://www.wikidata.org/entity/Q1931388> .
+fjs:cause_of_death rdfs:subClassOf fjs:causality .
+fjs:causality a rdfs:Class .
+fjs:causality rdfs:label "causality"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Wash_basin>  rdfs:subClassOf fjs:container .
+fjs:container a rdfs:Class .
+fjs:container rdfs:label "container"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Wash_basin>  rdfs:subClassOf fjs:lebrillo .
+fjs:lebrillo a rdfs:Class .
+fjs:lebrillo rdfs:label "lebrillo"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Wash_basin>  rdfs:subClassOf fjs:bowl .
+fjs:bowl a rdfs:Class .
+fjs:bowl rdfs:label "bowl"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Wash_basin>  rdfs:subClassOf fjs:water_storage .
+fjs:water_storage a rdfs:Class .
+fjs:water_storage rdfs:label "water storage"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Time> a fjs:magazine .
+fjs:magazine  rdfs:label "magazine"@en .
+fjs:magazine  a rdfs:Class .
+fjs:magazine  rdfs:seeAlso <http://www.wikidata.org/entity/Q41298> .
+fjs:magazine rdfs:subClassOf fjs:periodical .
+fjs:periodical a rdfs:Class .
+fjs:periodical rdfs:label "periodical"@en .
+fjs:magazine rdfs:subClassOf fjs:communication_medium .
+fjs:communication_medium a rdfs:Class .
+fjs:communication_medium rdfs:label "communication medium"@en .
+fjs:magazine rdfs:subClassOf fjs:organization .
+fjs:organization a rdfs:Class .
+fjs:organization rdfs:label "organization"@en .
+fjs:magazine rdfs:subClassOf fjs:type_of_publication .
+fjs:type_of_publication a rdfs:Class .
+fjs:type_of_publication rdfs:label "type of publication"@en .
+fjs:magazine rdfs:subClassOf fjs:mass_media .
+fjs:mass_media a rdfs:Class .
+fjs:mass_media rdfs:label "mass media"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/One> a fjs:natural_number .
+fjs:natural_number  rdfs:label "natural number"@en .
+fjs:natural_number  a rdfs:Class .
+fjs:natural_number  rdfs:seeAlso <http://www.wikidata.org/entity/Q21199> .
+fjs:natural_number rdfs:subClassOf fjs:non-negative_integer .
+fjs:non-negative_integer a rdfs:Class .
+fjs:non-negative_integer rdfs:label "non-negative integer"@en .
+fjs:natural_number rdfs:subClassOf fjs:rational_number .
+fjs:rational_number a rdfs:Class .
+fjs:rational_number rdfs:label "rational number"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/14_years> a fjs:song .
+fjs:song  rdfs:label "song"@en .
+fjs:song  a rdfs:Class .
+fjs:song  rdfs:seeAlso <http://www.wikidata.org/entity/Q7366> .
+fjs:song rdfs:subClassOf fjs:musical_work .
+fjs:musical_work a rdfs:Class .
+fjs:musical_work rdfs:label "musical work"@en .
+fjs:song rdfs:subClassOf fjs:literary_work .
+fjs:literary_work a rdfs:Class .
+fjs:literary_work rdfs:label "literary work"@en .
+fjs:song rdfs:subClassOf fjs:vocal_music .
+fjs:vocal_music a rdfs:Class .
+fjs:vocal_music rdfs:label "vocal music"@en .
+fjs:song rdfs:subClassOf fjs:musical_composition .
+fjs:musical_composition a rdfs:Class .
+fjs:musical_composition rdfs:label "musical composition"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Pulse>  rdfs:subClassOf fjs:seed .
+fjs:seed a rdfs:Class .
+fjs:seed rdfs:label "seed"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Pulse>  rdfs:subClassOf fjs:vegetable .
+fjs:vegetable a rdfs:Class .
+fjs:vegetable rdfs:label "vegetable"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Pulse>  rdfs:subClassOf fjs:food .
+fjs:food a rdfs:Class .
+fjs:food rdfs:label "food"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Pulse>  rdfs:subClassOf fjs:type_of_fruit .
+fjs:type_of_fruit a rdfs:Class .
+fjs:type_of_fruit rdfs:label "type of fruit"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/House>  rdfs:subClassOf fjs:residential_building .
+fjs:residential_building a rdfs:Class .
+fjs:residential_building rdfs:label "residential building"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/House>  rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/An_important_role> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Cigar>  rdfs:subClassOf fjs:tobacco_product .
+fjs:tobacco_product a rdfs:Class .
+fjs:tobacco_product rdfs:label "tobacco product"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/stolen> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/walk> a fjs:commune_of_France .
+fjs:commune_of_France  rdfs:label "commune of France"@en .
+fjs:commune_of_France  a rdfs:Class .
+fjs:commune_of_France  rdfs:seeAlso <http://www.wikidata.org/entity/Q484170> .
+fjs:commune_of_France rdfs:subClassOf fjs:territorial_collectivity_of_France .
+fjs:territorial_collectivity_of_France a rdfs:Class .
+fjs:territorial_collectivity_of_France rdfs:label "territorial collectivity of France"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:LAU_2 .
+fjs:LAU_2 a rdfs:Class .
+fjs:LAU_2 rdfs:label "LAU 2"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:municipality .
+fjs:municipality a rdfs:Class .
+fjs:municipality rdfs:label "municipality"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:fourth-level_administrative_country_subdivision .
+fjs:fourth-level_administrative_country_subdivision a rdfs:Class .
+fjs:fourth-level_administrative_country_subdivision rdfs:label "fourth-level administrative country subdivision"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:fifth-level_administrative_country_subdivision .
+fjs:fifth-level_administrative_country_subdivision a rdfs:Class .
+fjs:fifth-level_administrative_country_subdivision rdfs:label "fifth-level administrative country subdivision"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:commune .
+fjs:commune a rdfs:Class .
+fjs:commune rdfs:label "commune"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:electoral_district .
+fjs:electoral_district a rdfs:Class .
+fjs:electoral_district rdfs:label "electoral district"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:human_settlement .
+fjs:human_settlement a rdfs:Class .
+fjs:human_settlement rdfs:label "human settlement"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/bouts> a fjs:human .
+fjs:human  rdfs:label "human"@en .
+fjs:human  a rdfs:Class .
+fjs:human  rdfs:seeAlso <http://www.wikidata.org/entity/Q5> .
+fjs:human rdfs:subClassOf fjs:person .
+fjs:person a rdfs:Class .
+fjs:person rdfs:label "person"@en .
+fjs:human rdfs:subClassOf fjs:natural_person .
+fjs:natural_person a rdfs:Class .
+fjs:natural_person rdfs:label "natural person"@en .
+fjs:human rdfs:subClassOf fjs:omnivore .
+fjs:omnivore a rdfs:Class .
+fjs:omnivore rdfs:label "omnivore"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/himself> a fjs:third-person_pronoun .
+fjs:third-person_pronoun  rdfs:label "third-person pronoun"@en .
+fjs:third-person_pronoun  a rdfs:Class .
+fjs:third-person_pronoun  rdfs:seeAlso <http://www.wikidata.org/entity/Q28531230> .
+fjs:third-person_pronoun rdfs:subClassOf fjs:personal_pronoun .
+fjs:personal_pronoun a rdfs:Class .
+fjs:personal_pronoun rdfs:label "personal pronoun"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/about_two_men> a fjs:item_of_collection_or_exhibition .
+fjs:item_of_collection_or_exhibition  rdfs:label "item of collection or exhibition"@en .
+fjs:item_of_collection_or_exhibition  a rdfs:Class .
+fjs:item_of_collection_or_exhibition  rdfs:seeAlso <http://www.wikidata.org/entity/Q18593264> .
+fjs:item_of_collection_or_exhibition rdfs:subClassOf fjs:physical_object .
+fjs:physical_object a rdfs:Class .
+fjs:physical_object rdfs:label "physical object"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/fact>  rdfs:subClassOf fjs:occurrence .
+fjs:occurrence a rdfs:Class .
+fjs:occurrence rdfs:label "occurrence"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/fact>  rdfs:subClassOf fjs:phenomenon .
+fjs:phenomenon a rdfs:Class .
+fjs:phenomenon rdfs:label "phenomenon"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/the_gold> a fjs:state_of_the_United_States .
+fjs:state_of_the_United_States  rdfs:label "state of the United States"@en .
+fjs:state_of_the_United_States  a rdfs:Class .
+fjs:state_of_the_United_States  rdfs:seeAlso <http://www.wikidata.org/entity/Q35657> .
+fjs:state_of_the_United_States rdfs:subClassOf fjs:administrative_territorial_entity_of_the_United_States .
+fjs:administrative_territorial_entity_of_the_United_States a rdfs:Class .
+fjs:administrative_territorial_entity_of_the_United_States rdfs:label "administrative territorial entity of the United States"@en .
+fjs:state_of_the_United_States rdfs:subClassOf fjs:federated_state .
+fjs:federated_state a rdfs:Class .
+fjs:federated_state rdfs:label "federated state"@en .
+fjs:state_of_the_United_States rdfs:subClassOf fjs:first-level_administrative_country_subdivision .
+fjs:first-level_administrative_country_subdivision a rdfs:Class .
+fjs:first-level_administrative_country_subdivision rdfs:label "first-level administrative country subdivision"@en .
+fjs:state_of_the_United_States rdfs:subClassOf fjs:electoral_district .
+fjs:electoral_district a rdfs:Class .
+fjs:electoral_district rdfs:label "electoral district"@en .
+<http://kgc.knowledge-graph.jp/data/predicate/Have> a fjs:family_name .
+fjs:family_name  rdfs:label "family name"@en .
+fjs:family_name  a rdfs:Class .
+fjs:family_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q101352> .
+fjs:family_name rdfs:subClassOf fjs:anthroponym .
+fjs:anthroponym a rdfs:Class .
+fjs:anthroponym rdfs:label "anthroponym"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Disgust> a fjs:negative_emotion .
+fjs:negative_emotion  rdfs:label "negative emotion"@en .
+fjs:negative_emotion  a rdfs:Class .
+fjs:negative_emotion  rdfs:seeAlso <http://www.wikidata.org/entity/Q60539481> .
+fjs:negative_emotion rdfs:subClassOf fjs:emotion .
+fjs:emotion a rdfs:Class .
+fjs:emotion rdfs:label "emotion"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/The_heart> a fjs:locality .
+fjs:locality  rdfs:label "locality"@en .
+fjs:locality  a rdfs:Class .
+fjs:locality  rdfs:seeAlso <http://www.wikidata.org/entity/Q3257686> .
+fjs:locality rdfs:subClassOf fjs:human_settlement .
+fjs:human_settlement a rdfs:Class .
+fjs:human_settlement rdfs:label "human settlement"@en .
+fjs:locality rdfs:subClassOf fjs:geographic_location .
+fjs:geographic_location a rdfs:Class .
+fjs:geographic_location rdfs:label "geographic location"@en .
+fjs:locality rdfs:subClassOf fjs:section_of_populated_place .
+fjs:section_of_populated_place a rdfs:Class .
+fjs:section_of_populated_place rdfs:label "section of populated place"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Face> a fjs:anatomical_structure .
+fjs:anatomical_structure  rdfs:label "anatomical structure"@en .
+fjs:anatomical_structure  a rdfs:Class .
+fjs:anatomical_structure  rdfs:seeAlso <http://www.wikidata.org/entity/Q4936952> .
+fjs:anatomical_structure rdfs:subClassOf fjs:biological_component .
+fjs:biological_component a rdfs:Class .
+fjs:biological_component rdfs:label "biological component"@en .
+fjs:anatomical_structure rdfs:subClassOf fjs:material_anatomical_entity .
+fjs:material_anatomical_entity a rdfs:Class .
+fjs:material_anatomical_entity rdfs:label "material anatomical entity"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/the_cities> a fjs:version,_edition,_or_translation .
+fjs:version,_edition,_or_translation  rdfs:label "version, edition, or translation"@en .
+fjs:version,_edition,_or_translation  a rdfs:Class .
+fjs:version,_edition,_or_translation  rdfs:seeAlso <http://www.wikidata.org/entity/Q3331189> .
+fjs:version,_edition,_or_translation rdfs:subClassOf fjs:manifestation .
+fjs:manifestation a rdfs:Class .
+fjs:manifestation rdfs:label "manifestation"@en .
+fjs:version,_edition,_or_translation rdfs:subClassOf fjs:work .
+fjs:work a rdfs:Class .
+fjs:work rdfs:label "work"@en .
+fjs:version,_edition,_or_translation rdfs:subClassOf fjs:publication .
+fjs:publication a rdfs:Class .
+fjs:publication rdfs:label "publication"@en .
+fjs:version,_edition,_or_translation rdfs:subClassOf fjs:second-order_class .
+fjs:second-order_class a rdfs:Class .
+fjs:second-order_class rdfs:label "second-order class"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/the_letter> a fjs:film .
+fjs:film  rdfs:label "film"@en .
+fjs:film  a rdfs:Class .
+fjs:film  rdfs:seeAlso <http://www.wikidata.org/entity/Q11424> .
+fjs:film rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+fjs:film rdfs:subClassOf fjs:audiovisual_work .
+fjs:audiovisual_work a rdfs:Class .
+fjs:audiovisual_work rdfs:label "audiovisual work"@en .
+fjs:film rdfs:subClassOf fjs:series .
+fjs:series a rdfs:Class .
+fjs:series rdfs:label "series"@en .
+fjs:film rdfs:subClassOf fjs:moving_image .
+fjs:moving_image a rdfs:Class .
+fjs:moving_image rdfs:label "moving image"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Expression> a fjs:social_skills .
+fjs:social_skills  rdfs:label "social skills"@en .
+fjs:social_skills  a rdfs:Class .
+fjs:social_skills  rdfs:seeAlso <http://www.wikidata.org/entity/Q1413287> .
+fjs:social_skills rdfs:subClassOf fjs:skill .
+fjs:skill a rdfs:Class .
+fjs:skill rdfs:label "skill"@en .
+fjs:social_skills rdfs:subClassOf fjs:competence .
+fjs:competence a rdfs:Class .
+fjs:competence rdfs:label "competence"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/young_man> a fjs:given_name .
+fjs:given_name  rdfs:label "given name"@en .
+fjs:given_name  a rdfs:Class .
+fjs:given_name  rdfs:seeAlso <http://www.wikidata.org/entity/Q202444> .
+fjs:given_name rdfs:subClassOf fjs:anthroponym .
+fjs:anthroponym a rdfs:Class .
+fjs:anthroponym rdfs:label "anthroponym"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/face> a fjs:anatomical_structure .
+fjs:anatomical_structure  rdfs:label "anatomical structure"@en .
+fjs:anatomical_structure  a rdfs:Class .
+fjs:anatomical_structure  rdfs:seeAlso <http://www.wikidata.org/entity/Q4936952> .
+fjs:anatomical_structure rdfs:subClassOf fjs:biological_component .
+fjs:biological_component a rdfs:Class .
+fjs:biological_component rdfs:label "biological component"@en .
+fjs:anatomical_structure rdfs:subClassOf fjs:material_anatomical_entity .
+fjs:material_anatomical_entity a rdfs:Class .
+fjs:material_anatomical_entity rdfs:label "material anatomical entity"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/father> a fjs:kinship .
+fjs:kinship  rdfs:label "kinship"@en .
+fjs:kinship  a rdfs:Class .
+fjs:kinship  rdfs:seeAlso <http://www.wikidata.org/entity/Q171318> .
+fjs:kinship rdfs:subClassOf fjs:social_group .
+fjs:social_group a rdfs:Class .
+fjs:social_group rdfs:label "social group"@en .
+fjs:kinship rdfs:subClassOf fjs:social_relation .
+fjs:social_relation a rdfs:Class .
+fjs:social_relation rdfs:label "social relation"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Strange_habit> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Facts>  rdfs:subClassOf fjs:electric_power_converter .
+fjs:electric_power_converter a rdfs:Class .
+fjs:electric_power_converter rdfs:label "electric power converter"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Conditions> a fjs:album .
+fjs:album  rdfs:label "album"@en .
+fjs:album  a rdfs:Class .
+fjs:album  rdfs:seeAlso <http://www.wikidata.org/entity/Q482994> .
+fjs:album rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:album rdfs:subClassOf fjs:visual_artwork .
+fjs:visual_artwork a rdfs:Class .
+fjs:visual_artwork rdfs:label "visual artwork"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Morbidly> a fjs:scholarly_article .
+fjs:scholarly_article  rdfs:label "scholarly article"@en .
+fjs:scholarly_article  a rdfs:Class .
+fjs:scholarly_article  rdfs:seeAlso <http://www.wikidata.org/entity/Q13442814> .
+fjs:scholarly_article rdfs:subClassOf fjs:scientific_publication .
+fjs:scientific_publication a rdfs:Class .
+fjs:scientific_publication rdfs:label "scientific publication"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:article .
+fjs:article a rdfs:Class .
+fjs:article rdfs:label "article"@en .
+fjs:scholarly_article rdfs:subClassOf fjs:scholarly_work .
+fjs:scholarly_work a rdfs:Class .
+fjs:scholarly_work rdfs:label "scholarly work"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Evidence> a fjs:concept .
+fjs:concept  rdfs:label "concept"@en .
+fjs:concept  a rdfs:Class .
+fjs:concept  rdfs:seeAlso <http://www.wikidata.org/entity/Q151885> .
+fjs:concept rdfs:subClassOf fjs:mental_representation .
+fjs:mental_representation a rdfs:Class .
+fjs:mental_representation rdfs:label "mental representation"@en .
+fjs:concept rdfs:subClassOf fjs:abstract_object .
+fjs:abstract_object a rdfs:Class .
+fjs:abstract_object rdfs:label "abstract object"@en .
+fjs:concept rdfs:subClassOf fjs:capability .
+fjs:capability a rdfs:Class .
+fjs:capability rdfs:label "capability"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Higher_education> a fjs:educational_stage .
+fjs:educational_stage  rdfs:label "educational stage"@en .
+fjs:educational_stage  a rdfs:Class .
+fjs:educational_stage  rdfs:seeAlso <http://www.wikidata.org/entity/Q18189> .
+fjs:educational_stage rdfs:subClassOf fjs:education .
+fjs:education a rdfs:Class .
+fjs:education rdfs:label "education"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Youth> a fjs:phase_of_human_life .
+fjs:phase_of_human_life  rdfs:label "phase of human life"@en .
+fjs:phase_of_human_life  a rdfs:Class .
+fjs:phase_of_human_life  rdfs:seeAlso <http://www.wikidata.org/entity/Q785260> .
+fjs:phase_of_human_life rdfs:subClassOf fjs:development_stage_of_animal .
+fjs:development_stage_of_animal a rdfs:Class .
+fjs:development_stage_of_animal rdfs:label "development stage of animal"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Reply>  rdfs:subClassOf fjs:statement .
+fjs:statement a rdfs:Class .
+fjs:statement rdfs:label "statement"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/That> a fjs:extended_play .
+fjs:extended_play  rdfs:label "extended play"@en .
+fjs:extended_play  a rdfs:Class .
+fjs:extended_play  rdfs:seeAlso <http://www.wikidata.org/entity/Q169930> .
+fjs:extended_play rdfs:subClassOf fjs:release .
+fjs:release a rdfs:Class .
+fjs:release rdfs:label "release"@en .
+fjs:extended_play rdfs:subClassOf fjs:type_of_manufactured_good .
+fjs:type_of_manufactured_good a rdfs:Class .
+fjs:type_of_manufactured_good rdfs:label "type of manufactured good"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Footprint>  rdfs:subClassOf fjs:trace .
+fjs:trace a rdfs:Class .
+fjs:trace rdfs:label "trace"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Wall>  rdfs:subClassOf fjs:architectural_structure .
+fjs:architectural_structure a rdfs:Class .
+fjs:architectural_structure rdfs:label "architectural structure"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Wall>  rdfs:subClassOf fjs:support .
+fjs:support a rdfs:Class .
+fjs:support rdfs:label "support"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Wall>  rdfs:subClassOf fjs:null .
+fjs:null a rdfs:Class .
+fjs:null rdfs:label "null"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Walk> a fjs:commune_of_France .
+fjs:commune_of_France  rdfs:label "commune of France"@en .
+fjs:commune_of_France  a rdfs:Class .
+fjs:commune_of_France  rdfs:seeAlso <http://www.wikidata.org/entity/Q484170> .
+fjs:commune_of_France rdfs:subClassOf fjs:territorial_collectivity_of_France .
+fjs:territorial_collectivity_of_France a rdfs:Class .
+fjs:territorial_collectivity_of_France rdfs:label "territorial collectivity of France"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:LAU_2 .
+fjs:LAU_2 a rdfs:Class .
+fjs:LAU_2 rdfs:label "LAU 2"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:municipality .
+fjs:municipality a rdfs:Class .
+fjs:municipality rdfs:label "municipality"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:fourth-level_administrative_country_subdivision .
+fjs:fourth-level_administrative_country_subdivision a rdfs:Class .
+fjs:fourth-level_administrative_country_subdivision rdfs:label "fourth-level administrative country subdivision"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:fifth-level_administrative_country_subdivision .
+fjs:fifth-level_administrative_country_subdivision a rdfs:Class .
+fjs:fifth-level_administrative_country_subdivision rdfs:label "fifth-level administrative country subdivision"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:commune .
+fjs:commune a rdfs:Class .
+fjs:commune rdfs:label "commune"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:electoral_district .
+fjs:electoral_district a rdfs:Class .
+fjs:electoral_district rdfs:label "electoral district"@en .
+fjs:commune_of_France rdfs:subClassOf fjs:human_settlement .
+fjs:human_settlement a rdfs:Class .
+fjs:human_settlement rdfs:label "human settlement"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/Obex>  rdfs:subClassOf fjs:region_of_wall_of_fourth_ventricle .
+fjs:region_of_wall_of_fourth_ventricle a rdfs:Class .
+fjs:region_of_wall_of_fourth_ventricle rdfs:label "region of wall of fourth ventricle"@en .
+<http://kgc.knowledge-graph.jp/data/ResidentPatient/frequently> a fjs:term .
+fjs:term  rdfs:label "term"@en .
+fjs:term  a rdfs:Class .
+fjs:term  rdfs:seeAlso <http://www.wikidata.org/entity/Q1969448> .
+fjs:term rdfs:subClassOf fjs:concept .
+fjs:concept a rdfs:Class .
+fjs:concept rdfs:label "concept"@en .
+fjs:term rdfs:subClassOf fjs:lexical_item .
+fjs:lexical_item a rdfs:Class .
+fjs:lexical_item rdfs:label "lexical item"@en .
