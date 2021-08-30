@@ -1,0 +1,459 @@
+@prefix : <http://kgchallenge.github.io/ontology/project/0PySb2LTgsogxpMGxkXdS#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kgchallenge.github.io/ontology/project/0PySb2LTgsogxpMGxkXdS> .
+
+<http://kgchallenge.github.io/ontology/project/0PySb2LTgsogxpMGxkXdS> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://kgchallenge.github.io/ontology/hasSymptom
+<http://kgchallenge.github.io/ontology/hasSymptom> rdf:type owl:ObjectProperty ;
+                                                                rdfs:label "hasSymptom"@en ;
+                                                                rdfs:label "症状"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/hasOffensiveWeapon
+<http://kgchallenge.github.io/ontology/hasOffensiveWeapon> rdf:type owl:ObjectProperty ;
+                                                                rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                rdfs:domain <http://kgchallenge.github.io/ontology/殺害方法> ;
+                                                                rdfs:range <http://kgchallenge.github.io/ontology/犯罪供用物> ;
+                                                                rdfs:label "hasOffensiveWeapon"@en ;
+                                                                rdfs:label "犯罪供用物"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/hasRelatedObject
+<http://kgchallenge.github.io/ontology/hasRelatedObject> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf owl:topObjectProperty ;
+                                                               rdfs:domain <http://kgchallenge.github.io/ontology/犯罪供用物> ;
+                                                               rdfs:range <http://kgchallenge.github.io/ontology/犯罪関連物> ;
+                                                               rdfs:label "hasRelatedObject"@en ;
+                                                               rdfs:label "犯罪関連物"@ja .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+#################################################################
+#    KillingClasses
+#################################################################
+
+
+###  http://kgchallenge.github.io/ontology/殺害方法
+<http://kgchallenge.github.io/ontology/殺害方法> rdf:type owl:Class ;
+                                                                rdfs:label "Killing"@en ,
+                                                                           "殺害方法"@ja .
+
+
+<http://kgchallenge.github.io/ontology/撲殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/殺害方法> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasOffensiveWeapon> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/鈍器>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasSymptom> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/傷跡>
+                                                                                ] ;
+                                                                rdfs:label "SwordKilling"@en ,
+                                                                           "撲殺"@ja .
+
+<http://kgchallenge.github.io/ontology/絞殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/殺害方法> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasSymptom> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/傷跡>
+                                                                                ] ;
+                                                                rdfs:label "SwordKilling"@en ,
+                                                                           "絞殺"@ja .
+
+<http://kgchallenge.github.io/ontology/刺殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/殺害方法> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasOffensiveWeapon> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/鈍器>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasSymptom> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/傷跡>
+                                                                                ] ;
+                                                                rdfs:label "SwordKilling"@en ,
+                                                                           "刺殺"@ja .
+
+<http://kgchallenge.github.io/ontology/殴殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/殺害方法> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasSymptom> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/傷跡>
+                                                                                ] ;
+                                                                rdfs:label "SwordKilling"@en ,
+                                                                           "殴殺"@ja .
+
+
+<http://kgchallenge.github.io/ontology/薬殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/殺害方法> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasOffensiveWeapon> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/薬物>
+                                                                                ] ;
+                                                                rdfs:label "SwordKilling"@en ,
+                                                                           "薬殺"@ja .
+
+<http://kgchallenge.github.io/ontology/爆殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/殺害方法> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasSymptom> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/傷跡>
+                                                                                ] ;
+                                                                rdfs:label "SwordKilling"@en ,
+                                                                           "爆殺"@ja .
+<http://kgchallenge.github.io/ontology/焼殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/殺害方法> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasSymptom> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/傷跡>
+                                                                                ] ;
+                                                                rdfs:label "SwordKilling"@en ,
+                                                                           "焼殺"@ja .
+<http://kgchallenge.github.io/ontology/射殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/殺害方法> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasSymptom> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/傷跡>
+                                                                                ] ;
+                                                                rdfs:label "SwordKilling"@en ,
+                                                                           "射殺"@ja .
+
+###  http://kgchallenge.github.io/ontology/斬殺
+<http://kgchallenge.github.io/ontology/斬殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/殺害方法> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasOffensiveWeapon> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/刃物>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasSymptom> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/傷跡>
+                                                                                ] ;
+                                                                rdfs:label "SwordKilling"@en ,
+                                                                           "斬殺"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/ナイフ斬殺
+<http://kgchallenge.github.io/ontology/ナイフ斬殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/斬殺> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasOffensiveWeapon> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/ナイフ>
+                                                                                ] ;
+                                                                rdfs:label "SwordKillingByKnife"@en ,
+                                                                           "ナイフ斬殺"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/刀斬殺
+<http://kgchallenge.github.io/ontology/刀斬殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/斬殺> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasOffensiveWeapon> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/刀>
+                                                                                ] ;
+                                                                rdfs:label "SwordKillingBySword"@en ,
+                                                                           "刀斬殺"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/包丁斬殺
+<http://kgchallenge.github.io/ontology/包丁斬殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/斬殺> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasOffensiveWeapon> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/包丁>
+                                                                                ] ;
+                                                                rdfs:label "SwordKillingByKitchenKnife"@en ,
+                                                                           "包丁斬殺"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/毒殺
+<http://kgchallenge.github.io/ontology/毒殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/殺害方法> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasSymptom> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/嘔吐>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasSymptom> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/めまい>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasSymptom> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/青白い>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasSymptom> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/震え>
+                                                                                ] ;
+                                                                rdfs:label "PoisonKilling"@en ,
+                                                                           "毒殺"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/毒ガス殺
+<http://kgchallenge.github.io/ontology/毒ガス殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/毒殺> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasOffensiveWeapon> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/毒ガス>
+                                                                                ] ;
+                                                                rdfs:label "KillingByPoisonGas"@en ,
+                                                                           "毒ガス殺"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/毒動物殺
+<http://kgchallenge.github.io/ontology/毒動物殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/毒殺> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasOffensiveWeapon> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/毒動物>
+                                                                                ] ;
+                                                                rdfs:label "KillingByPoisonAnimal"@en ,
+                                                                           "毒動物殺"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/毒蛇殺
+<http://kgchallenge.github.io/ontology/毒蛇殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/毒動物殺> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasOffensiveWeapon> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/毒蛇>
+                                                                                ] ;
+                                                                rdfs:label "KillingByPoisonSnake"@en ,
+                                                                           "毒蛇殺"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/毒蜘蛛殺
+<http://kgchallenge.github.io/ontology/毒蜘蛛殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/毒動物殺> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasOffensiveWeapon> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/毒蜘蛛>
+                                                                                ] ;
+                                                                rdfs:label "KillingByPoisonSpider"@en ,
+                                                                           "毒蜘蛛殺"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/毒河豚殺
+<http://kgchallenge.github.io/ontology/毒河豚殺> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/毒動物殺> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasOffensiveWeapon> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/河豚>
+                                                                                ] ;
+                                                                rdfs:label "KillingByBlowfish"@en ,
+                                                                           "毒河豚殺"@ja .
+
+
+#################################################################
+#    OffensiveWeaponClasses
+#################################################################
+
+
+###  http://kgchallenge.github.io/ontology/犯罪供用物
+<http://kgchallenge.github.io/ontology/犯罪供用物> rdf:type owl:Class ;
+                                                               rdfs:label "OffensiveWeapon"@en ,
+                                                                          "犯罪供用物"@ja .
+
+###  http://kgchallenge.github.io/ontology/毒物
+<http://kgchallenge.github.io/ontology/毒物> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://kgchallenge.github.io/ontology/犯罪供用物> ;
+                                                               rdfs:label "Poison"@en ,
+                                                                          "毒物"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/毒ガス
+<http://kgchallenge.github.io/ontology/毒ガス> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/毒物> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasRelatedObject> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/毒ガス保存容器>
+                                                                                ] ;
+                                                                rdfs:label "PoisonGas"@en ,
+                                                                           "毒ガス"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/毒動物
+<http://kgchallenge.github.io/ontology/毒動物> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/犯罪供用物> ;
+                                                                rdfs:label "PoisonAnimal"@en ,
+                                                                           "毒動物"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/毒蜘蛛
+<http://kgchallenge.github.io/ontology/毒蜘蛛> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/毒動物> ;
+                                                                rdfs:label "PoisnousSpider"@en ,
+                                                                           "毒蜘蛛"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/毒蛇
+<http://kgchallenge.github.io/ontology/毒蛇> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/毒動物> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasRelatedObject> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/蛇調教道具>
+                                                                                ] ;
+                                                                rdfs:label "PoisonousSnake"@en ,
+                                                                           "毒蛇"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/河豚
+<http://kgchallenge.github.io/ontology/河豚> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/毒動物> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://kgchallenge.github.io/ontology/hasRelatedObject> ;
+                                                                                  owl:someValuesFrom <http://kgchallenge.github.io/ontology/水槽>
+                                                                                ] ;
+                                                                rdfs:label "Blowfish"@en ,
+                                                                           "河豚"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/刃物
+<http://kgchallenge.github.io/ontology/刃物> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/犯罪供用物> ;
+                                                                rdfs:label "BladedObject"@en ,
+                                                                           "刃物"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/ナイフ
+<http://kgchallenge.github.io/ontology/ナイフ> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/刃物> ;
+                                                                rdfs:label "ナイフ"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/刀
+<http://kgchallenge.github.io/ontology/刀> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/刃物> ;
+                                                                rdfs:label "刀"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/包丁
+<http://kgchallenge.github.io/ontology/包丁> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/刃物> ;
+                                                                rdfs:label "包丁"@ja .
+
+
+#################################################################
+#    SymptomClasses
+#################################################################
+
+
+###  http://kgchallenge.github.io/ontology/症状
+<http://kgchallenge.github.io/ontology/症状> rdf:type owl:Class ;
+                                                                rdfs:label "Symptom"@en ,
+                                                                           "症状"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/嘔吐
+<http://kgchallenge.github.io/ontology/嘔吐> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/症状> ;
+                                                                rdfs:label "vomiting"@en ,
+                                                                           "嘔吐"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/めまい
+<http://kgchallenge.github.io/ontology/めまい> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/症状> ;
+                                                                rdfs:label "beDizzy"@en ,
+                                                                           "めまい"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/青白い
+<http://kgchallenge.github.io/ontology/青白い> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://kgchallenge.github.io/ontology/症状> ;
+                                                               rdfs:label "turnPale"@en ,
+                                                                          "青白い"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/震え
+<http://kgchallenge.github.io/ontology/震え> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://kgchallenge.github.io/ontology/症状> ;
+                                                               rdfs:label "chilling"@en ,
+                                                                          "震え"@ja .
+###  http://kgchallenge.github.io/ontology/傷跡
+<http://kgchallenge.github.io/ontology/傷跡> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://kgchallenge.github.io/ontology/症状> ;
+                                                               rdfs:label "scar"@en ,
+                                                                          "傷跡"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/切傷
+<http://kgchallenge.github.io/ontology/切傷> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/傷跡> ;
+                                                                rdfs:label "gash"@en ,
+                                                                           "切傷"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/打撲
+<http://kgchallenge.github.io/ontology/打撲> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/傷跡> ;
+                                                                rdfs:label "Bruise"@en ,
+                                                                           "打撲"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/火傷
+<http://kgchallenge.github.io/ontology/火傷> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/傷跡> ;
+                                                                rdfs:label "burn"@en ,
+                                                                           "火傷"@ja .
+
+
+#################################################################
+#    RelatedObjectClasses
+#################################################################
+
+
+###  http://kgchallenge.github.io/ontology/犯罪関連物
+<http://kgchallenge.github.io/ontology/犯罪関連物> rdf:type owl:Class ;
+                                                                rdfs:label "RelatedObject"@en ,
+                                                                           "犯罪関連物"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/毒ガス保存容器
+<http://kgchallenge.github.io/ontology/毒ガス保存容器> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/犯罪関連物> ;
+                                                                rdfs:label "毒ガス保存容器"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/水槽
+<http://kgchallenge.github.io/ontology/水槽> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/犯罪関連物> ;
+                                                                rdfs:label "水槽"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/蛇調教道具
+<http://kgchallenge.github.io/ontology/蛇調教道具> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://kgchallenge.github.io/ontology/犯罪関連物> ;
+                                                                rdfs:label "蛇調教道具"@ja .
+
+
+###  http://kgchallenge.github.io/ontology/鞭
+<http://kgchallenge.github.io/ontology/鞭> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://kgchallenge.github.io/ontology/蛇調教道具> ;
+                                                               rdfs:label "Whip"@en ,
+                                                                          "鞭"@ja .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://kgchallenge.github.io/ontology/R7sN6iCtPE2XwdbHcdriWqx
+<http://kgchallenge.github.io/ontology/R7sN6iCtPE2XwdbHcdriWqx> rdf:type owl:NamedIndividual ,
+                                                                         <http://kgchallenge.github.io/ontology/切傷> ;
+                                                                rdfs:label "切傷"@ja .
+
+
+###  Generated by the OWL API (version 4.5.2) https://github.com/owlcs/owlapi

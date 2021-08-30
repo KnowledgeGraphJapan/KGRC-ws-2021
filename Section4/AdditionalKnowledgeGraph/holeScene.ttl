@@ -1,0 +1,171 @@
+# 修正: シーン関連インスタンス
+# "無い"の記述には基本手をいれていない
+
+@prefix kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#> .
+@prefix kd: <http://kgc.knowledge-graph.jp/data/SpeckledBand/> .
+@prefix kgcf: <http://kgchallenge.github.io/ontology/> .
+@prefix kdf: <http://kgchallenge.github.io/data/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# <http://kgc.knowledge-graph.jp/data/SpeckledBand/46>
+#     rdf:type    kgc:Situation;
+#     kgc:source  "寝室間にドアはない"@ja ;
+#     kgc:source  "There is no door between bedrooms"@en ;
+#     kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/notExist> ;
+#     kgc:subject   <http://kgc.knowledge-graph.jp/data/SpeckledBand/door> ;
+#     kgc:from   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Roylott> ;
+#     kgc:to   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Julia>.
+
+# <http://kgc.knowledge-graph.jp/data/SpeckledBand/47>
+#     rdf:type    kgc:Situation;
+#     kgc:source  "寝室間にドアはない"@ja ;
+#     kgc:source  "There is no door between bedrooms"@en ;
+#     kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/notExist> ;
+#     kgc:subject   <http://kgc.knowledge-graph.jp/data/SpeckledBand/door> ;
+#     kgc:from   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Julia> ;
+#     kgc:to   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Helen>.
+
+# --------------------------------
+# ドアを具体的なインスタンスに変更
+# ドア・窓の位置関係の記述統一
+# --------------------------------
+
+# 寝室間にドアはない
+kd:46 kgc:where kd:bedroom_of_Roylott.
+kd:47 kgc:where kd:bedroom_of_Julia.
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/48>
+    rdf:type    kgc:Situation;
+    kgc:source  "全ての寝室は廊下に繋がる"@ja ;
+    kgc:source  "All the bedrooms are connected to the hallway"@en ;
+    kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/exist> ;
+    kgc:subject   kdf:door_of_bedroom_of_Roylott ;
+    kgc:where   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Roylott> ;
+    kgc:from kd:bedroom_of_Roylott;
+    kgc:to   <http://kgc.knowledge-graph.jp/data/SpeckledBand/corridor>.
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/49>
+    rdf:type    kgc:Situation;
+    kgc:source  "全ての寝室は廊下に繋がる"@ja ;
+    kgc:source  "All the bedrooms are connected to the hallway"@en ;
+    kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/exist> ;
+    kgc:subject   kd:door_of_bedroom_of_Julia ;
+    kgc:where   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Julia> ;
+    kgc:from kd:bedroom_of_Julia;
+    kgc:to   <http://kgc.knowledge-graph.jp/data/SpeckledBand/corridor>.
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/50>
+    rdf:type    kgc:Situation;
+    kgc:source  "全ての寝室は廊下に繋がる"@ja ;
+    kgc:source  "All the bedrooms are connected to the hallway"@en ;
+    kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/exist> ;
+    kgc:subject   kdf:door_of_bedroom_of_Helen ;
+    kgc:where   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Helen> ;
+    kgc:from kd:bedroom_of_Helen;
+    kgc:to   <http://kgc.knowledge-graph.jp/data/SpeckledBand/corridor>.
+
+# --------------------------
+# 窓を具体的なインスタンスに変更
+# Juliaの部屋の2つの窓を区別
+# --------------------------
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/95>
+    rdf:type    kgc:Situation;
+    kgc:source  "ジュリアの部屋の窓には旧式の鎧戸が付いている。"@ja ;
+    kgc:source  "bedroom of Julia window has an old-fashioned door."@en ;
+    kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/have> ;
+    kgc:subject   kdf:window_of_bedroom_of_Julia_gardenside ;
+    kgc:what   <http://kgc.knowledge-graph.jp/data/SpeckledBand/shutter> ;
+    kgc:adjunct   <http://kgc.knowledge-graph.jp/data/SpeckledBand/old-fashioned>.
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/96>
+    rdf:type    kgc:Situation;
+    kgc:source  "ジュリアの部屋の窓は夜にはいつも太い鉄の棒をはめて閉ざしている。"@ja ;
+    kgc:source  "bedroom of Julia window is always closed with a thick iron stick at night."@en ;
+    kgc:hasProperty   <http://kgc.knowledge-graph.jp/data/SpeckledBand/close> ;
+    kgc:subject   kdf:window_of_bedroom_of_Julia_gardenside ;
+    kgc:when   <http://kgc.knowledge-graph.jp/data/SpeckledBand/night> ;
+    kgc:how   <http://kgc.knowledge-graph.jp/data/SpeckledBand/with_a_thick_iron_rod>.
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/183>
+    rdf:type    kgc:Situation;
+    kgc:source  "ヘレンの部屋には廊下に向いた窓がある。"@ja ;
+    kgc:source  "bedroom of Helen has a window facing the hallway."@en ;
+    kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/exist> ;
+    kgc:subject   kd:window_of_bedroom_of_Helen ;
+    kgc:where   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Helen> ;
+    kgc:from   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Helen> ;
+    kgc:to   <http://kgc.knowledge-graph.jp/data/SpeckledBand/corridor>.
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/T184>
+    rdf:type    kgc:Situation;
+    kgc:source  "ヘレンの部屋の窓は狭い。ジュリアの部屋の窓は狭い。ロイロット博士の部屋の窓は狭い。"@ja ;
+    kgc:source  "bedroom of Helen window is narrow. bedroom of Julia window is narrow.  Roylott 's bedroom has a narrow window."@en ;
+    kgc:hasProperty   <http://kgc.knowledge-graph.jp/data/SpeckledBand/narrow> ;
+    kgc:subject   <http://kgc.knowledge-graph.jp/data/SpeckledBand/window_of_bedroom_of_Helen> ;
+    kgc:subject   kdf:window_of_bedroom_of_Julia_corridorside ;
+    kgc:subject   <http://kgc.knowledge-graph.jp/data/SpeckledBand/window_of_bedroom_of_Roylott>.
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/184>
+    rdf:type    kgc:Situation;
+    kgc:source  "ジュリアの部屋には廊下に向いた窓がある。"@ja ;
+    kgc:source  "bedroom of Julia has a window facing the corridor."@en ;
+    kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/exist> ;
+    kgc:subject   kdf:window_of_bedroom_of_Julia_corridorside ;
+    kgc:where   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Julia> ;
+    kgc:from   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Julia> ;
+    kgc:to   <http://kgc.knowledge-graph.jp/data/SpeckledBand/corridor>.
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/185>
+    rdf:type    kgc:Situation;
+    kgc:source  "ロイロット博士の部屋には廊下に向いた窓がある。"@ja ;
+    kgc:source  "Roylott 's bedroom has a window facing the corridor."@en ;
+    kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/exist> ;
+    kgc:subject   kd:window_of_bedroom_of_Roylott ;
+    kgc:where   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Roylott> ;
+    kgc:from   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Roylott> ;
+    kgc:to   <http://kgc.knowledge-graph.jp/data/SpeckledBand/corridor>.
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/189>
+    rdf:type    kgc:Situation;
+    kgc:source  "ホームズは空いた窓を念入りに調べた。"@ja ;
+    kgc:source  "Holmes looked into the vacant window carefully."@en ;
+    kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/investigate> ;
+    kgc:subject   <http://kgc.knowledge-graph.jp/data/SpeckledBand/Holmes> ;
+    kgc:what   kdf:window_of_bedroom_of_Julia_gardenside ;
+    kgc:how   <http://kgc.knowledge-graph.jp/data/SpeckledBand/carefully> ;
+    kgc:then   <http://kgc.knowledge-graph.jp/data/SpeckledBand/190>.
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/202>
+    rdf:type    kgc:Situation;
+    kgc:source  "ジュリアの部屋の窓の左側には化粧台がある。"@ja ;
+    kgc:source  "There is a dressing table on the left side of bedroom of Julia window."@en ;
+    kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/have> ;
+    kgc:subject   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Julia> ;
+    kgc:left   kdf:window_of_bedroom_of_Julia_gardenside ;
+    kgc:what   <http://kgc.knowledge-graph.jp/data/SpeckledBand/vanity>.
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/260>
+    rdf:type    kgc:Statement;
+    kgc:source  "村の宿屋からヘレンの部屋の窓が見える"@ja ;
+    kgc:source  "Holmes can see the window of bedroom of Helen from village inn."@en ;
+    kgc:infoSource   <http://kgc.knowledge-graph.jp/data/SpeckledBand/Holmes> ;
+    kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/see> ;
+    kgc:subject   <http://kgc.knowledge-graph.jp/data/SpeckledBand/man> ;
+    kgc:where   <http://kgc.knowledge-graph.jp/data/SpeckledBand/Crown_Inn> ;
+    kgc:what   kdf:window_of_bedroom_of_Julia_gardenside.
+
+# --------------------------------------------------------------------
+# 「部屋と廊下を行き来できない」を「窓を通しては行き来できない」とする
+# --------------------------------------------------------------------
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/T186>
+    rdf:type    kgc:Situation;
+    kgc:source  "ヘレンの部屋の窓は人の通り抜けはできない。ジュリアの部屋の窓は人の通り抜けはできない。ロイロット博士の部屋の窓は人の通り抜けはできない。"@ja ;
+    kgc:source  "bedroom of Helen window can not pass through people. bedroom of Julia window can not pass through people.  Roylel's bedroom window can not pass through people."@en ;
+    kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/cannotGo> ;
+    kgc:subject   <http://kgc.knowledge-graph.jp/data/SpeckledBand/man> ;
+    kgc:where   kd:window_of_bedroom_of_Helen ;
+    kgc:where   kdf:window_of_bedroom_of_Julia_corridorside ;
+    kgc:where   kd:windwo_of_bedroom_of_Roylott .

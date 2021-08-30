@@ -1,0 +1,32 @@
+# additional_situation.ttl
+# 本文の情報をもとに追加したナレッジ
+
+@prefix kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#> .
+@prefix kd: <http://kgc.knowledge-graph.jp/data/SpeckledBand/> .
+@prefix kgcf: <http://kgchallenge.github.io/ontology/> .
+@prefix kdf:  <http://kgchallenge.github.io/data/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+# 小説中の"村の人々はすっかりおびえてしまい"の一文より
+kdf:_023 a kgc:Situation ;
+        kgc:source "村の人々はすっかりおびえてしまい、"@ja ;
+        kgc:subject kd:villager_of_Stoke_Moran ;
+        kgc:hasPredicate kd:beScared;
+        kgc:whom kd:Roylott . # 文脈からロイロットだと判断
+
+# 小説中の"「ひどい扱いを受けていらっしゃる。」ホームズが言った。"より
+kdf:_129_1 a kgc:Situation ;
+        kgc:source "「ひどい扱いを受けていらっしゃる。」ホームズが言った。"@ja ;
+        kgc:subject kd:Holmes ; 
+        kgc:hasPredicate kd:say ;
+        kgc:what  kd:_129_2 .
+
+kdf:_129_2 a kgc:Situation ;
+        kgc:source "ひどい扱いを受けていらっしゃる。"@ja ; 
+        kgc:subject kd:Helen ; # 文脈的にヘレン
+        kgc:whom kd:Roylott;   # 文脈的にロイロット
+        kgc:hasPredicate kd:beCruellyUsed ;
+        kgcf:hasAttribution kd:uncertainly .
+

@@ -1,0 +1,33 @@
+# 修正: 庭インスタンス統一
+# garden_of_Roylott と garden_of_mansion が混在しているので、前者に統一
+
+@prefix kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#> .
+@prefix kd: <http://kgc.knowledge-graph.jp/data/SpeckledBand/> .
+@prefix kgcf: <http://kgchallenge.github.io/ontology/> .
+@prefix kdf: <http://kgchallenge.github.io/data/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/222>
+    rdf:type    kgc:Situation;
+    kgc:source  "なぜなら，通風口なら、外気が入るようにするはず"@ja ;
+    kgc:source  "Because, if it is a ventilator, it should let outside air enter."@en ;
+    kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/notGo> ;
+    kgc:subject   <http://kgc.knowledge-graph.jp/data/SpeckledBand/ventilator> ;
+    kgc:from   <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Julia> ;
+    kgc:to   kd:garden_of_Roylott.
+
+<http://kgc.knowledge-graph.jp/data/SpeckledBand/231>
+    rdf:type    kgc:Situation;
+    kgc:source  "風の入らない通風口"@ja ;
+    kgc:source  "A wind-free entrance."@en ;
+    kgc:hasPredicate   <http://kgc.knowledge-graph.jp/data/SpeckledBand/notGo> ;
+    kgc:subject   <http://kgc.knowledge-graph.jp/data/SpeckledBand/wind> ;
+    kgc:from   kd:garden_of_Roylott ;
+    kgc:to   <http://kgc.knowledge-graph.jp/data/SpeckledBand/ventilator>.
+
+# 削除？
+# <http://kgc.knowledge-graph.jp/data/SpeckledBand/garden_of_mansion>
+#     rdfs:label     "garden of mansion"@en;
+#     rdf:type    kgc:OFobj;
+#     kgc:ofPart    <http://kgc.knowledge-graph.jp/data/SpeckledBand/garden>;
+#     kgc:ofWhole    <http://kgc.knowledge-graph.jp/data/SpeckledBand/mansion>.

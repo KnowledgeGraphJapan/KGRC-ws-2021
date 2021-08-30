@@ -1,0 +1,100 @@
+# 追加: 穴に関するクラスとインスタンス定義
+
+@prefix kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#> .
+@prefix kd: <http://kgc.knowledge-graph.jp/data/SpeckledBand/> .
+@prefix kgcf: <http://kgchallenge.github.io/ontology/> .
+@prefix kdf: <http://kgchallenge.github.io/data/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+# ============
+# 穴クラス定義
+# ============
+
+kgcf:Hole a rdfs:Class ;
+    rdfs:subclassOf kgc:Object .
+
+# # 案1
+# kd:ventilator a kgcf:Hole .  # JuliaとRoylottの部屋の間の通風口に限定。kd:hole と同一のものを指す
+# kd:hole a kgcf:Hole .  # ホームズの会話中、JuliaとRoylottの部屋の間の穴（=通風口）に限定
+# kd:door a kgcf:Hole .  # 様々なドアを指す
+# kd:window a kgcf:Hole .  # 様々な窓を指す
+# kd:chimney a kgcf:Hole .  # kd:chimney_of_bedroom_of_Julia kgc:ofPart kd:chimney
+
+# 案2 それぞれクラスを定義 （元KGにいろいろ修正が必要）
+kgcf:Ventilator a rdfs:Class ;
+  rdfs:subClassOf kgcf:Hole .
+kgcf:Door a rdfs:Class ;
+  rdfs:subClassOf kgcf:Hole .
+kgcf:Window a rdfs:Class ;
+  rdfs:subClassOf kgcf:Hole .
+kgcf:Chimney a rdfs:Class ;
+  rdfs:subClassOf kgcf:Hole .
+
+# ==========================
+# インスタンスにクラスを付与
+# ==========================
+## 今… kgc:ofPart で kd:door と接続している（これを消す？）
+# kd:door_of_bedroom_of_Julia a kgcf:Door .
+# …
+
+kd:ventilator a kgcf:Ventilator .  # JuliaとRoylottの部屋の間の通風口に限定。kd:hole と同一のものを指す
+kd:hole a kgcf:Hole .  # ホームズの会話中、JuliaとRoylottの部屋の間の穴（=通風口）に限定
+kd:door a kgcf:Door .  # 様々なドアを指す。ひとまず残しておく
+kd:window a kgcf:Window .  # 様々な窓を指す。ひとまず残しておく
+kd:chimney a kgcf:Chimney .  # kd:chimney_of_bedroom_of_Julia kgc:ofPart kd:chimney
+
+kd:door_of_bedroom_of_Julia a kgcf:Door .
+kd:window_of_bedroom_of_Helen a kgcf:Window .
+kd:window_of_bedroom_of_Roylott a kgcf:Window .
+kd:window_of_left_building_of_mansion_of_Roylott a kgcf:Window .
+kd:window_of_mansion_of_Roylott a kgcf:Window .
+
+# -------------------------
+# 新たに追加したインスタンス
+# --------------------------
+
+kdf:door_of_bedroom_of_Roylott
+    rdfs:label "door of bedroom of Roylott"@en;
+    a kgc:Object;
+    a kgcf:Door.
+
+kdf:door_of_bedroom_of_Helen
+    rdfs:label "door of bedroom of Helen"@en;
+    a kgc:Object;
+    a kgcf:Door.
+
+kdf:window_of_bedroom_of_Julia_gardenside
+    rdfs:label     "window of bedroom of Julia (garden side)"@en;
+    a kgc:Object;
+    rdf:type    kgc:OFobj;
+    kgc:ofWhole    <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Julia>;
+    kgc:ofPart    <http://kgc.knowledge-graph.jp/data/SpeckledBand/window>;
+    kgc:ofWhole    <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom>;
+    kgc:ofWhole    <http://kgc.knowledge-graph.jp/data/SpeckledBand/Julia>;    
+    a kgcf:Window.
+
+kdf:window_of_bedroom_of_Julia_corridorside
+    rdfs:label     "window of bedroom of Julia (corridor side)"@en;
+    a kgc:Object;
+    rdf:type    kgc:OFobj;
+    kgc:ofWhole    <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom_of_Julia>;
+    kgc:ofPart    <http://kgc.knowledge-graph.jp/data/SpeckledBand/window>;
+    kgc:ofWhole    <http://kgc.knowledge-graph.jp/data/SpeckledBand/bedroom>;
+    kgc:ofWhole    <http://kgc.knowledge-graph.jp/data/SpeckledBand/Julia>;
+    a kgcf:Window.
+
+# -----------------------------
+# 庭に面した窓（ダミーのシーン）
+# -----------------------------
+kd:dummy1
+    rdf:type    kgc:Situation;
+    kgc:hasPredicate   kd:exist ;
+    kgc:subject   kdf:window_of_bedroom_of_Julia_gardenside ;
+    kgc:where   kd:bedroom_of_Julia ;
+    kgc:from   kd:bedroom_of_Julia ;
+    kgc:to   kd:garden_of_Roylott.
+
+
+

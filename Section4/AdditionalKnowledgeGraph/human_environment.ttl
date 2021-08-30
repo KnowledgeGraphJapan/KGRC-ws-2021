@@ -1,0 +1,58 @@
+# human_environment.ttl
+# 登場人物の関係(一部)
+@prefix kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#> .
+@prefix kd: <http://kgc.knowledge-graph.jp/data/SpeckledBand/> .
+@prefix kgcf: <http://kgchallenge.github.io/ontology/> .
+@prefix kdf:  <http://kgchallenge.github.io/data/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix agrelon: <http://d-nb.info/standards/elementset/agrelon#> .
+
+kd:Helen agrelon:hasParentInlaw kd:Roylott .
+kd:Julia agrelon:hasParentInlaw kd:Roylott .
+
+kd:Helen agrelon:hasBiologicalSibling kd:Julia .
+kd:Julia agrelon:hasBiologicalSibling kd:Helen .
+
+kd:Roylott agrelon:hasChildInlaw kd:Helen ;
+           agrelon:hasChildInlaw kd:Julia .
+kd:mother_of_Helen agrelon:hasBiologicalChild kd:Helen .
+kd:mother_of_Helen agrelon:hasBiologicalChild kd:Julia .
+kd:mother_of_Julia agrelon:hasBiologicalChild kd:Helen .
+kd:mother_of_Julia agrelon:hasBiologicalChild kd:Julia .
+kd:mother_of_sister agrelon:hasBiologicalChild kd:Helen .
+kd:mother_of_sister agrelon:hasBiologicalChild kd:Julia .
+
+kd:Roylott agrelon:hasSpouse kd:mother_of_Helen .
+kd:mother_of_Helen agrelon:hasSpouse kd:Roylott .
+kd:mother_of_Julia agrelon:hasSpouse kd:Roylott .
+kd:mother_of_sister agrelon:hasSpouse kd:Roylott .
+
+
+
+kd:mother_of_sister owl:sameAs kd:mother_of_Helen .
+kd:mother_of_Julia owl:sameAs kd:mother_of_Helen .
+kd:mother_of_Helen owl:sameAs kd:mother_of_Julia .
+
+# 本文の"父のお友だちといっては、漂泊のロマの一団だけで"より
+kd:Roma agrelon:hasAcquaintance kd:Roylott .
+kd:Roylott agrelon:hasAcquaintance kd:Roma .
+
+
+# class付与
+kd:Helen a agrelon:HasParentInlaw ;
+         a agrelon:HasBiologicalSibling .
+kd:Julia a agrelon:HasParentInlaw ;
+         a agrelon:HasBiologicalSibling .
+kd:Roylott a agrelon:HasChildInlaw ;
+           a agrelon:HasSpouse ;
+           a agrelon:HasAcquaintance .
+kd:mother_of_Helen a agrelon:HasBiologicalChild ;
+                   a agrelon:HasSpouse .
+kd:mother_of_Julia a agrelon:HasBiologicalChild ;
+                   a agrelon:HasSpouse .
+kd:mother_of_sister a agrelon:HasBiologicalChild ;
+                    a agrelon:HasSpouse .
+
+

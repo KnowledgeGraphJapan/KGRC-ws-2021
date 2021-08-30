@@ -1,0 +1,20 @@
+# close_relation.ttl
+# 肉親にあたる関係
+@prefix kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#> .
+@prefix kd: <http://kgc.knowledge-graph.jp/data/SpeckledBand/> .
+@prefix kgcf: <http://kgchallenge.github.io/ontology/> .
+@prefix kdf: <http://kgchallenge.github.io/data/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+@prefix agrelon: <http://d-nb.info/standards/elementset/agrelon#> .
+
+kgcf:relation_of_family a rdf:Class .
+
+
+agrelon:hasParentInlaw a kgcf:relation_of_family .
+agrelon:hasBiologicalSibling a kgcf:relation_of_family .
+agrelon:hasChildInlaw a kgcf:relation_of_family .
+agrelon:hasBiologicalChild a kgcf:relation_of_family .
+agrelon:hasSpouse a kgcf:relation_of_family .
+

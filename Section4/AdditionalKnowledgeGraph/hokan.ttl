@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#> .
+@prefix kd: <http://kgc.knowledge-graph.jp/data/SpeckledBand/> .
+@prefix kgcf: <http://kgchallenge.github.io/ontology/> .
+
+kd:scar a kgcf:傷跡 .
+kd:104 kgc:when kd:death_day_of_Julia .
+kd:beDizzy a kgcf:めまい .
+kd:turnPale a kgcf:青白い .
+
+kd:whip a kgcf:鞭 .
+kd:dog_whip a kgcf:鞭 .
+kd:dog_whip_of_Roylott a kgcf:鞭 .
+
+kd:snake a kgcf:毒蛇 .
+kd:sname a kgcf:毒蛇 .
+kd:poisonous_snake a kgcf:毒蛇 .
+kd:the_most_terrible_snake_of_India a kgcf:毒蛇 .
+
