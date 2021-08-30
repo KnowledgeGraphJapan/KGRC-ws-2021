@@ -9,7 +9,7 @@
 - Pythonライブラリ「RDFLib」によるRDF利用プログラミング
 
 ## ナレッジグラフ（RDF）の基礎/ナレッジグラフ（RDF）用クエリ言語SPARQLの基礎
-[説明スライド](KGRC-WS-2021_0830RDF-SPARQL.pdf)  
+[説明スライド](KGRC-WS-2021_0830RDF-SPARQLv2.pdf)2021/8/30 14:38更新  
 ### SPARQLクエリ例
 - [Wikidata](SPARQL-sample.md)
 - [推論チャレンジ](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/blob/master/kgrc2020ws/SPARQL-Sample-KGRC2020.md)
