@@ -1,0 +1,24 @@
+@prefix ex: <http://example.com/terms> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+############################
+# クラス-インスタンス推論の例 #
+############################
+
+ex:哺乳類 a rdfs:Class .
+
+ex:人間 a rdfs:Class ;
+	rdfs:subClassOf ex:哺乳類 .
+
+ex:Aさん a ex:人間 .
+
+#######################
+# サブプロパティ推論の例 #
+#######################
+
+ex:親族 a rdf:Property .
+
+ex:兄弟 a rdf:Property ;
+	rdfs:subPropertyOf ex:親族 .
+
+ex:Aさん ex:兄弟 ex:Bさん .
