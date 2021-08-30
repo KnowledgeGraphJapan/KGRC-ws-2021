@@ -15,7 +15,7 @@
 - [推論チャレンジ](https://github.com/KnowledgeGraphJapan/LOD-ws-2020/blob/master/kgrc2020ws/SPARQL-Sample-KGRC2020.md)
 　
 ## RDFデータベース「GraphDB」の導入方法
-[説明スライド](（暫定版）ナレッジグラフ推論チャレンジ技術勉強会_egami.pdf)  
+[説明スライド](KGRC-WS-2021_0830_GraphDB_python.pdf)  
 実演時にお手元でもGraphDBの動作を試したい方は予め下記リンクからユーザ情報を入力し，無料版のインストールを行っておいてください．  
 [https://www.ontotext.com/products/graphdb/graphdb-free/](https://www.ontotext.com/products/graphdb/graphdb-free/)  
 
