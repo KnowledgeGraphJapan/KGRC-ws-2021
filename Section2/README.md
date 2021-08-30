@@ -20,6 +20,6 @@
 [https://www.ontotext.com/products/graphdb/graphdb-free/](https://www.ontotext.com/products/graphdb/graphdb-free/)  
 
 ## Pythonライブラリ「RDFLib」によるRDF利用プログラミング
-[説明スライド](（暫定版）ナレッジグラフ推論チャレンジ技術勉強会_egami.pdf)  
+[説明スライド](KGRC-WS-2021_0830_GraphDB_python.pdf)  
 [Google Colaboratory](https://colab.research.google.com/drive/1Sj4b32IRE2nN3tlfiz0O8XHTXFDBnjC7?usp=sharing)  
 [Jupyter Notebook](https://github.com/KnowledgeGraphJapan/KGRC-ws-2021/blob/main/Section2/kgrc_ws_2021_sample.ipynb)
