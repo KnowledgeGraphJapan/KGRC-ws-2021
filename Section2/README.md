@@ -8,6 +8,9 @@
 - RDFデータベース「GraphDB」の導入方法
 - Pythonライブラリ「RDFLib」によるRDF利用プログラミング
 
+## 動画
+当日の動画は[こちら](https://drive.google.com/file/d/1ZzxVO09SJqEOaR_xw5KxmpWmq-pxuP_6/view?usp=sharing)からご覧いただけます．
+
 ## ナレッジグラフ（RDF）の基礎/ナレッジグラフ（RDF）用クエリ言語SPARQLの基礎
 [説明スライド](KGRC-WS-2021_0830RDF-SPARQLv2.pdf) 2021/8/30 14:38更新  
 ### SPARQLクエリ例
