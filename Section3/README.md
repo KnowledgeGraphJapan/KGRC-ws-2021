@@ -1,4 +1,6 @@
 # これまでに作成されてきたデータ、オントロジー
+## 動画（Section3）
+当日の動画は[こちら](https://drive.google.com/file/d/19wOxxYdvk81zRcMi9vW8TDqRJO9MUVHC/view?usp=sharing)からご覧いただけます．  
 
 ## 主語, 動詞, 目的語の3つ組データ（まだらの紐）: 東京都市大学 勝島修平さん作成
 * http://challenge.knowledge-graph.jp/submissions/2019/katsushima/knowledge_graph_data.xlsx
