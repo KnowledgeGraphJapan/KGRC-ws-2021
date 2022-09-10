@@ -9,7 +9,9 @@
 - Pythonライブラリ「RDFLib」によるRDF利用プログラミング
 
 ## 動画（Section2）
-当日の動画は[こちら](https://drive.google.com/file/d/19YKSsUalvVSGinYtCwi2R7zHIp3W0EBU/view?usp=sharing)からご覧いただけます．
+当日の動画はこちらからご覧いただけます．
+- [前編](https://drive.google.com/file/d/1okQgmlbKyu0iMypcrqk90Zbg8X787GlJ/view?usp=sharing)
+- [後編](https://drive.google.com/file/d/19YKSsUalvVSGinYtCwi2R7zHIp3W0EBU/view?usp=sharing)
 
 ## ナレッジグラフ（RDF）の基礎/ナレッジグラフ（RDF）用クエリ言語SPARQLの基礎
 [説明スライド](KGRC-WS-2021_0830RDF-SPARQLv2.pdf) 2021/8/30 14:38更新  
